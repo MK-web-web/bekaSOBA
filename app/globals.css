@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  /* Palette: rebuilt directly from the firm's logo (extracted programmatically:
+     jade #00A86B + black). "Indigo"/"clay" variable names are kept from the
+     earlier pass to avoid touching every component, but now carry the real
+     brand colors: near-black in place of indigo, jade in place of clay. */
+  --color-ink: #17140f;
+  --color-indigo: #0e1210;
+  --color-indigo-deep: #070907;
+  --color-clay: #00a86b;
+  --color-clay-deep: #007a4d;
+  --color-bone: #f2f3ee;
+  --color-bone-dim: #e6e8df;
+  --color-paper: #faf9f5;
+  --color-gold: #00a86b;
+  --color-green: #00a86b;
+  --color-line: #d7dbd0;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Work Sans", -apple-system, sans-serif;
+  --font-utility: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-indigo: var(--color-indigo);
+  --color-indigo-deep: var(--color-indigo-deep);
+  --color-clay: var(--color-clay);
+  --color-clay-deep: var(--color-clay-deep);
+  --color-bone: var(--color-bone);
+  --color-bone-dim: var(--color-bone-dim);
+  --color-paper: var(--color-paper);
+  --color-gold: var(--color-gold);
+  --color-green: var(--color-green);
+  --color-line: var(--color-line);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-utility: var(--font-utility);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.08;
+}
+
+.font-utility {
+  font-family: var(--font-utility);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-indigo-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-clay);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,28 @@
+"use client";
+
+import { contact } from "@/lib/content";
+import { useLanguage } from "@/lib/i18n";
+
+export default function WhatsAppFloat() {
+  const { lang } = useLanguage();
+  const digits = contact.whatsappPlaceholder.replace(/[^0-9]/g, "");
+  const message =
+    lang === "fr"
+      ? "Bonjour, je souhaite en savoir plus sur vos services."
+      : "Hello, I'd like to learn more about your services.";
+
+  return (
+    <a
+      href={`https://wa.me/${digits}?text=${encodeURIComponent(message)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-40 flex items-center gap-2 bg-clay text-bone px-4 py-3.5 shadow-lg hover:bg-clay-deep transition-colors"
+      aria-label="WhatsApp"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.72 1.2h.02c5.46 0 9.9-4.45 9.9-9.91C21.94 6.45 17.5 2 12.04 2zm5.8 14.05c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.12-.42-.13-.95-.31-1.63-.6-2.87-1.24-4.74-4.13-4.88-4.32-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.3.48-.14.17-.3.37-.43.5-.14.14-.29.29-.13.57.17.28.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.32 1.44.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.28.14.47.21.53.33.07.12.07.68-.17 1.35z"/>
+      </svg>
+      <span className="text-[14px] font-medium hidden sm:inline">WhatsApp</span>
+    </a>
+  );
+}
