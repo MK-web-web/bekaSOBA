@@ -73,13 +73,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  ...(analytics.gscVerification
-    ? {
-        verification: {
-          google: analytics.gscVerification,
-        },
-      }
-    : {}),
+  verification: {
+    google: analytics.gscVerification,
+  },
   icons: {
     icon: site.logo,
     apple: site.logo,

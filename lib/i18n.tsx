@@ -38,7 +38,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const lang = useSyncExternalStore(subscribe, readLang, () => "fr");
+  const lang = useSyncExternalStore<Lang>(subscribe, readLang, () => "fr");
 
   const setLang = useCallback((l: Lang) => {
     window.localStorage.setItem(STORAGE_KEY, l);

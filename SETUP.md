@@ -36,10 +36,11 @@ Edit locally → git push → GitHub → Vercel redeploys → bekasoba.com updat
    - Suggested name: `bekasoba-website` or `denmisew-ka-gneta-website`
    - Do **not** add a README if this folder already has code
 
-2. **Connect this folder to GitHub** (run once in Terminal, from this folder):
+2. **Connect this folder to GitHub** (run once in Terminal):
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd "/Users/mahamadoukane/Desktop/My code sources/denmisew-ka-gneta-website"
+git remote set-url origin https://github.com/MK-web-web/bekaSOBA.git
 git push -u origin main
 ```
 
