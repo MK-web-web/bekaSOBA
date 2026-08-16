@@ -11,7 +11,7 @@ import "@fontsource/ibm-plex-mono/500.css";
 import "./globals.css";
 import Providers from "@/components/Providers";
 import JsonLd from "@/components/JsonLd";
-import { analytics, site } from "@/lib/site";
+import { gscVerification, site } from "@/lib/site";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: analytics.gscVerification,
+    google: gscVerification,
   },
   icons: {
     icon: site.logo,

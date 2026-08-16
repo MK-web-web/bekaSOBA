@@ -22,9 +22,14 @@ export const site = {
   twitter: "@bekasoba",
 };
 
+export const gscVerification =
+  process.env.NEXT_PUBLIC_GSC_VERIFICATION ??
+  "veOq8bjVw0Li6MmaB2zFa7zGBvYYKZstgVc6_Rn2I4w";
+
+export const gaMeasurementId =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-JMV29X7KMG";
+
 export const analytics = {
-  gaId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-JMV29X7KMG",
-  gscVerification:
-    process.env.NEXT_PUBLIC_GSC_VERIFICATION ??
-    "veOq8bjVw0Li6MmaB2zFa7zGBvYYKZstgVc6_Rn2I4w",
+  gaId: gaMeasurementId,
+  gscVerification,
 };

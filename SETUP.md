@@ -51,7 +51,22 @@ git push -u origin main
    - Add custom domain **bekasoba.com** under **Settings → Domains**
    - Also add **www.bekasoba.com** — the site redirects www → apex automatically
 
-4. **Google Search Console**
+4. **Namecheap DNS** (fixes “DNS Change Recommended” in Vercel)
+   - In Vercel → **Domains** → click **View DNS configuration** on each domain
+   - Copy the **exact** A record and CNAME values shown (they may differ from defaults)
+   - In Namecheap → **Advanced DNS** → remove parking-page records, then add:
+
+   | Type | Host | Value |
+   |------|------|-------|
+   | A | `@` | *(from Vercel domain card — often `76.76.21.21`)* |
+   | CNAME | `www` | *(from Vercel domain card — often `cname.vercel-dns.com`)* |
+
+5. **Vercel domain redirect** (avoid redirect loops)
+   - Set **`bekasoba.com`** as **Production** (not redirect to www)
+   - Set **`www.bekasoba.com`** → **Redirect** to `bekasoba.com`
+   - This matches the site’s canonical URL in `lib/site.ts`
+
+6. **Google Search Console**
    - Add property `https://bekasoba.com`
    - Choose **HTML tag** verification
    - Copy the `content="..."` value into `NEXT_PUBLIC_GSC_VERIFICATION` in Vercel
