@@ -1,0 +1,12 @@
+import type { Metadata } from "next";
+import { pageSeo } from "@/lib/seo";
+
+export const metadata: Metadata = pageSeo.privacy;
+
+export default function PrivacyLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
+}

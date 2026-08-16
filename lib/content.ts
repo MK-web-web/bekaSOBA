@@ -130,6 +130,14 @@ export const uiStrings = {
     whoFor: { fr: "Pour qui", en: "Who this is for" },
     whatsIncluded: { fr: "Ce qui est inclus", en: "What's included" },
     pricingApproach: { fr: "Approche tarifaire", en: "Pricing approach" },
+    ctaTitle: {
+      fr: "Prêt à clarifier votre prochaine étape ?",
+      en: "Ready to clarify your next step?",
+    },
+    ctaText: {
+      fr: "WhatsApp pour une réponse rapide, ou formulaire pour un message détaillé — entretien découverte gratuit.",
+      en: "WhatsApp for a fast reply, or the form for a detailed message — complimentary discovery conversation.",
+    },
   },
   about: {
     eyebrow: { fr: "À propos du cabinet", en: "About the firm" },
@@ -254,6 +262,33 @@ export const uiStrings = {
       en: "By submitting this form, you agree to our privacy policy. Your data is used only to respond to your inquiry.",
     },
     privacyLink: { fr: "Politique de confidentialité", en: "Privacy policy" },
+    leadRouting: {
+      title: {
+        fr: "Choisissez comment nous contacter",
+        en: "Choose how to reach us",
+      },
+      sub: {
+        fr: "Réponse rapide par WhatsApp, e-mail détaillé ou formulaire — selon ce qui vous convient le mieux.",
+        en: "Fast reply on WhatsApp, a detailed email, or the form — whichever works best for you.",
+      },
+      whatsappTitle: { fr: "WhatsApp — le plus rapide", en: "WhatsApp — fastest" },
+      whatsappText: {
+        fr: "Idéal pour une première question ou planifier un court échange découverte.",
+        en: "Best for a first question or scheduling a short discovery conversation.",
+      },
+      emailTitle: { fr: "E-mail", en: "Email" },
+      emailText: {
+        fr: "Pour un message plus détaillé ou un document à partager.",
+        en: "For a longer message or if you need to share a document.",
+      },
+      emailCta: { fr: "Envoyer un e-mail", en: "Send an email" },
+      formTitle: { fr: "Formulaire", en: "Contact form" },
+      formText: {
+        fr: "Précisez votre service d'intérêt et vos objectifs — nous revenons vers vous.",
+        en: "Tell us your service of interest and goals — we'll follow up.",
+      },
+      formCta: { fr: "Remplir le formulaire", en: "Use the form" },
+    },
   },
   privacy: {
     eyebrow: { fr: "Confidentialité", en: "Privacy" },

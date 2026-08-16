@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { Container, Eyebrow, Button } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
 import ServiceCard from "@/components/ServiceCard";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { serviceLines, uiStrings } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
@@ -17,7 +19,26 @@ export default function ServiceDetail({ service }: { service: Service }) {
     <>
       <section className="pt-16 pb-16 md:pt-24">
         <Container>
-          <Eyebrow>{service.code} — {t.services.eyebrow[lang]}</Eyebrow>
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex flex-wrap items-center gap-2 font-utility text-[12px] text-ink/50">
+              <li>
+                <Link href="/" className="hover:text-clay">
+                  {lang === "fr" ? "Accueil" : "Home"}
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li>
+                <Link href="/services" className="hover:text-clay">
+                  {t.nav.services[lang]}
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
+              <li className="text-ink/70">{service.shortName[lang]}</li>
+            </ol>
+          </nav>
+          <Eyebrow>
+            {service.code} — {t.services.eyebrow[lang]}
+          </Eyebrow>
           <h1 className="font-display text-[32px] md:text-[44px] text-indigo max-w-[720px] leading-[1.12]">
             {service.name[lang]}
           </h1>
@@ -25,6 +46,10 @@ export default function ServiceDetail({ service }: { service: Service }) {
             {service.summary[lang]}
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
+            <WhatsAppButton
+              source="service-detail"
+              serviceName={service.name[lang]}
+            />
             <Button href="/contact" variant="secondary">
               {t.buttons.discussService[lang]}
             </Button>
@@ -48,6 +73,9 @@ export default function ServiceDetail({ service }: { service: Service }) {
             </div>
             <div>
               <Eyebrow>{t.services.whatsIncluded[lang]}</Eyebrow>
+              <h3 className="sr-only">
+                {lang === "fr" ? "Contenu du service" : "What's included"}
+              </h3>
               <ul className="space-y-3.5">
                 {service.includes.map((item) => (
                   <li
@@ -67,9 +95,9 @@ export default function ServiceDetail({ service }: { service: Service }) {
       <section className="py-20">
         <Container>
           <div className="bg-indigo text-bone p-10 md:p-12">
-            <div className="font-utility text-[11px] uppercase tracking-[0.16em] text-clay mb-3">
+            <h2 className="font-utility text-[11px] uppercase tracking-[0.16em] text-clay mb-3">
               {t.services.pricingApproach[lang]}
-            </div>
+            </h2>
             <p className="text-[16px] leading-relaxed max-w-[680px]">
               {service.pricing[lang]}
             </p>

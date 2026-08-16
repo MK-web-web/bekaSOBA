@@ -122,3 +122,25 @@ The founder profile links to mahamadou-kane.vercel.app.
 3. ED — Education Mentoring (bekaSOBA model)
 4. EN — Professional English & Leadership
 5. DS — Digital Skills Development
+
+## SEO — Google Search Console checklist
+
+After DNS is live and the site loads at `https://www.bekasoba.com`:
+
+1. **Verify ownership** — HTML tag + file at `/google8afabc4a923c5f49.html`
+2. **Submit sitemap** — `https://www.bekasoba.com/sitemap.xml` (full URL, not `/sitemap.xml` alone)
+3. **Request indexing** for key pages (URL Inspection → Request indexing):
+   - `https://www.bekasoba.com/`
+   - `https://www.bekasoba.com/services`
+   - `https://www.bekasoba.com/contact`
+   - `https://www.bekasoba.com/about`
+   - Each service page under `/services/...`
+4. **Monitor** — Pages → Indexing report; fix any “Couldn't fetch” by waiting for DNS/SSL, then re-request
+
+Per-page SEO metadata lives in `lib/seo.ts`. WhatsApp lead clicks fire GA4 `generate_lead` events (after cookie consent).
+
+## Backup
+
+- **Primary:** GitHub `MK-web-web/bekaSOBA` — push after every change
+- **Live:** Vercel auto-deploys from GitHub
+- **Local:** Desktop folder + iCloud (extra safety, not a substitute for GitHub)

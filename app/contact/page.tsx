@@ -3,6 +3,8 @@
 import { Container, Eyebrow } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
 import ContactForm from "@/components/ContactForm";
+import LeadRouting from "@/components/LeadRouting";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { contact, engagementSteps, uiStrings } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
@@ -21,20 +23,31 @@ export default function Contact() {
           <p className="mt-6 text-[17px] text-ink/75 max-w-[560px] leading-relaxed">
             {t.sub[lang]}
           </p>
+          <div className="mt-8">
+            <WhatsAppButton source="contact" />
+          </div>
         </Container>
       </section>
 
+      <LeadRouting />
+
       <BogolanDivider tone="clay" />
 
-      <section className="py-20">
+      <section className="py-20" id="contact-form" aria-labelledby="contact-form-title">
         <Container>
+          <h2
+            id="contact-form-title"
+            className="font-display text-[26px] text-indigo mb-10"
+          >
+            {lang === "fr" ? "Envoyez-nous un message" : "Send us a message"}
+          </h2>
           <div className="grid lg:grid-cols-[1fr_1.3fr] gap-16">
             <div>
               <div className="space-y-8">
                 <div>
-                  <div className="font-utility text-[11px] uppercase tracking-wide text-clay mb-2">
+                  <h3 className="font-utility text-[11px] uppercase tracking-wide text-clay mb-2">
                     {t.email[lang]}
-                  </div>
+                  </h3>
                   <a
                     href={`mailto:${contact.emailPlaceholder}`}
                     className="text-[16px] text-indigo hover:text-clay transition-colors"
@@ -43,30 +56,25 @@ export default function Contact() {
                   </a>
                 </div>
                 <div>
-                  <div className="font-utility text-[11px] uppercase tracking-wide text-clay mb-2">
+                  <h3 className="font-utility text-[11px] uppercase tracking-wide text-clay mb-2">
                     {t.whatsapp[lang]}
-                  </div>
-                  <a
-                    href={`https://wa.me/${contact.whatsappPlaceholder.replace(/[^0-9]/g, "")}`}
-                    className="text-[16px] text-indigo hover:text-clay transition-colors"
-                  >
-                    {contact.whatsappPlaceholder}
-                  </a>
+                  </h3>
+                  <WhatsAppButton source="contact" variant="inline" />
                 </div>
                 <div>
-                  <div className="font-utility text-[11px] uppercase tracking-wide text-clay mb-2">
+                  <h3 className="font-utility text-[11px] uppercase tracking-wide text-clay mb-2">
                     {t.location[lang]}
-                  </div>
-                  <span className="text-[16px] text-indigo">
+                  </h3>
+                  <p className="text-[16px] text-indigo">
                     {contact.location[lang]}
-                  </span>
+                  </p>
                 </div>
               </div>
 
               <div className="mt-14 pt-8 border-t border-line">
-                <div className="font-utility text-[11px] uppercase tracking-wide text-ink/50 mb-5">
+                <h3 className="font-utility text-[11px] uppercase tracking-wide text-ink/50 mb-5">
                   {t.howItWorks[lang]}
-                </div>
+                </h3>
                 <ol className="space-y-4">
                   {engagementSteps.map((s, i) => (
                     <li key={s.title.en} className="flex gap-4">
@@ -74,12 +82,12 @@ export default function Contact() {
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <div>
-                        <div className="text-[14.5px] font-medium text-indigo">
+                        <p className="text-[14.5px] font-medium text-indigo">
                           {s.title[lang]}
-                        </div>
-                        <div className="text-[13.5px] text-ink/60 mt-0.5">
+                        </p>
+                        <p className="text-[13.5px] text-ink/60 mt-0.5">
                           {s.detail[lang]}
-                        </div>
+                        </p>
                       </div>
                     </li>
                   ))}
