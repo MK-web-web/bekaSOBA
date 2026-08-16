@@ -24,7 +24,7 @@ export default function JsonLd() {
           "https://mahamadou-kane.vercel.app",
         ],
         description:
-          "Results-oriented consulting firm bridging U.S. professional standards with Malian realities.",
+          "Results-oriented consulting and support firm bridging U.S. professional standards with Malian realities.",
         knowsAbout: serviceLines.map((s) => s.name.en),
       },
       {

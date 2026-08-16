@@ -89,6 +89,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <meta
+          name="google-site-verification"
+          content={gscVerification}
+        />
+      </head>
       <body className="antialiased">
         <JsonLd />
         <Providers>{children}</Providers>

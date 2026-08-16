@@ -3,8 +3,8 @@ export type Lang = "fr" | "en";
 export const firm = {
   name: "bekaSOBA",
   positioning: {
-    fr: "Un cabinet de conseil axé sur les résultats, alliant les standards professionnels américains aux réalités maliennes.",
-    en: "A results-oriented consulting firm bridging U.S. professional standards with Malian realities.",
+    fr: "Un cabinet de conseil et de soutien axé sur les résultats, alliant les standards professionnels américains aux réalités maliennes.",
+    en: "A results-oriented consulting and support firm bridging U.S. professional standards with Malian realities.",
   },
 };
 
@@ -20,8 +20,8 @@ export const uiStrings = {
     },
     allServices: { fr: "Tous les services", en: "All service lines" },
     tagline: {
-      fr: "Conseil axé sur les résultats",
-      en: "Results-Oriented Consulting",
+      fr: "Conseil et soutien axés sur les résultats",
+      en: "Results-Oriented Consulting & Support",
     },
   },
   buttons: {
@@ -49,8 +49,8 @@ export const uiStrings = {
   },
   home: {
     eyebrow: {
-      fr: "Cabinet de conseil axé sur les résultats",
-      en: "Results-Oriented Consulting Firm",
+      fr: "Cabinet de conseil et de soutien axé sur les résultats",
+      en: "Results-Oriented Consulting & Support Firm",
     },
     heroTitle: {
       fr: "Allier les standards professionnels américains aux réalités maliennes.",
@@ -107,8 +107,8 @@ export const uiStrings = {
       en: "A complementary ecosystem in Mali.",
     },
     networkText: {
-      fr: "bekaSOBA est le cabinet de conseil. Big Hope Mali English Club et DJIGUI-BA-MALI sont des organisations sœurs fondées par le même porteur de projet — des initiatives distinctes, alignées sur la même mission.",
-      en: "bekaSOBA is the consulting firm. Big Hope Mali English Club and DJIGUI-BA-MALI are sister organizations built by the same founder — distinct initiatives aligned on the same mission.",
+      fr: "bekaSOBA est le cabinet de conseil et de soutien. Big Hope Mali English Club et DJIGUI-BA-MALI sont des organisations sœurs fondées par le même porteur de projet — des initiatives distinctes, alignées sur la même mission.",
+      en: "bekaSOBA is the consulting and support firm. Big Hope Mali English Club and DJIGUI-BA-MALI are sister organizations built by the same founder — distinct initiatives aligned on the same mission.",
     },
     networkLink: { fr: "Voir l'écosystème complet →", en: "See the full ecosystem →" },
   },
@@ -173,8 +173,8 @@ export const uiStrings = {
       en: "An ecosystem built by the same founder.",
     },
     networkText: {
-      fr: "bekaSOBA est le cabinet de conseil. Les initiatives ci-dessous sont des organisations sœurs — créées et dirigées par le même fondateur au Mali. Ce ne sont pas des filiales du cabinet ni des partenaires commerciaux formels, mais des projets complémentaires qui partagent la même mission : allier rigueur professionnelle et impact concret.",
-      en: "bekaSOBA is the consulting firm. The initiatives below are sister organizations — built and led by the same founder in Mali. They are not subsidiaries of the firm or formal commercial partners, but complementary projects that share the same mission: pairing professional rigor with real-world impact.",
+      fr: "bekaSOBA est le cabinet de conseil et de soutien. Les initiatives ci-dessous sont des organisations sœurs — créées et dirigées par le même fondateur au Mali. Ce ne sont pas des filiales du cabinet ni des partenaires commerciaux formels, mais des projets complémentaires qui partagent la même mission : allier rigueur professionnelle et impact concret.",
+      en: "bekaSOBA is the consulting and support firm. The initiatives below are sister organizations — built and led by the same founder in Mali. They are not subsidiaries of the firm or formal commercial partners, but complementary projects that share the same mission: pairing professional rigor with real-world impact.",
     },
     sisterOrgLabel: { fr: "Organisation sœur", en: "Sister organization" },
     founderProfileLabel: { fr: "Profil du fondateur", en: "Founder profile" },
@@ -306,8 +306,8 @@ export const uiStrings = {
   },
   footer: {
     tagline: {
-      fr: "bekaSOBA — cabinet de conseil axé sur les résultats, alliant les standards professionnels américains aux réalités maliennes.",
-      en: "bekaSOBA — a results-oriented consulting firm bridging U.S. professional standards with Malian realities.",
+      fr: "bekaSOBA — cabinet de conseil et de soutien axé sur les résultats, alliant les standards professionnels américains aux réalités maliennes.",
+      en: "bekaSOBA — a results-oriented consulting and support firm bridging U.S. professional standards with Malian realities.",
     },
     servicesTitle: { fr: "Services", en: "Services" },
     firmTitle: { fr: "Cabinet", en: "Firm" },
