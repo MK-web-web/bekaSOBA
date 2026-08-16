@@ -6,7 +6,6 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import WhatsAppFloat from "./WhatsAppFloat";
 import CookieConsent from "./CookieConsent";
-import CookieConsent from "./CookieConsent";
 
 export default function Providers({ children }: { children: ReactNode }) {
   return (
@@ -15,7 +14,6 @@ export default function Providers({ children }: { children: ReactNode }) {
       <main>{children}</main>
       <Footer />
       <WhatsAppFloat />
-      <CookieConsent />
       <CookieConsent />
     </LanguageProvider>
   );
