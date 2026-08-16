@@ -1,7 +1,7 @@
 export type Lang = "fr" | "en";
 
 export const firm = {
-  name: "Denmisew Ka Gneta",
+  name: "bekaSOBA",
   positioning: {
     fr: "Un cabinet de conseil axé sur les résultats, alliant les standards professionnels américains aux réalités maliennes.",
     en: "A results-oriented consulting firm bridging U.S. professional standards with Malian realities.",
@@ -66,8 +66,8 @@ export const uiStrings = {
     },
     blueprintTag: { fr: "Périmètre d'intervention", en: "Scope of Engagement" },
     blueprintTitle: {
-      fr: "Quatre pôles de service",
-      en: "Four lead service lines",
+      fr: "Cinq pôles de service",
+      en: "Five lead service lines",
     },
     whoEyebrow: { fr: "À qui nous nous adressons", en: "Who we serve" },
     whoTitle: {
@@ -76,15 +76,15 @@ export const uiStrings = {
     },
     deliverEyebrow: { fr: "Ce que nous offrons", en: "What we deliver" },
     deliverTitle: {
-      fr: "Quatre pôles de service, un seul cabinet.",
-      en: "Four lead service lines, one consulting firm.",
+      fr: "Cinq pôles de service, un seul cabinet.",
+      en: "Five lead service lines, one consulting firm.",
     },
     approachEyebrow: { fr: "Notre approche", en: "Our approach" },
     approachTitle: {
       fr: "Des standards concrets, des résultats mesurables.",
       en: "Practical standards, measurable outcomes.",
     },
-    whyEyebrow: { fr: "Pourquoi Denmisew Ka Gneta", en: "Why Denmisew Ka Gneta" },
+    whyEyebrow: { fr: "Pourquoi bekaSOBA", en: "Why bekaSOBA" },
     whyTitle: {
       fr: "Formation professionnelle américaine, expérience malienne approfondie.",
       en: "U.S. professional training, deep Malian experience.",
@@ -101,12 +101,22 @@ export const uiStrings = {
       fr: "Les entretiens découverte sont gratuits et sans engagement. Vous repartirez avec une prochaine étape claire, que nous travaillions ensemble ou non.",
       en: "Discovery conversations are complimentary. You'll leave with a clear next step, whether or not we end up working together.",
     },
+    networkEyebrow: { fr: "Organisations sœurs", en: "Sister organizations" },
+    networkTitle: {
+      fr: "Un écosystème complémentaire au Mali.",
+      en: "A complementary ecosystem in Mali.",
+    },
+    networkText: {
+      fr: "bekaSOBA est le cabinet de conseil. Big Hope Mali English Club et DJIGUI-BA-MALI sont des organisations sœurs fondées par le même porteur de projet — des initiatives distinctes, alignées sur la même mission.",
+      en: "bekaSOBA is the consulting firm. Big Hope Mali English Club and DJIGUI-BA-MALI are sister organizations built by the same founder — distinct initiatives aligned on the same mission.",
+    },
+    networkLink: { fr: "Voir l'écosystème complet →", en: "See the full ecosystem →" },
   },
   services: {
     eyebrow: { fr: "Menu des services", en: "Service menu" },
     title: {
-      fr: "Quatre pôles de service, conçus pour des résultats mesurables.",
-      en: "Four lead service lines, built for measurable outcomes.",
+      fr: "Cinq pôles de service, conçus pour des résultats mesurables.",
+      en: "Five lead service lines, built for measurable outcomes.",
     },
     sub: {
       fr: "Chaque pôle est assuré par le même cabinet, avec une tarification et un mode de prestation adaptés à la nature de la mission.",
@@ -125,12 +135,12 @@ export const uiStrings = {
     eyebrow: { fr: "À propos du cabinet", en: "About the firm" },
     positioningEyebrow: { fr: "Positionnement", en: "Positioning" },
     positioningTitle: {
-      fr: "Un cabinet, quatre pôles de service.",
-      en: "One firm, four service lines.",
+      fr: "Un cabinet, cinq pôles de service.",
+      en: "One firm, five service lines.",
     },
     positioningText: {
-      fr: "Nous opérons comme une entreprise unique qui propose des services éducatifs spécialisés sous le modèle Denmisew Ka Gneta, tout en offrant un portefeuille plus large de services de conseil, de formation et d'accompagnement. Cette structure garantit simplicité opérationnelle et concentration, tout en permettant aux pôles spécialisés de se développer.",
-      en: "We operate as a single company that delivers specialized education services under the Denmisew Ka Gneta model while offering a broader portfolio of consulting, training, and advisory services. This structure allows focus, operational simplicity, and the ability to expand specialized lines as they grow.",
+      fr: "bekaSOBA opère comme une entreprise unique qui propose des services éducatifs spécialisés et un portefeuille plus large de conseil, de formation et d'accompagnement. Cette structure garantit simplicité opérationnelle et concentration, tout en permettant aux pôles spécialisés de se développer.",
+      en: "bekaSOBA operates as a single company delivering specialized education services alongside a broader portfolio of consulting, training, and advisory work. This structure allows focus, operational simplicity, and room for specialized lines to grow.",
     },
     shortEyebrow: { fr: "En bref", en: "The firm, in short" },
     shortTitle: { fr: "Un atout distinctif.", en: "A distinctive strength." },
@@ -144,7 +154,7 @@ export const uiStrings = {
       en: "How we work with clients.",
     },
     credEyebrow: { fr: "Parcours du fondateur", en: "Founder credentials" },
-    credTitle: { fr: "Pourquoi Denmisew Ka Gneta.", en: "Why Denmisew Ka Gneta." },
+    credTitle: { fr: "Pourquoi bekaSOBA.", en: "Why bekaSOBA." },
     credText: {
       fr: "Une riche expérience d'enseignement du primaire à l'université — dont l'anglais technique et professionnel à TechnoLAB-ISTA. Bilingue (anglais/français), avec une maîtrise du bambara et la capacité, forgée par l'expérience, d'évoluer efficacement dans les environnements professionnels américains comme maliens.",
       en: "Extensive teaching experience across primary, secondary, professional, and university levels — including Technical & Professional English at TechnoLAB-ISTA. Bilingual (English/French) with fluency in Bambara, and the lived ability to operate effectively in both U.S. and Malian professional environments.",
@@ -163,8 +173,8 @@ export const uiStrings = {
       en: "An ecosystem built by the same founder.",
     },
     networkText: {
-      fr: "Denmisew Ka Gneta est le cabinet de conseil. Les initiatives ci-dessous sont des organisations sœurs — créées et dirigées par le même fondateur au Mali. Ce ne sont pas des filiales du cabinet ni des partenaires commerciaux formels, mais des projets complémentaires qui partagent la même mission : allier rigueur professionnelle et impact concret.",
-      en: "Denmisew Ka Gneta is the consulting firm. The initiatives below are sister organizations — built and led by the same founder in Mali. They are not subsidiaries of the firm or formal commercial partners, but complementary projects that share the same mission: pairing professional rigor with real-world impact.",
+      fr: "bekaSOBA est le cabinet de conseil. Les initiatives ci-dessous sont des organisations sœurs — créées et dirigées par le même fondateur au Mali. Ce ne sont pas des filiales du cabinet ni des partenaires commerciaux formels, mais des projets complémentaires qui partagent la même mission : allier rigueur professionnelle et impact concret.",
+      en: "bekaSOBA is the consulting firm. The initiatives below are sister organizations — built and led by the same founder in Mali. They are not subsidiaries of the firm or formal commercial partners, but complementary projects that share the same mission: pairing professional rigor with real-world impact.",
     },
     sisterOrgLabel: { fr: "Organisation sœur", en: "Sister organization" },
     founderProfileLabel: { fr: "Profil du fondateur", en: "Founder profile" },
@@ -240,14 +250,64 @@ export const uiStrings = {
       en: "Something went wrong sending this — please email us directly in the meantime.",
     },
     formNote: {
-      fr: "Ce formulaire nécessite un identifiant Formspree actif (ou équivalent) avant le lancement — il pointe actuellement vers un identifiant provisoire.",
-      en: "This form needs a live Formspree ID (or equivalent) wired into it before launch — currently set to a placeholder endpoint.",
+      fr: "En envoyant ce formulaire, vous acceptez notre politique de confidentialité. Vos données sont utilisées uniquement pour répondre à votre demande.",
+      en: "By submitting this form, you agree to our privacy policy. Your data is used only to respond to your inquiry.",
     },
+    privacyLink: { fr: "Politique de confidentialité", en: "Privacy policy" },
+  },
+  privacy: {
+    eyebrow: { fr: "Confidentialité", en: "Privacy" },
+    title: {
+      fr: "Politique de confidentialité",
+      en: "Privacy policy",
+    },
+    updated: { fr: "Dernière mise à jour : août 2026", en: "Last updated: August 2026" },
+    intro: {
+      fr: "bekaSOBA (« nous ») respecte votre vie privée. Cette politique explique quelles données nous collectons, comment nous les utilisons et quels sont vos droits.",
+      en: "bekaSOBA (“we”) respects your privacy. This policy explains what data we collect, how we use it, and your rights.",
+    },
+    sections: [
+      {
+        title: { fr: "Données que nous collectons", en: "Data we collect" },
+        body: {
+          fr: "Via le formulaire de contact : nom, e-mail, téléphone/WhatsApp, service souhaité et message. Via WhatsApp : le contenu de vos messages. Via Google Analytics (si activé) : données de navigation anonymisées (pages visitées, appareil, région approximative).",
+          en: "Through the contact form: name, email, phone/WhatsApp, service of interest, and message. Through WhatsApp: the content of your messages. Through Google Analytics (when enabled): anonymized browsing data (pages visited, device, approximate region).",
+        },
+      },
+      {
+        title: { fr: "Comment nous utilisons vos données", en: "How we use your data" },
+        body: {
+          fr: "Pour répondre à vos demandes, planifier des entretiens découverte et améliorer notre site. Nous ne vendons ni ne louons vos données à des tiers.",
+          en: "To respond to inquiries, schedule discovery conversations, and improve our website. We do not sell or rent your data to third parties.",
+        },
+      },
+      {
+        title: { fr: "Services tiers", en: "Third-party services" },
+        body: {
+          fr: "Nous utilisons Formspree pour le formulaire de contact, WhatsApp pour la messagerie directe, Vercel pour l'hébergement, et Google Analytics pour comprendre l'utilisation du site. Chaque service a sa propre politique de confidentialité.",
+          en: "We use Formspree for the contact form, WhatsApp for direct messaging, Vercel for hosting, and Google Analytics to understand site usage. Each service has its own privacy policy.",
+        },
+      },
+      {
+        title: { fr: "Cookies et stockage local", en: "Cookies and local storage" },
+        body: {
+          fr: "Nous mémorisons votre préférence de langue (français/anglais) dans le stockage local de votre navigateur. Google Analytics peut déposer des cookies si activé.",
+          en: "We store your language preference (French/English) in your browser’s local storage. Google Analytics may set cookies when enabled.",
+        },
+      },
+      {
+        title: { fr: "Vos droits", en: "Your rights" },
+        body: {
+          fr: "Vous pouvez demander l'accès, la correction ou la suppression de vos données en nous écrivant à l'adresse indiquée sur la page Contact.",
+          en: "You may request access, correction, or deletion of your data by writing to the email address on our Contact page.",
+        },
+      },
+    ],
   },
   footer: {
     tagline: {
-      fr: "Un cabinet de conseil axé sur les résultats, alliant les standards professionnels américains aux réalités maliennes.",
-      en: "A results-oriented consulting firm bridging U.S. professional standards with Malian realities.",
+      fr: "bekaSOBA — cabinet de conseil axé sur les résultats, alliant les standards professionnels américains aux réalités maliennes.",
+      en: "bekaSOBA — a results-oriented consulting firm bridging U.S. professional standards with Malian realities.",
     },
     servicesTitle: { fr: "Services", en: "Services" },
     firmTitle: { fr: "Cabinet", en: "Firm" },
@@ -468,29 +528,29 @@ export const serviceLines = [
       },
     ],
     pricing: {
-      fr: "Fortement lié aux résultats. Une part importante des honoraires est liée à la réussite à l'examen ou à des jalons de progression clairs — un élément différenciateur central de l'approche Denmisew.",
-      en: "Strongly success-aligned. A significant portion of fees is linked to examination outcomes or clear progress milestones — a core differentiator of the Denmisew approach.",
+      fr: "Fortement lié aux résultats. Une part importante des honoraires est liée à la réussite à l'examen ou à des jalons de progression clairs — un élément différenciateur central de l'approche bekaSOBA.",
+      en: "Strongly success-aligned. A significant portion of fees is linked to examination outcomes or clear progress milestones — a core differentiator of the bekaSOBA approach.",
     },
   },
   {
     slug: "english-leadership",
     code: "EN",
     name: {
-      fr: "Anglais professionnel, leadership et développement des compétences numériques",
-      en: "Professional English, Leadership & Digital Skills Development",
+      fr: "Anglais professionnel et développement du leadership",
+      en: "Professional English & Leadership Development",
     },
     shortName: { fr: "Anglais et leadership", en: "English & Leadership" },
     short: {
-      fr: "Anglais immersif, mentorat en leadership et compétences numériques.",
-      en: "Immersive English, leadership mentoring, and digital fluency.",
+      fr: "Anglais immersif et mentorat en leadership, par des coachs ayant vécu aux États-Unis.",
+      en: "Immersive English and leadership mentoring from coaches with lived U.S. experience.",
     },
     summary: {
-      fr: "Un coaching d'anglais immersif et personnalisé, animé par des coachs ayant vécu aux États-Unis. L'anglais s'acquiert naturellement, par la conversation réelle, sans exercices de grammaire formels ni traduction mentale. Le leadership, le développement du potentiel et les compétences numériques pratiques sont travaillés en parallèle.",
-      en: "Personalized immersive English coaching led by coaches with lived U.S. experience. English is acquired naturally through real conversation, without formal grammar drills or mental translation barriers. Leadership, talent-development, and practical digital skills are built alongside it.",
+      fr: "Un coaching d'anglais immersif et personnalisé, animé par des coachs ayant vécu aux États-Unis. L'anglais s'acquiert naturellement, par la conversation réelle, sans exercices de grammaire formels ni traduction mentale. Le leadership et le développement du potentiel sont travaillés en parallèle.",
+      en: "Personalized immersive English coaching led by coaches with lived U.S. experience. English is acquired naturally through real conversation, without formal grammar drills or mental translation barriers. Leadership and talent development are built alongside it.",
     },
     who: {
-      fr: "Professionnels souhaitant progresser en anglais, en leadership ou en compétences numériques.",
-      en: "Professionals seeking English fluency, leadership growth, or digital skills.",
+      fr: "Professionnels souhaitant progresser en anglais ou en leadership.",
+      en: "Professionals seeking English fluency or leadership growth.",
     },
     includes: [
       {
@@ -506,8 +566,8 @@ export const serviceLines = [
         en: "Leadership and talent-development mentoring",
       },
       {
-        fr: "Compétences numériques pratiques : bureautique, Canva / graphisme de base, notions web",
-        en: "Practical digital skills: bureautique, Canva / basic graphic design, introductory web concepts",
+        fr: "Anglais professionnel et technique adapté à votre secteur",
+        en: "Professional and technical English tailored to your field",
       },
       {
         fr: "Enregistrements des séances et suivi de progression selon les cas",
@@ -515,8 +575,55 @@ export const serviceLines = [
       },
     ],
     pricing: {
-      fr: "Principalement des forfaits fixes ou des forfaits de séances. Composante hybride ou liée au succès possible pour les programmes de leadership ou de fluidité plus longs.",
-      en: "Primarily fixed packages or session packages. Hybrid or light success components available for longer leadership or fluency programs.",
+      fr: "Principalement des forfaits fixes ou des forfaits de séances. Composante hybride ou liée au succès possible pour les programmes de fluidité ou de leadership plus longs.",
+      en: "Primarily fixed packages or session packages. Hybrid or light success components available for longer fluency or leadership programs.",
+    },
+  },
+  {
+    slug: "digital-skills",
+    code: "DS",
+    name: {
+      fr: "Développement des compétences numériques",
+      en: "Digital Skills Development",
+    },
+    shortName: { fr: "Compétences numériques", en: "Digital Skills" },
+    short: {
+      fr: "Bureautique, design de base et outils numériques pour le travail et les études.",
+      en: "Office tools, basic design, and practical digital fluency for work and study.",
+    },
+    summary: {
+      fr: "Formation pratique aux outils numériques essentiels pour les professionnels, les étudiants et les organisations au Mali. De la bureautique au design graphique de base et aux notions web, chaque programme est adapté au niveau et aux objectifs du client.",
+      en: "Practical training in essential digital tools for professionals, students, and organizations in Mali. From office productivity to basic graphic design and introductory web concepts, each program is tailored to the client's level and goals.",
+    },
+    who: {
+      fr: "Professionnels, étudiants et organisations souhaitant renforcer leurs compétences numériques.",
+      en: "Professionals, students, and organizations seeking stronger digital skills.",
+    },
+    includes: [
+      {
+        fr: "Maîtrise de la bureautique (Word, Excel, PowerPoint, Google Workspace)",
+        en: "Office productivity (Word, Excel, PowerPoint, Google Workspace)",
+      },
+      {
+        fr: "Design graphique de base avec Canva et outils similaires",
+        en: "Basic graphic design with Canva and similar tools",
+      },
+      {
+        fr: "Notions web : sites simples, présence en ligne, outils collaboratifs",
+        en: "Introductory web concepts: simple sites, online presence, collaborative tools",
+      },
+      {
+        fr: "Organisation numérique : fichiers, calendriers, communication professionnelle",
+        en: "Digital organization: files, calendars, professional communication",
+      },
+      {
+        fr: "Ateliers en présentiel ou à distance, adaptés aux débutants comme aux profils intermédiaires",
+        en: "In-person or remote workshops for beginners and intermediate learners",
+      },
+    ],
+    pricing: {
+      fr: "Forfaits fixes par module ou parcours multi-séances. Tarifs groupés disponibles pour les institutions et les équipes.",
+      en: "Fixed packages per module or multi-session tracks. Group rates available for institutions and teams.",
     },
   },
 ];
@@ -605,7 +712,7 @@ export const networkLinks = [
 ];
 
 export const contact = {
-  emailPlaceholder: "contact@denmisewkagneta.com",
-  whatsappPlaceholder: "+223 00 00 00 00",
+  emailPlaceholder: "kanemohamed16641@gmail.com",
+  whatsappPlaceholder: "+223 96 30 70 72",
   location: { fr: "Bamako, Mali", en: "Bamako, Mali" },
 };

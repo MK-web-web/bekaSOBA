@@ -85,7 +85,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
           <h2 className="font-display text-[26px] text-indigo mb-10">
             {t.services.exploreRest[lang]}
           </h2>
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {others.map((s) => (
               <ServiceCard key={s.slug} {...s} />
             ))}

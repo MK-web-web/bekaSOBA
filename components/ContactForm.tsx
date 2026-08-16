@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { uiStrings } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
@@ -9,6 +10,7 @@ const servicesFr = [
   "Conseil en construction",
   "Accompagnement scolaire",
   "Anglais professionnel et leadership",
+  "Compétences numériques",
   "Je ne sais pas encore",
 ];
 const servicesEn = [
@@ -16,6 +18,7 @@ const servicesEn = [
   "Construction Advisory",
   "Education Mentoring",
   "Professional English & Leadership",
+  "Digital Skills Development",
   "Not sure yet",
 ];
 
@@ -26,6 +29,9 @@ export default function ContactForm() {
     "idle"
   );
   const services = lang === "fr" ? servicesFr : servicesEn;
+  const formspreeEndpoint =
+    process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ??
+    "https://formspree.io/f/xbgrykay";
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -64,7 +70,8 @@ export default function ContactForm() {
 
   return (
     <form
-      action="https://formspree.io/f/YOUR_FORM_ID"
+      action={formspreeEndpoint}
+      method="POST"
       onSubmit={handleSubmit}
       className="space-y-5"
     >
@@ -112,6 +119,13 @@ export default function ContactForm() {
       {status === "error" && (
         <p className="text-[13.5px] text-clay-deep">{t.errorText[lang]}</p>
       )}
+      <p className="text-[12.5px] text-ink/55 leading-relaxed">
+        {t.formNote[lang]}{" "}
+        <Link href="/privacy" className="text-clay hover:underline">
+          {t.privacyLink[lang]}
+        </Link>
+        .
+      </p>
     </form>
   );
 }

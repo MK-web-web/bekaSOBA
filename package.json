@@ -1,5 +1,5 @@
 {
-  "name": "denmisew-site",
+  "name": "bekasoba-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "@fontsource/fraunces": "^5.3.0",
     "@fontsource/ibm-plex-mono": "^5.3.0",
     "@fontsource/work-sans": "^5.3.0",
+    "@next/third-parties": "^16.3.1",
     "next": "16.3.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"

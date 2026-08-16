@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Container } from "./ui";
 import { serviceLines, uiStrings } from "@/lib/content";
+import { site } from "@/lib/site";
 import { useLanguage } from "@/lib/i18n";
 
 export default function Nav() {
@@ -12,8 +13,12 @@ export default function Nav() {
   const { lang, toggle } = useLanguage();
   const t = uiStrings.nav;
 
+  const sisterLabel =
+    lang === "fr" ? "Organisations sœurs" : "Sister organizations";
+
   const navLinks = [
     { href: "/about", label: t.about[lang] },
+    { href: "/about#network", label: sisterLabel },
     { href: "/pricing", label: t.pricing[lang] },
     { href: "/contact", label: t.contact[lang] },
   ];
@@ -24,13 +29,13 @@ export default function Nav() {
         <Link href="/" className="flex items-center gap-3 group">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-transparent.png"
-            alt="Denmisew Ka Gneta"
-            className="h-8 w-auto"
+            src={site.logo}
+            alt={site.name}
+            className="h-9 w-auto"
           />
           <span className="hidden sm:flex flex-col leading-none border-l border-line pl-3">
             <span className="font-display text-[15px] text-indigo">
-              Denmisew Ka Gneta
+              {site.name}
             </span>
             <span className="font-utility text-[9px] tracking-[0.14em] uppercase text-ink/60 mt-1">
               {t.tagline[lang]}
@@ -149,7 +154,7 @@ export default function Nav() {
               className="py-2 text-ink"
               onClick={() => setOpen(false)}
             >
-              {lang === "fr" ? "Organisations sœurs" : "Sister organizations"}
+              {sisterLabel}
             </Link>
             <div className="h-px bg-line my-2" />
             <Link

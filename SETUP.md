@@ -1,9 +1,9 @@
-# Denmisew Ka Gneta — Website
+# bekaSOBA — Website
 
-Multi-page Next.js site: Home, About, Services (overview + 4 detail pages),
-Pricing, Contact.
+Multi-page Next.js site for **bekaSOBA** (bekasoba.com): Home, About, Services
+(overview + 5 detail pages), Pricing, Contact, and Privacy Policy.
 
-## Run it locally
+## Run locally
 
 ```bash
 npm install
@@ -12,44 +12,55 @@ npm run dev
 
 Open http://localhost:3000
 
-## Before launch — 3 things to fill in
+## Before launch — checklist
 
-1. **Contact form** — `components/ContactForm.tsx`, line with
-   `action="https://formspree.io/f/YOUR_FORM_ID"`. Create a free form at
-   formspree.io and swap in your real form ID.
-2. **Email / WhatsApp / location** — `lib/content.ts`, the `contact` object
-   at the bottom of the file.
-3. **Real photos** (optional but recommended) — currently the site is
-   text/pattern only, no stock or placeholder photography. Add a founder
-   photo and any project photos under `public/` and reference them in
-   `app/about/page.tsx` or `app/page.tsx` when ready.
+1. **Environment variables** — copy `.env.example` to `.env.local` and fill in:
+   - `NEXT_PUBLIC_GA_MEASUREMENT_ID` — Google Analytics 4 (e.g. `G-XXXXXXXXXX`)
+   - `NEXT_PUBLIC_GSC_VERIFICATION` — Google Search Console HTML tag verification code
+2. **Contact form** — create a form at [formspree.io](https://formspree.io) and update
+   the endpoint in `components/ContactForm.tsx` (or set `NEXT_PUBLIC_FORMSPREE_ENDPOINT`).
+3. **Email / WhatsApp** — `lib/content.ts`, the `contact` object at the bottom.
+4. **Custom domain** — connect `bekasoba.com` in Vercel project settings (see below).
 
-## Deploy (free) — GitHub + Vercel auto-sync
+## Deploy — GitHub + Vercel auto-sync
 
-This is the workflow that keeps your **Desktop folder**, **GitHub**, and **live Vercel URL** in sync:
+This workflow keeps your **Desktop folder**, **GitHub**, and **live site** in sync:
 
 ```
-Edit files locally → git push → GitHub → Vercel redeploys automatically
+Edit locally → git push → GitHub → Vercel redeploys → bekasoba.com updates
 ```
 
 ### One-time setup
 
 1. **Create a GitHub repo** (github.com → New repository)
-   - Name suggestion: `denmisew-ka-gneta-website`
-   - Public or private — either works with Vercel
+   - Suggested name: `bekasoba-website` or `denmisew-ka-gneta-website`
    - Do **not** add a README if this folder already has code
 
 2. **Connect this folder to GitHub** (run once in Terminal, from this folder):
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/denmisew-ka-gneta-website.git
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 git push -u origin main
 ```
 
 3. **Connect Vercel** (vercel.com → New Project → Import Git Repository)
-   - Select the GitHub repo above
+   - Select the GitHub repo
    - Vercel auto-detects Next.js — click **Deploy**
-   - Optional: add a custom domain (e.g. `denmisewkagneta.com`) in project settings
+   - Add environment variables from `.env.example` under **Settings → Environment Variables**
+   - Add custom domain **bekasoba.com** under **Settings → Domains**
+   - Also add **www.bekasoba.com** — the site redirects www → apex automatically
+
+4. **Google Search Console**
+   - Add property `https://bekasoba.com`
+   - Choose **HTML tag** verification
+   - Copy the `content="..."` value into `NEXT_PUBLIC_GSC_VERIFICATION` in Vercel
+   - Redeploy, then click **Verify** in Search Console
+   - Submit sitemap: `https://bekasoba.com/sitemap.xml`
+
+5. **Google Analytics**
+   - Create a GA4 property for bekasoba.com
+   - Copy the Measurement ID into `NEXT_PUBLIC_GA_MEASUREMENT_ID` in Vercel
+   - Redeploy — analytics activates after visitors accept the cookie notice
 
 ### Every time you change the site
 
@@ -59,50 +70,39 @@ git commit -m "Describe your change"
 git push
 ```
 
-Vercel rebuilds in ~1–2 minutes. Your live URL updates automatically — no manual re-upload.
-
-### Desktop folder stays the source of truth
-
-- Work in: `Desktop/My code sources/denmisew-ka-gneta-website`
-- Push to GitHub when you want changes to go live
-- You do **not** need to edit on Vercel's dashboard — code changes always start here
-
-## Deploy (free) — quick reference
-
-1. Push this folder to a GitHub repo.
-2. Go to vercel.com → New Project → import the repo.
-3. Vercel auto-detects Next.js — click Deploy. No config needed.
-4. Optional: connect a custom domain in Vercel's project settings.
-
-Every future edit: push to GitHub, Vercel redeploys automatically.
+Vercel rebuilds in ~1–2 minutes. Your live URL updates automatically.
 
 ## Editing content
 
-All firm copy (service descriptions, pricing text, credentials, client
-types) lives in one file: `lib/content.ts`. Edit that file to update text
-across the whole site without touching page layouts.
+All firm copy lives in `lib/content.ts`. Site-wide SEO settings (domain, keywords,
+analytics env vars) live in `lib/site.ts`.
 
 ## Language
 
-The site is fully bilingual (French default, English toggle). All copy
-lives in `lib/content.ts` as `{ fr: "...", en: "..." }` pairs — edit both
-languages there. The toggle state (`lib/i18n.tsx`) is remembered per
-visitor via `localStorage`, so returning visitors keep their choice.
+Fully bilingual (French default, English toggle). Copy is `{ fr: "...", en: "..." }`
+pairs in `lib/content.ts`. Language preference is stored in `localStorage`.
 
-## Design system
+## Brand
 
-- Colors, fonts: `app/globals.css`
-- **Palette now comes directly from your logo**, extracted programmatically:
-  jade green `#00A86B` and near-black. (Variable names `--color-clay` and
-  `--color-indigo` were kept from an earlier pass to avoid touching every
-  component — they now hold jade and near-black, not their old values.)
-- The thin diamond-pattern dividers (`components/BogolanDivider.tsx`) are
-  a nod to bogolan (Malian mudcloth) linework — the site's one signature
-  visual element, used sparingly as section breaks, now rendered in jade.
-- Typefaces: Fraunces (display/headlines), Work Sans (body), IBM Plex Mono
-  (labels, numbers, eyebrows) — self-hosted via `@fontsource` so the build
-  never depends on Google Fonts being reachable at build time.
-- Logo: `public/logo.png` (original, black background) and
-  `public/logo-transparent.png` (background removed, used in the nav and
-  footer). If you get a proper vector/SVG export of the logo later, swap
-  it in — it'll look sharper than the rasterized transparent version.
+- Wordmark: **bekaSOBA**
+- Logo: `public/bekasoba-logo.png`
+- Domain: **bekasoba.com**
+- Theme color: jade green `#00A86B` (from logo)
+
+## Sister organizations
+
+Listed on the Home page and About page (`/about#network`) as **sister organizations**
+(not commercial partners):
+
+- Big Hope Mali English Club — bighopemali.com
+- DJIGUI-BA-MALI — djiguibamali.vercel.app
+
+The founder profile links to mahamadou-kane.vercel.app.
+
+## Service lines (5)
+
+1. PM — Project Management
+2. CA — Construction Advisory
+3. ED — Education Mentoring (bekaSOBA model)
+4. EN — Professional English & Leadership
+5. DS — Digital Skills Development

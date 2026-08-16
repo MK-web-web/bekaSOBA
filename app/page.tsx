@@ -10,6 +10,7 @@ import {
   approach,
   credentials,
   uiStrings,
+  networkLinks,
 } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
@@ -187,6 +188,54 @@ export default function Home() {
               ))}
             </ul>
           </div>
+        </Container>
+      </section>
+
+      <BogolanDivider tone="clay" />
+
+      <section className="py-24 bg-bone">
+        <Container>
+          <div className="max-w-[640px] mb-12">
+            <Eyebrow>{t.home.networkEyebrow[lang]}</Eyebrow>
+            <h2 className="font-display text-[28px] sm:text-[32px] text-indigo mb-4">
+              {t.home.networkTitle[lang]}
+            </h2>
+            <p className="text-[15px] text-ink/70 leading-relaxed">
+              {t.home.networkText[lang]}
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-5 mb-10">
+            {networkLinks
+              .filter((org) => org.kind === "sister")
+              .map((org) => (
+                <a
+                  key={org.url}
+                  href={org.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group border border-line bg-paper p-6 hover:border-clay transition-colors"
+                >
+                  <div className="font-utility text-[10px] uppercase tracking-wide text-clay border border-clay/30 px-2 py-0.5 inline-block mb-4">
+                    {t.about.sisterOrgLabel[lang]}
+                  </div>
+                  <h3 className="font-display text-[18px] text-indigo mb-2">
+                    {org.name}
+                  </h3>
+                  <p className="text-[14px] text-ink/65 leading-relaxed">
+                    {org.description[lang]}
+                  </p>
+                  <span className="mt-4 inline-block font-utility text-[11px] text-ink/45 group-hover:text-clay transition-colors">
+                    {org.displayUrl} ↗
+                  </span>
+                </a>
+              ))}
+          </div>
+          <Link
+            href="/about#network"
+            className="font-utility text-[13px] uppercase tracking-wide text-clay hover:text-clay-deep"
+          >
+            {t.home.networkLink[lang]}
+          </Link>
         </Container>
       </section>
 

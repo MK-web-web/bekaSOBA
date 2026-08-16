@@ -89,9 +89,6 @@ export default function Contact() {
 
             <div>
               <ContactForm />
-              <p className="mt-6 text-[12.5px] text-ink/45 leading-relaxed">
-                {t.formNote[lang]}
-              </p>
             </div>
           </div>
         </Container>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Container } from "./ui";
 import { serviceLines, contact, uiStrings } from "@/lib/content";
+import { site } from "@/lib/site";
 import { useLanguage } from "@/lib/i18n";
 import BogolanDivider from "./BogolanDivider";
 
@@ -18,8 +19,8 @@ export default function Footer() {
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/logo-transparent.png"
-              alt="Denmisew Ka Gneta"
+              src={site.logo}
+              alt={site.name}
               className="h-9 w-auto mb-4"
             />
             <p className="mt-3 text-bone/70 text-[14px] max-w-[320px] leading-relaxed">
@@ -67,13 +68,18 @@ export default function Footer() {
                   {lang === "fr" ? "Organisations sœurs" : "Sister organizations"}
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy" className="text-bone/80 hover:text-bone transition-colors">
+                  {t.contact.privacyLink[lang]}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-14 pt-6 border-t border-bone/15 flex flex-col md:flex-row justify-between gap-2 text-[12px] text-bone/50 font-utility">
-          <span>&copy; {new Date().getFullYear()} Denmisew Ka Gneta. {t.footer.rights[lang]}</span>
-          <span>Bamako, Mali</span>
+          <span>&copy; {new Date().getFullYear()} {site.name}. {t.footer.rights[lang]}</span>
+          <span>{site.domain} · Bamako, Mali</span>
         </div>
       </Container>
     </footer>
