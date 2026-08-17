@@ -784,8 +784,8 @@ export const networkLinks = [
   {
     kind: "founder" as const,
     name: "Mahamadou Kane",
-    url: "https://mahamadou-kane.vercel.app",
-    displayUrl: "mahamadou-kane.vercel.app",
+    url: "https://my-professional-website-gamma.vercel.app",
+    displayUrl: "my-professional-website-gamma.vercel.app",
     description: {
       fr: "Parcours complet, enseignement et engagement communautaire du fondateur.",
       en: "Full background, teaching history, and community involvement of the founder.",
