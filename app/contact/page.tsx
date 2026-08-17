@@ -4,6 +4,7 @@ import { Container, Eyebrow } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
 import ContactForm from "@/components/ContactForm";
 import LeadRouting from "@/components/LeadRouting";
+import LocationMap from "@/components/LocationMap";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { contact, engagementSteps, uiStrings } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
@@ -30,6 +31,20 @@ export default function Contact() {
       </section>
 
       <LeadRouting />
+
+      <section className="py-16 bg-bone">
+        <Container>
+          <h2 className="font-display text-[26px] text-indigo mb-2">
+            {lang === "fr" ? "Nous trouver" : "Find us"}
+          </h2>
+          <p className="text-[15px] text-ink/70 max-w-[560px] leading-relaxed">
+            {lang === "fr"
+              ? "bekaSOBA est basé à Lafiabougou, Bamako — à proximité de la Place de la Cane."
+              : "bekaSOBA is based in Lafiabougou, Bamako — near Place de la Cane."}
+          </p>
+          <LocationMap />
+        </Container>
+      </section>
 
       <BogolanDivider tone="clay" />
 

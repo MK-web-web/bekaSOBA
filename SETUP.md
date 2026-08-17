@@ -111,7 +111,7 @@ Listed on the Home page and About page (`/about#network`) as **sister organizati
 (not commercial partners):
 
 - Big Hope Mali English Club — bighopemali.com
-- DJIGUI-BA-MALI — djiguibamali.vercel.app
+- DJIGUI-BA-MALI — djiguibamali.org
 
 The founder profile links to mahamadou-kane.vercel.app.
 

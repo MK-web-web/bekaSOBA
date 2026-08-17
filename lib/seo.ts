@@ -43,7 +43,7 @@ export const pageSeo = {
   services: buildMetadata({
     title: "Services — Conseil, formation et accompagnement",
     description:
-      "Cinq pôles de service bekaSOBA au Mali : gestion de projet PMP®, conseil en construction, accompagnement scolaire DEF, anglais & leadership, compétences numériques.",
+      "Six pôles de service bekaSOBA au Mali : gestion de projet PMP®, conseil en construction, accompagnement scolaire DEF, anglais professionnel, leadership et compétences numériques.",
     path: "/services",
   }),
   contact: buildMetadata({
@@ -91,11 +91,17 @@ const serviceSeo: Record<string, PageMeta> = {
       "Accompagnement scolaire inspiré du homeschooling à Bamako. Préparation DEF en mathématiques, physique, chimie, français et anglais.",
     path: "/services/education-mentoring",
   },
-  "english-leadership": {
-    title: "Anglais professionnel et leadership",
+  "professional-english": {
+    title: "Anglais professionnel — Coaching immersif",
     description:
-      "Coaching d'anglais immersif et mentorat en leadership à Bamako. Méthode d'acquisition naturelle avec coachs ayant vécu aux États-Unis.",
-    path: "/services/english-leadership",
+      "Coaching d'anglais professionnel à Bamako. Méthode d'acquisition naturelle avec coachs ayant vécu aux États-Unis — fluidité, confiance et anglais technique.",
+    path: "/services/professional-english",
+  },
+  "leadership-development": {
+    title: "Développement du leadership — Mentorat et programmes",
+    description:
+      "Mentorat en leadership à Bamako : communication d'équipe, prise de décision, développement du potentiel et programmes sur mesure pour managers et institutions.",
+    path: "/services/leadership-development",
   },
   "digital-skills": {
     title: "Compétences numériques — Formation pratique",

@@ -9,7 +9,8 @@ const servicesFr = [
   "Gestion de projet",
   "Conseil en construction",
   "Accompagnement scolaire",
-  "Anglais professionnel et leadership",
+  "Anglais professionnel",
+  "Développement du leadership",
   "Compétences numériques",
   "Je ne sais pas encore",
 ];
@@ -17,7 +18,8 @@ const servicesEn = [
   "Project Management Consulting",
   "Construction Advisory",
   "Education Mentoring",
-  "Professional English & Leadership",
+  "Professional English Coaching",
+  "Leadership Development",
   "Digital Skills Development",
   "Not sure yet",
 ];

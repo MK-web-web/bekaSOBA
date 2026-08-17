@@ -39,7 +39,7 @@ export default function Services() {
             id="services-list-title"
             className="font-display text-[28px] text-indigo mb-10"
           >
-            {lang === "fr" ? "Nos cinq pôles de service" : "Our five service lines"}
+            {lang === "fr" ? "Nos six pôles de service" : "Our six service lines"}
           </h2>
           <div className="grid gap-5">
             {serviceLines.map((s) => (

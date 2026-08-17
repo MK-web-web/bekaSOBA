@@ -11,6 +11,15 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/services/english-leadership",
+        destination: "/services/professional-english",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

@@ -128,7 +128,7 @@ export default function HomePage() {
               {t.buttons.seeFullMenu[lang]}
             </Link>
           </div>
-          <div className="grid md:grid-cols-2 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {serviceLines.map((s) => (
               <ServiceCard key={s.slug} {...s} />
             ))}

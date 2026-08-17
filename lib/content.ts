@@ -66,8 +66,8 @@ export const uiStrings = {
     },
     blueprintTag: { fr: "Périmètre d'intervention", en: "Scope of Engagement" },
     blueprintTitle: {
-      fr: "Cinq pôles de service",
-      en: "Five lead service lines",
+      fr: "Six pôles de service",
+      en: "Six lead service lines",
     },
     whoEyebrow: { fr: "À qui nous nous adressons", en: "Who we serve" },
     whoTitle: {
@@ -76,8 +76,8 @@ export const uiStrings = {
     },
     deliverEyebrow: { fr: "Ce que nous offrons", en: "What we deliver" },
     deliverTitle: {
-      fr: "Cinq pôles de service, un seul cabinet.",
-      en: "Five lead service lines, one consulting firm.",
+      fr: "Six pôles de service, un seul cabinet.",
+      en: "Six lead service lines, one consulting firm.",
     },
     approachEyebrow: { fr: "Notre approche", en: "Our approach" },
     approachTitle: {
@@ -115,8 +115,8 @@ export const uiStrings = {
   services: {
     eyebrow: { fr: "Menu des services", en: "Service menu" },
     title: {
-      fr: "Cinq pôles de service, conçus pour des résultats mesurables.",
-      en: "Five lead service lines, built for measurable outcomes.",
+      fr: "Six pôles de service, conçus pour des résultats mesurables.",
+      en: "Six lead service lines, built for measurable outcomes.",
     },
     sub: {
       fr: "Chaque pôle est assuré par le même cabinet, avec une tarification et un mode de prestation adaptés à la nature de la mission.",
@@ -143,8 +143,8 @@ export const uiStrings = {
     eyebrow: { fr: "À propos du cabinet", en: "About the firm" },
     positioningEyebrow: { fr: "Positionnement", en: "Positioning" },
     positioningTitle: {
-      fr: "Un cabinet, cinq pôles de service.",
-      en: "One firm, five service lines.",
+      fr: "Un cabinet, six pôles de service.",
+      en: "One firm, six service lines.",
     },
     positioningText: {
       fr: "bekaSOBA opère comme une entreprise unique qui propose des services éducatifs spécialisés et un portefeuille plus large de conseil, de formation et d'accompagnement. Cette structure garantit simplicité opérationnelle et concentration, tout en permettant aux pôles spécialisés de se développer.",
@@ -568,41 +568,41 @@ export const serviceLines = [
     },
   },
   {
-    slug: "english-leadership",
+    slug: "professional-english",
     code: "EN",
     name: {
-      fr: "Anglais professionnel et développement du leadership",
-      en: "Professional English & Leadership Development",
+      fr: "Coaching d'anglais professionnel",
+      en: "Professional English Coaching",
     },
-    shortName: { fr: "Anglais et leadership", en: "English & Leadership" },
+    shortName: { fr: "Anglais professionnel", en: "Professional English" },
     short: {
-      fr: "Anglais immersif et mentorat en leadership, par des coachs ayant vécu aux États-Unis.",
-      en: "Immersive English and leadership mentoring from coaches with lived U.S. experience.",
+      fr: "Anglais immersif par des coachs ayant vécu aux États-Unis — acquisition naturelle, sans traduction mentale.",
+      en: "Immersive English with coaches who lived in the U.S. — natural acquisition, no mental translation.",
     },
     summary: {
-      fr: "Un coaching d'anglais immersif et personnalisé, animé par des coachs ayant vécu aux États-Unis. L'anglais s'acquiert naturellement, par la conversation réelle, sans exercices de grammaire formels ni traduction mentale. Le leadership et le développement du potentiel sont travaillés en parallèle.",
-      en: "Personalized immersive English coaching led by coaches with lived U.S. experience. English is acquired naturally through real conversation, without formal grammar drills or mental translation barriers. Leadership and talent development are built alongside it.",
+      fr: "Un coaching d'anglais immersif et personnalisé, animé par des coachs ayant vécu aux États-Unis. L'anglais s'acquiert naturellement, par la conversation réelle, sans exercices de grammaire formels ni barrière de traduction. Idéal pour les professionnels, étudiants et dirigeants qui veulent communiquer avec confiance en contexte international.",
+      en: "Personalized immersive English coaching led by coaches with lived U.S. experience. English is acquired naturally through real conversation, without formal grammar drills or mental translation barriers. Ideal for professionals, students, and leaders who need confident communication in international settings.",
     },
     who: {
-      fr: "Professionnels souhaitant progresser en anglais ou en leadership.",
-      en: "Professionals seeking English fluency or leadership growth.",
+      fr: "Professionnels, étudiants et cadres souhaitant gagner en fluidité et en confiance en anglais.",
+      en: "Professionals, students, and managers seeking fluency and confidence in English.",
     },
     includes: [
       {
-        fr: "Coaching d'anglais immersif par des coachs ayant vécu aux États-Unis (méthode d'acquisition naturelle)",
-        en: "Immersive English coaching by coaches with lived U.S. experience (natural acquisition method)",
+        fr: "Coaching immersif par des coachs ayant vécu aux États-Unis (méthode d'acquisition naturelle)",
+        en: "Immersive coaching by coaches with lived U.S. experience (natural acquisition method)",
       },
       {
         fr: "Formats flexibles : individuel, en binôme ou en petit groupe de trois",
         en: "Flexible formats: 1-on-1, 2-on-1, or 3-on-1",
       },
       {
-        fr: "Mentorat en leadership et développement du potentiel",
-        en: "Leadership and talent-development mentoring",
+        fr: "Anglais professionnel et technique adapté à votre secteur (business, construction, éducation, etc.)",
+        en: "Professional and technical English tailored to your field (business, construction, education, etc.)",
       },
       {
-        fr: "Anglais professionnel et technique adapté à votre secteur",
-        en: "Professional and technical English tailored to your field",
+        fr: "Préparation aux entretiens, réunions, présentations et correspondance professionnelle",
+        en: "Preparation for interviews, meetings, presentations, and professional correspondence",
       },
       {
         fr: "Enregistrements des séances et suivi de progression selon les cas",
@@ -610,8 +610,55 @@ export const serviceLines = [
       },
     ],
     pricing: {
-      fr: "Principalement des forfaits fixes ou des forfaits de séances. Composante hybride ou liée au succès possible pour les programmes de fluidité ou de leadership plus longs.",
-      en: "Primarily fixed packages or session packages. Hybrid or light success components available for longer fluency or leadership programs.",
+      fr: "Principalement des forfaits fixes ou des forfaits de séances. Composante hybride ou liée au succès possible pour les programmes de fluidité plus longs.",
+      en: "Primarily fixed packages or session packages. Hybrid or light success components available for longer fluency programs.",
+    },
+  },
+  {
+    slug: "leadership-development",
+    code: "LD",
+    name: {
+      fr: "Développement du leadership",
+      en: "Leadership Development",
+    },
+    shortName: { fr: "Leadership", en: "Leadership" },
+    short: {
+      fr: "Mentorat en leadership, communication et développement du potentiel pour managers et futurs dirigeants.",
+      en: "Leadership mentoring, communication, and talent development for managers and emerging leaders.",
+    },
+    summary: {
+      fr: "Un accompagnement structuré pour développer le leadership, la prise de décision, la communication d'équipe et le potentiel professionnel. Conçu pour les managers, entrepreneurs et jeunes professionnels qui veulent progresser avec des standards concrets — inspirés de pratiques américaines et adaptés au contexte malien.",
+      en: "Structured support to develop leadership, decision-making, team communication, and professional potential. Built for managers, entrepreneurs, and emerging professionals who want practical standards — informed by U.S. practice and adapted to the Malian context.",
+    },
+    who: {
+      fr: "Managers, entrepreneurs, responsables d'équipe et jeunes professionnels en progression.",
+      en: "Managers, entrepreneurs, team leads, and emerging professionals.",
+    },
+    includes: [
+      {
+        fr: "Mentorat individuel ou en petit groupe sur le leadership et la gestion d'équipe",
+        en: "Individual or small-group mentoring on leadership and team management",
+      },
+      {
+        fr: "Communication professionnelle, feedback, délégation et résolution de conflits",
+        en: "Professional communication, feedback, delegation, and conflict resolution",
+      },
+      {
+        fr: "Développement du potentiel, confiance en situation professionnelle et posture de dirigeant",
+        en: "Talent development, professional confidence, and executive presence",
+      },
+      {
+        fr: "Ateliers sur la prise de décision, la planification et la responsabilisation",
+        en: "Workshops on decision-making, planning, and accountability",
+      },
+      {
+        fr: "Programmes sur mesure pour institutions, ONG et entreprises",
+        en: "Custom programs for institutions, NGOs, and companies",
+      },
+    ],
+    pricing: {
+      fr: "Forfaits fixes par programme ou parcours multi-séances. Modèle hybride possible lorsque des jalons de progression ou de performance sont définis à l'avance.",
+      en: "Fixed packages per program or multi-session track. Hybrid models available when progress or performance milestones are defined upfront.",
     },
   },
   {
@@ -727,8 +774,8 @@ export const networkLinks = [
   {
     kind: "sister" as const,
     name: "DJIGUI-BA-MALI",
-    url: "https://djiguibamali.vercel.app",
-    displayUrl: "djiguibamali.vercel.app",
+    url: "https://djiguibamali.org",
+    displayUrl: "djiguibamali.org",
     description: {
       fr: "Association d'éducation et de communauté, fondée en 2015 comme centre de tutorat bénévole.",
       en: "An education and community association, founded in 2015 as a volunteer tutoring center.",
@@ -749,5 +796,11 @@ export const networkLinks = [
 export const contact = {
   emailPlaceholder: "kanemohamed16641@gmail.com",
   whatsappPlaceholder: "+223 96 30 70 72",
-  location: { fr: "Bamako, Mali", en: "Bamako, Mali" },
+  location: {
+    fr: "Lafiabougou, Bamako — Rue 252, Porte 109 (à proximité de la Place de la Cane)",
+    en: "Lafiabougou, Bamako — Rue 252, Porte 109 (near Place de la Cane)",
+  },
+  mapQuery: "Rue 252 Porte 109 Lafiabougou Bamako Mali",
+  mapLink:
+    "https://www.google.com/maps/search/?api=1&query=Rue+252+Porte+109+Lafiabougou+Bamako+Mali",
 };

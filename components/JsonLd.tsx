@@ -15,12 +15,13 @@ export default function JsonLd() {
         telephone: contact.whatsappPlaceholder.replace(/\s/g, ""),
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Bamako",
+          streetAddress: "Rue 252, Porte 109",
+          addressLocality: "Lafiabougou, Bamako",
           addressCountry: "ML",
         },
         sameAs: [
           "https://bighopemali.com",
-          "https://djiguibamali.vercel.app",
+          "https://djiguibamali.org",
           "https://mahamadou-kane.vercel.app",
         ],
         description:
