@@ -113,7 +113,7 @@ Listed on the Home page and About page (`/about#network`) as **sister organizati
 - Big Hope Mali English Club — bighopemali.com
 - DJIGUI-BA-MALI — djiguibamali.org
 
-The founder profile links to my-professional-website-gamma.vercel.app.
+The founder profile links to mahamadoukane.vercel.app.
 
 ## Service lines (5)
 

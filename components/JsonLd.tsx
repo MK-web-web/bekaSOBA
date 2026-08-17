@@ -22,7 +22,7 @@ export default function JsonLd() {
         sameAs: [
           "https://bighopemali.com",
           "https://djiguibamali.org",
-          "https://my-professional-website-gamma.vercel.app",
+          "https://mahamadoukane.vercel.app",
         ],
         description:
           "Results-oriented consulting and support firm bridging U.S. professional standards with Malian realities.",
