@@ -1,21 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  /* Palette: rebuilt directly from the firm's logo (extracted programmatically:
-     jade #00A86B + black). "Indigo"/"clay" variable names are kept from the
-     earlier pass to avoid touching every component, but now carry the real
-     brand colors: near-black in place of indigo, jade in place of clay. */
-  --color-ink: #17140f;
-  --color-indigo: #0e1210;
-  --color-indigo-deep: #070907;
-  --color-clay: #00a86b;
-  --color-clay-deep: #007a4d;
+  /* Brand palette — Deep Forest, Tropical Green, Soft Mint (WCAG on paper/bone) */
+  --color-forest: #083d2e;
+  --color-ink: #1a2e28;
+  --color-indigo: #083d2e;
+  --color-indigo-deep: #062a20;
+  --color-clay: #0f6b4d;
+  --color-clay-deep: #0a5239;
+  --color-mint: #25c58d;
   --color-bone: #f2f3ee;
   --color-bone-dim: #e6e8df;
   --color-paper: #faf9f5;
-  --color-gold: #00a86b;
-  --color-green: #00a86b;
-  --color-line: #d7dbd0;
+  --color-gold: #0f6b4d;
+  --color-green: #0f6b4d;
+  --color-line: #d0ddd6;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Work Sans", -apple-system, sans-serif;
@@ -23,11 +22,13 @@
 }
 
 @theme inline {
+  --color-forest: var(--color-forest);
   --color-ink: var(--color-ink);
   --color-indigo: var(--color-indigo);
   --color-indigo-deep: var(--color-indigo-deep);
   --color-clay: var(--color-clay);
   --color-clay-deep: var(--color-clay-deep);
+  --color-mint: var(--color-mint);
   --color-bone: var(--color-bone);
   --color-bone-dim: var(--color-bone-dim);
   --color-paper: var(--color-paper);

@@ -4,7 +4,8 @@ export const site = {
   domain: "bekasoba.com",
   url: "https://bekasoba.com",
   logo: "/bekasoba-logo.png",
-  themeColor: "#00a86b",
+  logoSvg: "/bekasoba-logo.svg",
+  themeColor: "#0F6B4D",
   locale: "fr_FR",
   alternateLocale: "en_US",
   keywords: [

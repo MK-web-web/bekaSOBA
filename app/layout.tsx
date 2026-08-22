@@ -77,7 +77,10 @@ export const metadata: Metadata = {
     google: gscVerification,
   },
   icons: {
-    icon: site.logo,
+    icon: [
+      { url: site.logoSvg, type: "image/svg+xml" },
+      { url: site.logo, type: "image/png" },
+    ],
     apple: site.logo,
   },
 };

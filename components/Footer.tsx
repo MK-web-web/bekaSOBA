@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import BekasobaLogo from "./BekasobaLogo";
 import { Container } from "./ui";
 import { serviceLines, contact, uiStrings } from "@/lib/content";
 import { site } from "@/lib/site";
@@ -17,11 +18,10 @@ export default function Footer() {
       <Container className="py-16">
         <div className="grid md:grid-cols-[1.4fr_1fr_1fr] gap-12">
           <div>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={site.logo}
-              alt={site.name}
-              className="h-9 w-auto mb-4"
+            <BekasobaLogo
+              className="h-9 w-auto max-w-[192px] mb-4"
+              color="#25C58D"
+              prefixColor="#25C58D"
             />
             <p className="mt-3 text-bone/70 text-[14px] max-w-[320px] leading-relaxed">
               {t.footer.tagline[lang]}
