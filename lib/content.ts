@@ -57,8 +57,8 @@ export const uiStrings = {
       en: "Bridging U.S. professional standards with Malian realities.",
     },
     heroSub: {
-      fr: "Nous aidons particuliers, familles, organisations et institutions à résoudre des problèmes concrets — performance scolaire, gestion de projets, construction, anglais professionnel, leadership et compétences numériques.",
-      en: "We help individuals, families, organizations, and institutions solve measurable problems — in education performance, project delivery, construction, professional English, leadership, and practical digital skills.",
+      fr: "Nous aidons particuliers, familles, organisations et institutions à résoudre des problèmes concrets — performance scolaire, gestion de projets, construction, anglais professionnel, leadership et compétences informatiques.",
+      en: "We help individuals, families, organizations, and institutions solve measurable problems — in education performance, project delivery, construction, professional English, leadership, and practical IT skills.",
     },
     credLine: {
       fr: "BOURSIER FULBRIGHT · MBA (UF) · CERTIFIÉ PMP® · DOCTORANT EN GESTION DE LA CONSTRUCTION",
@@ -153,8 +153,8 @@ export const uiStrings = {
     shortEyebrow: { fr: "En bref", en: "The firm, in short" },
     shortTitle: { fr: "Un atout distinctif.", en: "A distinctive strength." },
     shortText: {
-      fr: "Notre atout distinctif est la combinaison d'une formation professionnelle américaine rigoureuse et d'une expérience malienne pratique et approfondie — appliquée à l'éducation, la gestion de projet, le conseil en construction, l'anglais professionnel, le leadership et les compétences numériques.",
-      en: "Our distinctive strength is the combination of rigorous U.S. professional training with deep, practical Malian experience — applied to education, project management, construction advisory, professional English, leadership, and practical digital skills.",
+      fr: "Notre atout distinctif est la combinaison d'une formation professionnelle américaine rigoureuse et d'une expérience malienne pratique et approfondie — appliquée à l'éducation, la gestion de projet, le conseil en construction, l'anglais professionnel, le leadership et les compétences informatiques.",
+      en: "Our distinctive strength is the combination of rigorous U.S. professional training with deep, practical Malian experience — applied to education, project management, construction advisory, professional English, leadership, and practical IT skills.",
     },
     approachEyebrow: { fr: "Notre approche", en: "Our approach" },
     approachTitle: {
@@ -355,8 +355,8 @@ export const clientTypes = [
   {
     title: { fr: "Particuliers et familles", en: "Individuals & families" },
     detail: {
-      fr: "Élèves préparant le DEF ou les classes antérieures ; parents recherchant un accompagnement personnalisé de qualité ; professionnels souhaitant progresser en anglais, en leadership ou en compétences numériques.",
-      en: "Students preparing for the DEF and lower grades; parents seeking high-quality personalized mentoring; professionals seeking English fluency, leadership growth, or digital skills.",
+      fr: "Élèves préparant le DEF ou les classes antérieures ; parents recherchant un accompagnement personnalisé de qualité ; professionnels souhaitant progresser en anglais, en leadership ou en compétences informatiques.",
+      en: "Students preparing for the DEF and lower grades; parents seeking high-quality personalized mentoring; professionals seeking English fluency, leadership growth, or IT skills.",
     },
   },
   {
@@ -665,34 +665,46 @@ export const serviceLines = [
     slug: "digital-skills",
     code: "DS",
     name: {
-      fr: "Développement des compétences numériques",
-      en: "Digital Skills Development",
+      fr: "Compétences informatiques et numériques",
+      en: "IT & Digital Skills Development",
     },
-    shortName: { fr: "Compétences numériques", en: "Digital Skills" },
+    shortName: { fr: "Informatique & numérique", en: "IT & Digital Skills" },
     short: {
-      fr: "Bureautique, design de base et outils numériques pour le travail et les études.",
-      en: "Office tools, basic design, and practical digital fluency for work and study.",
+      fr: "Bureautique, création web, IA, SQL et outils numériques pour le travail et les études.",
+      en: "Office tools, web building, AI, SQL, and practical digital fluency for work and study.",
     },
     summary: {
-      fr: "Formation pratique aux outils numériques essentiels pour les professionnels, les étudiants et les organisations au Mali. De la bureautique au design graphique de base et aux notions web, chaque programme est adapté au niveau et aux objectifs du client.",
-      en: "Practical training in essential digital tools for professionals, students, and organizations in Mali. From office productivity to basic graphic design and introductory web concepts, each program is tailored to the client's level and goals.",
+      fr: "Formation pratique en informatique et productivité numérique pour les professionnels, les étudiants et les organisations au Mali. Nous distinguons clairement les compétences informatiques (outils tech, web, IA, données) de la maîtrise quantitative — chaque programme est adapté au niveau et aux objectifs du client.",
+      en: "Practical training in IT and digital productivity for professionals, students, and organizations in Mali. We clearly separate IT skills (tech tools, web, AI, data) from quantitative/numerical ability — each program is tailored to the client's level and goals.",
     },
     who: {
-      fr: "Professionnels, étudiants et organisations souhaitant renforcer leurs compétences numériques.",
-      en: "Professionals, students, and organizations seeking stronger digital skills.",
+      fr: "Professionnels, étudiants et organisations souhaitant renforcer leurs compétences informatiques et leur productivité numérique.",
+      en: "Professionals, students, and organizations seeking stronger IT skills and digital productivity.",
     },
     includes: [
       {
-        fr: "Maîtrise de la bureautique (Word, Excel, PowerPoint, Google Workspace)",
+        fr: "Bureautique et productivité (Word, Excel, PowerPoint, Google Workspace)",
         en: "Office productivity (Word, Excel, PowerPoint, Google Workspace)",
       },
       {
-        fr: "Design graphique de base avec Canva et outils similaires",
-        en: "Basic graphic design with Canva and similar tools",
+        fr: "Design et présentations (Canva, PowerPoint avancé, supports visuels professionnels)",
+        en: "Design and presentations (Canva, advanced PowerPoint, professional visual materials)",
       },
       {
-        fr: "Notions web : sites simples, présence en ligne, outils collaboratifs",
-        en: "Introductory web concepts: simple sites, online presence, collaborative tools",
+        fr: "Création de sites web et présence en ligne (sites simples, portfolios, outils no-code)",
+        en: "Website building and online presence (simple sites, portfolios, no-code tools)",
+      },
+      {
+        fr: "Outils IA et productivité (prompt engineering, assistants IA, automatisation de base)",
+        en: "AI tools and productivity (prompt engineering, AI assistants, basic automation)",
+      },
+      {
+        fr: "Données et analyse (SQL, Google Colab, tableaux de bord et bases de données introductives)",
+        en: "Data and analysis (SQL, Google Colab, dashboards, and introductory databases)",
+      },
+      {
+        fr: "Documents professionnels (CV, lettres de motivation, portfolios numériques)",
+        en: "Professional documents (résumés/CVs, cover letters, digital portfolios)",
       },
       {
         fr: "Organisation numérique : fichiers, calendriers, communication professionnelle",

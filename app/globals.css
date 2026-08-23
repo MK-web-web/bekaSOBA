@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand palette — Deep Forest, Tropical Green, Soft Mint (WCAG on paper/bone) */
-  --color-forest: #083d2e;
+  /* Brand palette — extracted from Logo_Final_Version (#006838 primary) */
+  --color-forest: #006838;
   --color-ink: #1a2e28;
-  --color-indigo: #083d2e;
-  --color-indigo-deep: #062a20;
-  --color-clay: #0f6b4d;
-  --color-clay-deep: #0a5239;
+  --color-indigo: #005a36;
+  --color-indigo-deep: #004428;
+  --color-clay: #007848;
+  --color-clay-deep: #006838;
   --color-mint: #25c58d;
   --color-bone: #f2f3ee;
   --color-bone-dim: #e6e8df;
   --color-paper: #faf9f5;
-  --color-gold: #0f6b4d;
-  --color-green: #0f6b4d;
-  --color-line: #d0ddd6;
+  --color-gold: #007848;
+  --color-green: #006838;
+  --color-line: #c8ddd2;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Work Sans", -apple-system, sans-serif;
@@ -71,8 +71,8 @@ h1, h2, h3, h4 {
 }
 
 ::selection {
-  background: var(--color-gold);
-  color: var(--color-indigo-deep);
+  background: var(--color-mint);
+  color: var(--color-ink);
 }
 
 :focus-visible {

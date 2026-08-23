@@ -37,13 +37,13 @@ export const pageSeo = {
   home: buildMetadata({
     title: "bekaSOBA — Conseil et soutien axés sur les résultats au Mali",
     description:
-      "bekaSOBA : cabinet de conseil et de soutien à Bamako. Gestion de projet, construction, accompagnement scolaire, anglais professionnel, leadership et compétences numériques.",
+      "bekaSOBA : cabinet de conseil et de soutien à Bamako. Gestion de projet, construction, accompagnement scolaire, anglais professionnel, leadership et compétences informatiques.",
     path: "/",
   }),
   services: buildMetadata({
     title: "Services — Conseil, formation et accompagnement",
     description:
-      "Six pôles de service bekaSOBA au Mali : gestion de projet PMP®, conseil en construction, accompagnement scolaire DEF, anglais professionnel, leadership et compétences numériques.",
+      "Six pôles de service bekaSOBA au Mali : gestion de projet PMP®, conseil en construction, accompagnement scolaire DEF, anglais professionnel, leadership et compétences informatiques.",
     path: "/services",
   }),
   contact: buildMetadata({
@@ -104,9 +104,9 @@ const serviceSeo: Record<string, PageMeta> = {
     path: "/services/leadership-development",
   },
   "digital-skills": {
-    title: "Compétences numériques — Formation pratique",
+    title: "Compétences informatiques et numériques — Formation IT",
     description:
-      "Formation aux compétences numériques au Mali : bureautique, Canva, organisation digitale et notions web pour professionnels et organisations.",
+      "Formation IT et compétences numériques au Mali : bureautique, création web, IA, SQL, Google Colab, Canva, CV et lettres de motivation pour professionnels et organisations.",
     path: "/services/digital-skills",
   },
 };

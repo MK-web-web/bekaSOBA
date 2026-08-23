@@ -20,8 +20,7 @@ export default function Footer() {
           <div>
             <BekasobaLogo
               className="h-9 w-auto max-w-[192px] mb-4"
-              color="#25C58D"
-              prefixColor="#25C58D"
+              variant="light"
             />
             <p className="mt-3 text-bone/70 text-[14px] max-w-[320px] leading-relaxed">
               {t.footer.tagline[lang]}
@@ -32,7 +31,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="font-utility text-[11px] uppercase tracking-[0.14em] text-clay mb-4">
+            <div className="font-utility text-[11px] uppercase tracking-[0.14em] text-mint mb-4">
               {t.footer.servicesTitle[lang]}
             </div>
             <ul className="space-y-2.5 text-[14px]">
@@ -50,7 +49,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="font-utility text-[11px] uppercase tracking-[0.14em] text-clay mb-4">
+            <div className="font-utility text-[11px] uppercase tracking-[0.14em] text-mint mb-4">
               {t.footer.firmTitle[lang]}
             </div>
             <ul className="space-y-2.5 text-[14px]">

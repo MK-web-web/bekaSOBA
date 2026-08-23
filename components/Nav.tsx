@@ -38,7 +38,7 @@ export default function Nav() {
         >
           <BekasobaLogo className="h-7 w-auto max-w-[140px] sm:h-8 sm:max-w-[168px] lg:h-9 lg:max-w-[192px]" />
           <span className="hidden xl:flex flex-col leading-none border-l border-line pl-3 max-w-[200px]">
-            <span className="font-utility text-[9px] tracking-[0.14em] uppercase text-ink/60">
+            <span className="font-utility text-[9px] tracking-[0.14em] uppercase text-ink/70">
               {t.tagline[lang]}
             </span>
           </span>

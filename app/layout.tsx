@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | bekaSOBA",
   },
   description:
-    "bekaSOBA bridges U.S. professional standards with Malian realities — project management, construction advisory, education mentoring, professional English, leadership, and digital skills. Based in Bamako, Mali.",
+    "bekaSOBA bridges U.S. professional standards with Malian realities — project management, construction advisory, education mentoring, professional English, leadership, and IT skills. Based in Bamako, Mali.",
   keywords: site.keywords,
   authors: [{ name: site.name, url: site.url }],
   creator: site.name,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: "bekaSOBA — Results-Oriented Consulting in Mali",
     description:
-      "Project management, construction advisory, education mentoring, professional English, leadership, and digital skills — Bamako, Mali.",
+      "Project management, construction advisory, education mentoring, professional English, leadership, and IT skills — Bamako, Mali.",
     images: [
       {
         url: site.logo,
@@ -78,10 +78,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: site.logoSvg, type: "image/svg+xml" },
-      { url: site.logo, type: "image/png" },
+      { url: site.favicon, sizes: "any" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
-    apple: site.logo,
+    apple: site.appleTouchIcon,
   },
 };
 

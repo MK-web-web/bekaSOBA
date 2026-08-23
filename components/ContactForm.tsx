@@ -11,7 +11,7 @@ const servicesFr = [
   "Accompagnement scolaire",
   "Anglais professionnel",
   "Développement du leadership",
-  "Compétences numériques",
+  "Compétences informatiques et numériques",
   "Je ne sais pas encore",
 ];
 const servicesEn = [
@@ -20,7 +20,7 @@ const servicesEn = [
   "Education Mentoring",
   "Professional English Coaching",
   "Leadership Development",
-  "Digital Skills Development",
+  "IT & Digital Skills Development",
   "Not sure yet",
 ];
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
       </div>
       <Field label={t.formPhone[lang]} name="phone" />
       <div>
-        <label className="block font-utility text-[11px] uppercase tracking-wide text-ink/60 mb-2">
+        <label className="block font-utility text-[11px] uppercase tracking-wide text-ink/70 mb-2">
           {t.formService[lang]}
         </label>
         <select
@@ -98,7 +98,7 @@ export default function ContactForm() {
         </select>
       </div>
       <div>
-        <label className="block font-utility text-[11px] uppercase tracking-wide text-ink/60 mb-2">
+        <label className="block font-utility text-[11px] uppercase tracking-wide text-ink/70 mb-2">
           {t.formMessage[lang]}
         </label>
         <textarea
@@ -121,7 +121,7 @@ export default function ContactForm() {
       {status === "error" && (
         <p className="text-[13.5px] text-clay-deep">{t.errorText[lang]}</p>
       )}
-      <p className="text-[12.5px] text-ink/55 leading-relaxed">
+      <p className="text-[12.5px] text-ink/65 leading-relaxed">
         {t.formNote[lang]}{" "}
         <Link href="/privacy" className="text-clay hover:underline">
           {t.privacyLink[lang]}
@@ -145,7 +145,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block font-utility text-[11px] uppercase tracking-wide text-ink/60 mb-2">
+      <label className="block font-utility text-[11px] uppercase tracking-wide text-ink/70 mb-2">
         {label}
       </label>
       <input
