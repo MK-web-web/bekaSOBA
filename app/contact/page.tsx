@@ -18,10 +18,10 @@ export default function Contact() {
       <section className="pt-16 pb-16 md:pt-24">
         <Container>
           <Eyebrow>{t.eyebrow[lang]}</Eyebrow>
-          <h1 className="font-display text-[36px] md:text-[48px] text-indigo max-w-[600px] leading-[1.1]">
+          <h1 className="font-display text-[30px] sm:text-[36px] md:text-[48px] text-indigo max-w-[600px] leading-[1.1] text-balance">
             {t.title[lang]}
           </h1>
-          <p className="mt-6 text-[17px] text-ink/75 max-w-[560px] leading-relaxed">
+          <p className="mt-6 text-[16px] sm:text-[17px] text-ink/75 max-w-[560px] leading-relaxed">
             {t.sub[lang]}
           </p>
           <div className="mt-8">

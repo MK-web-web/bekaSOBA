@@ -75,8 +75,18 @@ export default function ContactForm() {
       action={formspreeEndpoint}
       method="POST"
       onSubmit={handleSubmit}
-      className="space-y-5"
+      className="relative space-y-5"
     >
+      {/* Formspree honeypot — hidden from users, catches naive bots */}
+      <input
+        type="text"
+        name="_gotcha"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden
+        className="absolute -left-[9999px] h-0 w-0 opacity-0"
+      />
+      <input type="hidden" name="_subject" value="bekaSOBA — nouveau message" />
       <div className="grid sm:grid-cols-2 gap-5">
         <Field label={t.formName[lang]} name="name" required />
         <Field label={t.formEmail[lang]} name="email" type="email" required />

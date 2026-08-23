@@ -13,10 +13,10 @@ export default function Footer() {
   const t = uiStrings;
 
   return (
-    <footer className="bg-indigo-deep text-bone mt-32">
+    <footer className="bg-indigo-deep text-bone mt-20 md:mt-32">
       <BogolanDivider tone="bone" />
-      <Container className="py-16">
-        <div className="grid md:grid-cols-[1.4fr_1fr_1fr] gap-12">
+      <Container className="py-12 md:py-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr] gap-10 md:gap-12">
           <div>
             <BekasobaLogo
               className="h-9 w-auto max-w-[192px] mb-4"

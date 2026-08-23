@@ -21,9 +21,9 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-paper pt-16 pb-20 md:pt-24 md:pb-28">
+      <section className="relative overflow-hidden bg-paper pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-24 md:pb-28">
         <Container>
-          <div className="grid lg:grid-cols-[1.15fr_1fr] gap-16 items-center">
+          <div className="grid lg:grid-cols-[1.15fr_1fr] gap-10 lg:gap-16 items-center">
             <div>
               <Eyebrow>{t.home.eyebrow[lang]}</Eyebrow>
               <h1 className="font-display text-[30px] sm:text-[40px] md:text-[56px] text-indigo leading-[1.05] max-w-[560px] text-balance">

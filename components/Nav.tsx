@@ -34,35 +34,10 @@ export default function Nav() {
       <Container className="flex items-center justify-between gap-3 min-h-[68px] py-2 lg:min-h-[76px] lg:py-0">
         <Link
           href="/"
-          className="flex min-w-0 shrink items-center gap-2 sm:gap-3 group"
+          className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-3 group"
           aria-label={`bekaSOBA — ${t.tagline[lang]}`}
         >
-          <BekasobaLogo className="h-7 w-auto max-w-[140px] sm:h-8 sm:max-w-[168px] lg:h-9 lg:max-w-[180px] xl:max-w-[192px] shrink-0" />
-          {/* xl only: visible when nav has room; controlled 2-line break */}
-          <span
-            className="hidden xl:flex flex-col justify-center gap-0.5 border-l border-line/80 pl-3 min-w-0 max-w-[11.5rem]"
-            aria-hidden
-          >
-            {lang === "en" ? (
-              <>
-                <span className="font-utility text-[10px] font-medium leading-[1.25] tracking-[0.1em] uppercase text-ink/80">
-                  Results-Oriented Consulting
-                </span>
-                <span className="font-utility text-[10px] font-medium leading-[1.25] tracking-[0.1em] uppercase text-ink/80">
-                  & Support
-                </span>
-              </>
-            ) : (
-              <>
-                <span className="font-utility text-[10px] font-medium leading-[1.25] tracking-[0.08em] uppercase text-ink/80">
-                  Conseil et soutien
-                </span>
-                <span className="font-utility text-[10px] font-medium leading-[1.25] tracking-[0.08em] uppercase text-ink/80">
-                  axés sur les résultats
-                </span>
-              </>
-            )}
-          </span>
+          <BekasobaLogo className="h-7 w-auto max-w-[140px] sm:h-8 sm:max-w-[168px] lg:h-9 lg:max-w-[192px]" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-6 font-body text-[14px] xl:text-[15px] min-w-0 shrink">

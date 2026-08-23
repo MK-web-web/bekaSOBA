@@ -20,7 +20,7 @@ export default function ServiceCard({
   return (
     <Link
       href={`/services/${slug}`}
-      className="group relative block border border-line bg-paper p-7 hover:border-clay transition-colors"
+      className="group relative block border border-line bg-paper p-5 sm:p-7 hover:border-clay transition-colors"
     >
       <div className="flex items-start justify-between mb-6">
         <span className="font-utility text-[12px] tracking-[0.14em] text-clay">
