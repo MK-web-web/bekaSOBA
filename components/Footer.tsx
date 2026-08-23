@@ -76,9 +76,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 pt-6 border-t border-bone/15 flex flex-col md:flex-row justify-between gap-2 text-[12px] text-bone/50 font-utility">
+        <div className="mt-14 pt-6 border-t border-bone/15 flex flex-col md:flex-row justify-between gap-2 text-[12px] text-bone/50 font-utility pb-4 sm:pb-0">
           <span>&copy; {new Date().getFullYear()} {site.name}. {t.footer.rights[lang]}</span>
-          <span>{site.domain} · Bamako, Mali</span>
+          <span>bekasoba.com · Bamako, Mali</span>
         </div>
       </Container>
     </footer>

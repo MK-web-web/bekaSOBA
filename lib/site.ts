@@ -2,7 +2,7 @@ export const site = {
   name: "bekaSOBA",
   legalName: "bekaSOBA",
   domain: "bekasoba.com",
-  url: "https://bekasoba.com",
+  url: "https://www.bekasoba.com",
   logo: "/bekasoba-logo.png",
   logoSvg: "/bekasoba-logo.png",
   favicon: "/favicon.ico",

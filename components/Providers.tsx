@@ -11,7 +11,7 @@ export default function Providers({ children }: { children: ReactNode }) {
   return (
     <LanguageProvider>
       <Nav />
-      <main>{children}</main>
+      <main className="pb-20 sm:pb-24">{children}</main>
       <Footer />
       <WhatsAppFloat />
       <CookieConsent />

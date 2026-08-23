@@ -61,7 +61,7 @@ export default function CookieConsent() {
         <div
           role="dialog"
           aria-live="polite"
-          className="fixed bottom-20 md:bottom-6 left-4 right-4 md:left-auto md:right-6 md:max-w-[440px] z-50 border border-line bg-paper shadow-lg p-5"
+          className="fixed bottom-[5.5rem] md:bottom-6 left-4 right-4 md:left-auto md:right-6 md:max-w-[440px] z-50 border border-line bg-paper shadow-lg p-5"
         >
           <p className="font-display text-[16px] text-indigo">
             {lang === "fr" ? "Cookies et confidentialité" : "Cookies & privacy"}

@@ -12,7 +12,7 @@ export default function WhatsAppFloat() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-40 flex items-center gap-2 bg-clay text-bone px-4 py-3.5 shadow-lg hover:bg-clay-deep transition-colors"
+      className="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-40 flex items-center gap-2 bg-clay text-bone px-3.5 py-3 sm:px-4 sm:py-3.5 shadow-lg hover:bg-clay-deep transition-colors max-w-[calc(100vw-2rem)]"
       aria-label="WhatsApp"
       onClick={() => trackLeadClick("float")}
     >

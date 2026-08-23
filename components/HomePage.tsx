@@ -26,13 +26,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-[1.15fr_1fr] gap-16 items-center">
             <div>
               <Eyebrow>{t.home.eyebrow[lang]}</Eyebrow>
-              <h1 className="font-display text-[32px] sm:text-[40px] md:text-[56px] text-indigo leading-[1.05] max-w-[560px]">
+              <h1 className="font-display text-[30px] sm:text-[40px] md:text-[56px] text-indigo leading-[1.05] max-w-[560px] text-balance">
                 {t.home.heroTitle[lang]}
               </h1>
-              <p className="mt-6 text-[17px] text-ink/75 max-w-[480px] leading-relaxed">
+              <p className="mt-6 text-[16px] sm:text-[17px] text-ink/75 max-w-[480px] leading-relaxed">
                 {t.home.heroSub[lang]}
               </p>
-              <div className="mt-9 flex flex-wrap gap-4">
+              <div className="mt-9 flex flex-wrap gap-3 sm:gap-4">
                 <WhatsAppButton source="home" />
                 <Button href="/contact" variant="secondary">
                   {t.buttons.startDiscovery[lang]}
