@@ -57,7 +57,7 @@ export default function HomePage() {
                 }}
               />
               <div className="relative">
-                <div className="font-utility text-[11px] tracking-[0.16em] text-clay uppercase mb-1">
+                <div className="font-utility text-[11px] tracking-[0.16em] text-mint uppercase mb-1">
                   {t.home.blueprintTag[lang]}
                 </div>
                 <div className="font-display text-[20px] mb-8">
@@ -69,7 +69,7 @@ export default function HomePage() {
                       key={s.slug}
                       className="flex items-baseline gap-4 pb-5 border-b border-bone/15 last:border-0 last:pb-0"
                     >
-                      <span className="font-utility text-[13px] text-clay w-7 shrink-0">
+                      <span className="font-utility text-[13px] text-mint w-7 shrink-0">
                         {s.code}
                       </span>
                       <Link
