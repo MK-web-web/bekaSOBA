@@ -76,14 +76,7 @@ export const metadata: Metadata = {
   verification: {
     google: gscVerification,
   },
-  icons: {
-    icon: [
-      { url: site.favicon, sizes: "any" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-    ],
-    apple: site.appleTouchIcon,
-  },
+
 };
 
 export default function RootLayout({

@@ -5,8 +5,7 @@ export const site = {
   url: "https://www.bekasoba.com",
   logo: "/bekasoba-logo.png",
   logoSvg: "/bekasoba-logo.png",
-  favicon: "/favicon.ico",
-  appleTouchIcon: "/apple-touch-icon.png",
+
   themeColor: "#006838",
   locale: "fr_FR",
   alternateLocale: "en_US",
