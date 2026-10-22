@@ -105,22 +105,6 @@ export default function About() {
         </Container>
       </section>
 
-      <section className="py-24">
-        <Container className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-          <div>
-            <h2 className="font-display text-[24px] sm:text-[26px] text-indigo max-w-[440px]">
-              {t.closingTitle[lang]}
-            </h2>
-            <p className="mt-3 text-[15px] text-ink/70 max-w-[460px]">
-              {t.closingText[lang]}
-            </p>
-          </div>
-          <Button href="/contact" variant="secondary" className="shrink-0">
-            {b.startNow[lang]}
-          </Button>
-        </Container>
-      </section>
-
       <BogolanDivider tone="clay" />
 
       <section className="py-24 bg-bone" id="network">

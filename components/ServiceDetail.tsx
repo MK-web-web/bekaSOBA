@@ -5,6 +5,7 @@ import { Container, Eyebrow, Button } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
 import ServiceCard from "@/components/ServiceCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import LaunchPriceTable from "@/components/LaunchPriceTable";
 import { serviceLines, uiStrings } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
@@ -56,6 +57,11 @@ export default function ServiceDetail({ service }: { service: Service }) {
             <Button href="/pricing" variant="ghost">
               {t.buttons.seePricing[lang]}
             </Button>
+            {service.code === "PM" && (
+              <Button href="/entreprises" variant="ghost">
+                {t.nav.business[lang]}
+              </Button>
+            )}
           </div>
         </Container>
       </section>
@@ -104,6 +110,8 @@ export default function ServiceDetail({ service }: { service: Service }) {
           </div>
         </Container>
       </section>
+
+      <LaunchPriceTable serviceCode={service.code} />
 
       <BogolanDivider tone="clay" />
 

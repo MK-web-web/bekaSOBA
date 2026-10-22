@@ -38,9 +38,7 @@ export default function Contact() {
             {lang === "fr" ? "Nous trouver" : "Find us"}
           </h2>
           <p className="text-[15px] text-ink/70 max-w-[560px] leading-relaxed">
-            {lang === "fr"
-              ? "bekaSOBA est basé à Lafiabougou, Bamako — à proximité de la Place de la Cane."
-              : "bekaSOBA is based in Lafiabougou, Bamako — near Place de la Cane."}
+            {contact.findUs[lang]}
           </p>
           <LocationMap />
         </Container>
@@ -82,6 +80,9 @@ export default function Contact() {
                   </h3>
                   <p className="text-[16px] text-indigo">
                     {contact.location[lang]}
+                  </p>
+                  <p className="mt-2 text-[13px] text-ink/65 leading-relaxed">
+                    {t.hours[lang]}
                   </p>
                 </div>
               </div>

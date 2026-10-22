@@ -1,6 +1,6 @@
 export const site = {
   name: "bekaSOBA",
-  legalName: "bekaSOBA",
+  legalName: "DENMISEW KA GNETA",
   domain: "bekasoba.com",
   url: "https://www.bekasoba.com",
   logo: "/bekasoba-logo.png",
@@ -16,7 +16,9 @@ export const site = {
     "conseil Bamako",
     "project management Mali",
     "English coaching Mali",
-    "education mentoring Mali",
+    "school services Mali",
+    "web app Mali",
+    "business launch Mali",
     "construction advisory Mali",
     "IT skills Mali",
     "digital skills Mali",

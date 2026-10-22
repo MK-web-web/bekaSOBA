@@ -57,6 +57,14 @@ export default function Services() {
                   <p className="text-[14.5px] text-ink/70 leading-relaxed max-w-[560px]">
                     {s.short[lang]} {s.who[lang]}
                   </p>
+                  {s.code === "PM" && (
+                    <a
+                      href="/entreprises"
+                      className="mt-2 inline-block text-[14px] text-clay hover:text-clay-deep underline underline-offset-2"
+                    >
+                      {uiStrings.nav.business[lang]} →
+                    </a>
+                  )}
                 </div>
                 <a
                   href={`/services/${s.slug}`}

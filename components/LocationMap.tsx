@@ -11,11 +11,7 @@ export default function LocationMap() {
     <div className="mt-10">
       <div className="border border-line overflow-hidden bg-paper">
         <iframe
-          title={
-            lang === "fr"
-              ? "Carte — bekaSOBA, Lafiabougou, Bamako"
-              : "Map — bekaSOBA, Lafiabougou, Bamako"
-          }
+          title={contact.mapTitle[lang]}
           src={embedSrc}
           className="w-full h-[320px] md:h-[380px] border-0"
           loading="lazy"

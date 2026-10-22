@@ -22,11 +22,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "bekaSOBA — Conseil et soutien axés sur les résultats au Mali",
+    default: "bekaSOBA — Cabinet de conseil et de soutien à Bamako",
     template: "%s | bekaSOBA",
   },
   description:
-    "bekaSOBA bridges U.S. professional standards with Malian realities — project management, construction advisory, education mentoring, professional English, leadership, and IT skills. Based in Bamako, Mali.",
+    "bekaSOBA : cabinet de conseil et de soutien à Bamako. Gestion de projet et d'entreprise, construction de A à Z, établissements scolaires, anglais professionnel, leadership, informatique et numérique.",
   keywords: site.keywords,
   authors: [{ name: site.name, url: site.url }],
   creator: site.name,
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     alternateLocale: [site.alternateLocale],
     url: site.url,
     siteName: site.name,
-    title: "bekaSOBA — Results-Oriented Consulting in Mali",
+    title: "bekaSOBA — Consulting and support in Bamako",
     description:
-      "Project management, construction advisory, education mentoring, professional English, leadership, and IT skills — Bamako, Mali.",
+      "International standards, Malian realities.",
     images: [
       {
         url: site.logo,
@@ -58,9 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "bekaSOBA — Results-Oriented Consulting in Mali",
-    description:
-      "Bridging U.S. professional standards with Malian realities.",
+    title: "bekaSOBA — Consulting and support in Bamako",
+    description: "International standards, Malian realities.",
     images: [site.logo],
   },
   robots: {

@@ -43,6 +43,11 @@ const nextConfig: NextConfig = {
         destination: "/services/professional-english",
         permanent: true,
       },
+      {
+        source: "/tarification",
+        destination: "/pricing",
+        permanent: true,
+      },
     ];
   },
   async headers() {

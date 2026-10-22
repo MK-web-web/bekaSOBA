@@ -10,6 +10,7 @@ import {
   clientTypes,
   approach,
   credentials,
+  homeFeaturedOffers,
   uiStrings,
   networkLinks,
 } from "@/lib/content";
@@ -18,6 +19,9 @@ import { useLanguage } from "@/lib/i18n";
 export default function HomePage() {
   const { lang } = useLanguage();
   const t = uiStrings;
+  const association = networkLinks.find(
+    (org) => org.url === "https://djiguibamali.org"
+  );
 
   return (
     <>
@@ -136,6 +140,36 @@ export default function HomePage() {
         </Container>
       </section>
 
+      <section className="py-24 bg-bone">
+        <Container>
+          <div className="max-w-[560px] mb-12">
+            <Eyebrow>{t.home.featuredEyebrow[lang]}</Eyebrow>
+            <h2 className="font-display text-[32px] text-indigo">
+              {t.home.featuredTitle[lang]}
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {homeFeaturedOffers.map((offer) => (
+              <Link
+                key={offer.title.en}
+                href={offer.href}
+                className="border border-line bg-paper p-6 hover:border-clay transition-colors"
+              >
+                <h3 className="font-display text-[20px] text-indigo mb-3">
+                  {offer.title[lang]}
+                </h3>
+                <p className="text-[14px] text-ink/70 leading-relaxed">
+                  {offer.detail[lang]}
+                </p>
+              </Link>
+            ))}
+          </div>
+          <p className="mt-6 text-[13px] text-ink/60">
+            {t.home.featuredNote[lang]}
+          </p>
+        </Container>
+      </section>
+
       <BogolanDivider tone="clay" />
 
       <section className="py-24 bg-bone">
@@ -207,33 +241,30 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid sm:grid-cols-2 gap-5 mb-10">
-            {networkLinks
-              .filter((org) => org.kind === "sister")
-              .map((org) => (
-                <a
-                  key={org.url}
-                  href={org.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group border border-line bg-paper p-6 hover:border-clay transition-colors"
-                >
-                  <div className="font-utility text-[10px] uppercase tracking-wide text-clay border border-clay/30 px-2 py-0.5 inline-block mb-4">
-                    {t.about.sisterOrgLabel[lang]}
-                  </div>
-                  <h3 className="font-display text-[18px] text-indigo mb-2">
-                    {org.name}
-                  </h3>
-                  <p className="text-[14px] text-ink/65 leading-relaxed">
-                    {org.description[lang]}
-                  </p>
-                  <span className="mt-4 inline-block font-utility text-[11px] text-ink/45 group-hover:text-clay transition-colors">
-                    {org.displayUrl} ↗
-                  </span>
-                </a>
-              ))}
+            {association && (
+              <a
+                href={association.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group border border-line bg-paper p-6 hover:border-clay transition-colors"
+              >
+                <div className="font-utility text-[10px] uppercase tracking-wide text-clay border border-clay/30 px-2 py-0.5 inline-block mb-4">
+                  {t.about.sisterOrgLabel[lang]}
+                </div>
+                <h3 className="font-display text-[18px] text-indigo mb-2">
+                  {t.home.founderCardName[lang]}
+                </h3>
+                <p className="text-[14px] text-ink/65 leading-relaxed">
+                  {t.home.founderCardDescription[lang]}
+                </p>
+                <span className="mt-4 inline-block font-utility text-[11px] text-ink/45 group-hover:text-clay transition-colors">
+                  {association.displayUrl} ↗
+                </span>
+              </a>
+            )}
           </div>
           <Link
-            href="/about#network"
+            href="/about"
             className="font-utility text-[13px] uppercase tracking-wide text-clay hover:text-clay-deep"
           >
             {t.home.networkLink[lang]}

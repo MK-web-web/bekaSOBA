@@ -26,8 +26,12 @@ export default function Footer() {
               {t.footer.tagline[lang]}
             </p>
             <div className="mt-6 font-utility text-[12px] text-bone/50">
+              {t.footer.addressLabel[lang]}
               {contact.location[lang]}
             </div>
+            <p className="mt-2 font-utility text-[12px] text-bone/50 leading-relaxed">
+              {uiStrings.contact.hours[lang]}
+            </p>
           </div>
 
           <div>
@@ -45,6 +49,14 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/entreprises"
+                  className="text-bone/80 hover:text-bone transition-colors"
+                >
+                  {t.nav.business[lang]}
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -64,7 +76,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about#network" className="text-bone/80 hover:text-bone transition-colors">
-                  {lang === "fr" ? "Organisations sœurs" : "Sister organizations"}
+                  {t.home.networkEyebrow[lang]}
                 </Link>
               </li>
               <li>
@@ -80,6 +92,9 @@ export default function Footer() {
           <span>&copy; {new Date().getFullYear()} {site.name}. {t.footer.rights[lang]}</span>
           <span>bekasoba.com · Bamako, Mali</span>
         </div>
+        <p className="mt-4 text-[10px] text-bone/40 font-utility leading-relaxed">
+          {t.footer.legalLine[lang]}
+        </p>
       </Container>
     </footer>
   );

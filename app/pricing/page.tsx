@@ -2,8 +2,10 @@
 
 import { Container, Eyebrow, Button } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
-import { pricingModels, engagementSteps, serviceLines, uiStrings } from "@/lib/content";
+import { pricingModels, engagementSteps, serviceLines, uiStrings, launchPriceLabels } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
+import LaunchPriceTable from "@/components/LaunchPriceTable";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Pricing() {
   const { lang } = useLanguage();
@@ -42,6 +44,30 @@ export default function Pricing() {
                 </p>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <LaunchPriceTable />
+
+      <section className="py-20">
+        <Container>
+          <div className="max-w-[680px]">
+            <Eyebrow>{launchPriceLabels.title[lang]}</Eyebrow>
+            <h2 className="font-display text-[28px] text-indigo mb-6">
+              {launchPriceLabels.conditionsTitle[lang]}
+            </h2>
+            <ul className="space-y-4">
+              {launchPriceLabels.conditions.map((condition) => (
+                <li key={condition.en} className="flex items-start gap-3 text-[14.5px] text-ink/75 leading-relaxed">
+                  <span className="text-clay mt-0.5">—</span>
+                  {condition[lang]}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8">
+              <WhatsAppButton source="pricing" />
+            </div>
           </div>
         </Container>
       </section>

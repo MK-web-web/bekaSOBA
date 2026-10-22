@@ -3,7 +3,7 @@ import { serviceLines } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/about", "/services", "/pricing", "/contact", "/privacy"];
+  const staticRoutes = ["", "/about", "/services", "/entreprises", "/pricing", "/contact", "/privacy"];
   const now = new Date();
 
   return [

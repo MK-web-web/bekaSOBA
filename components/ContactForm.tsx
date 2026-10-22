@@ -2,27 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { uiStrings } from "@/lib/content";
+import { contact, uiStrings } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
-
-const servicesFr = [
-  "Gestion de projet",
-  "Conseil en construction",
-  "Accompagnement scolaire",
-  "Anglais professionnel",
-  "Développement du leadership",
-  "Compétences informatiques et numériques",
-  "Je ne sais pas encore",
-];
-const servicesEn = [
-  "Project Management Consulting",
-  "Construction Advisory",
-  "Education Mentoring",
-  "Professional English Coaching",
-  "Leadership Development",
-  "IT & Digital Skills Development",
-  "Not sure yet",
-];
 
 export default function ContactForm() {
   const { lang } = useLanguage();
@@ -30,7 +11,6 @@ export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle"
   );
-  const services = lang === "fr" ? servicesFr : servicesEn;
   const formspreeEndpoint =
     process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ??
     "https://formspree.io/f/xbgrykay";
@@ -100,9 +80,9 @@ export default function ContactForm() {
           name="service"
           className="w-full bg-paper border border-line px-4 py-3 text-[14.5px] focus:border-clay outline-none"
         >
-          {services.map((s) => (
-            <option key={s} value={s}>
-              {s}
+          {contact.serviceOptions.map((service) => (
+            <option key={service.en} value={service[lang]}>
+              {service[lang]}
             </option>
           ))}
         </select>

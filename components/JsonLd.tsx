@@ -9,23 +9,30 @@ export default function JsonLd() {
         "@type": "Organization",
         "@id": `${site.url}/#organization`,
         name: site.name,
+        legalName: site.legalName,
         url: site.url,
         logo: `${site.url}${site.logo}`,
         email: contact.emailPlaceholder,
         telephone: contact.whatsappPlaceholder.replace(/\s/g, ""),
         address: {
           "@type": "PostalAddress",
-          streetAddress: "Rue 252, Porte 109",
-          addressLocality: "Lafiabougou, Bamako",
+          streetAddress: "Rue 429, Porte 52",
+          addressLocality: "Hamdallaye ACI, Bamako",
           addressCountry: "ML",
         },
-        sameAs: [
-          "https://bighopemali.com",
-          "https://djiguibamali.org",
-          "https://mahamadoukane.vercel.app",
-        ],
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 12.629445,
+          longitude: -8.034999,
+        },
+        openingHours: "Sa-Th 07:00-23:00",
+        founder: {
+          "@type": "Person",
+          name: "Mahamadou Kane",
+          url: "https://mahamadoukane.vercel.app",
+        },
         description:
-          "Results-oriented consulting and support firm bridging U.S. professional standards with Malian realities.",
+          "Consulting and support firm in Bamako. International standards, Malian realities.",
         knowsAbout: serviceLines.map((s) => s.name.en),
       },
       {

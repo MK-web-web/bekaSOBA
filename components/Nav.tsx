@@ -13,8 +13,7 @@ export default function Nav() {
   const { lang, toggle } = useLanguage();
   const t = uiStrings.nav;
 
-  const sisterLabel =
-    lang === "fr" ? "Organisations sœurs" : "Sister organizations";
+  const sisterLabel = uiStrings.home.networkEyebrow[lang];
 
   const primaryLinks = [
     { href: "/about", label: t.about[lang] },
@@ -70,6 +69,12 @@ export default function Nav() {
                       {s.name[lang]}
                     </Link>
                   ))}
+                  <Link
+                    href="/entreprises"
+                    className="block px-4 py-2.5 text-[14px] text-ink hover:bg-bone-dim border-t border-line/60"
+                  >
+                    {t.business[lang]}
+                  </Link>
                 </div>
               </div>
             )}
@@ -159,6 +164,13 @@ export default function Nav() {
                 {s.name[lang]}
               </Link>
             ))}
+            <Link
+              href="/entreprises"
+              className="py-2 text-ink pl-3"
+              onClick={closeMenu}
+            >
+              {t.business[lang]}
+            </Link>
             <div className="h-px bg-line my-2" />
             {primaryLinks.map((l) => (
               <Link

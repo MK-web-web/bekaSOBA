@@ -3,7 +3,7 @@ import { serviceLines } from "@/lib/content";
 import { site } from "@/lib/site";
 
 type PageMeta = {
-  title: string;
+  title: string | { absolute: string };
   description: string;
   path: string;
 };
@@ -35,34 +35,43 @@ function buildMetadata({ title, description, path }: PageMeta): Metadata {
 
 export const pageSeo = {
   home: buildMetadata({
-    title: "bekaSOBA — Conseil et soutien axés sur les résultats au Mali",
+    title: "bekaSOBA — Cabinet de conseil et de soutien à Bamako",
     description:
-      "bekaSOBA : cabinet de conseil et de soutien à Bamako. Gestion de projet, construction, accompagnement scolaire, anglais professionnel, leadership et compétences informatiques.",
+      "bekaSOBA : cabinet de conseil et de soutien à Bamako. Gestion de projet et d'entreprise, construction de A à Z, établissements scolaires, anglais professionnel, leadership, informatique et numérique.",
     path: "/",
   }),
   services: buildMetadata({
     title: "Services — Conseil, formation et accompagnement",
     description:
-      "Six pôles de service bekaSOBA au Mali : gestion de projet PMP®, conseil en construction, accompagnement scolaire DEF, anglais professionnel, leadership et compétences informatiques.",
+      "Six pôles de service bekaSOBA au Mali : gestion de projet et d'entreprise, construction de A à Z, services aux établissements scolaires, anglais professionnel, leadership, informatique et numérique.",
     path: "/services",
   }),
   contact: buildMetadata({
     title: "Contact — Démarrer un échange découverte gratuit",
     description:
-      "Contactez bekaSOBA par WhatsApp, e-mail ou formulaire. Entretien découverte gratuit à Bamako — conseil, formation et soutien pour particuliers, familles et organisations.",
+      "Contactez bekaSOBA par WhatsApp, e-mail ou formulaire. Entretien découverte gratuit à Bamako — conseil, formation et soutien pour étudiants, professionnels, entreprises et écoles.",
     path: "/contact",
   }),
   about: buildMetadata({
-    title: "À propos — Cabinet bekaSOBA et organisations sœurs",
+    title: "À propos — Le cabinet bekaSOBA et son fondateur",
     description:
-      "bekaSOBA allie standards professionnels américains et réalités maliennes. Fondateur Fulbright, PMP®, MBA. Écosystème : Big Hope Mali, DJIGUI-BA-MALI.",
+      "bekaSOBA, cabinet de conseil et de soutien à Bamako. Standards internationaux, réalités maliennes. Fondateur : Mahamadou Kane, boursier Fulbright, MBA (UF), PMP®.",
     path: "/about",
   }),
   pricing: buildMetadata({
     title: "Tarification — Transparente et alignée sur les résultats",
     description:
-      "Approche tarifaire bekaSOBA : forfaits fixes, modèles hybrides et honoraires liés aux résultats. Propositions claires après un entretien découverte gratuit.",
+      "Prix de lancement bekaSOBA jusqu'au 31 décembre 2026 : tarifs fixes en FCFA et missions de conseil sur devis après une consultation gratuite de 30 minutes.",
     path: "/pricing",
+  }),
+  business: buildMetadata({
+    title: {
+      absolute:
+        "Pour les entreprises — Lancement et diagnostic financier | bekaSOBA",
+    },
+    description:
+      "Lancement d'entreprise, diagnostic financier et gestion de projet à Bamako. Consultation de cadrage gratuite de 30 minutes.",
+    path: "/entreprises",
   }),
   privacy: buildMetadata({
     title: "Politique de confidentialité",
@@ -80,21 +89,24 @@ const serviceSeo: Record<string, PageMeta> = {
     path: "/services/project-management",
   },
   "construction-advisory": {
-    title: "Conseil en construction — Représentation du maître d'ouvrage",
+    title: {
+      absolute:
+        "Construction de A à Z — Représentation du maître d'ouvrage",
+    },
     description:
       "Accompagnement de projets de construction résidentielle au Mali : planification, budget, qualité, sécurité et suivi d'exécution côté maître d'ouvrage.",
     path: "/services/construction-advisory",
   },
   "education-mentoring": {
-    title: "Accompagnement scolaire — Préparation DEF",
+    title: "Établissements scolaires — Services aux écoles et universités",
     description:
-      "Accompagnement scolaire inspiré du homeschooling à Bamako. Préparation DEF en mathématiques, physique, chimie, français et anglais.",
+      "Formation du personnel, outils de suivi des inscriptions et des frais, visibilité en ligne pour les écoles et universités à Bamako.",
     path: "/services/education-mentoring",
   },
   "professional-english": {
     title: "Anglais professionnel — Coaching immersif",
     description:
-      "Coaching d'anglais professionnel à Bamako. Méthode d'acquisition naturelle avec coachs ayant vécu aux États-Unis — fluidité, confiance et anglais technique.",
+      "Coaching d'anglais professionnel à Bamako par un ancien boursier Fulbright — fluidité, confiance et anglais technique.",
     path: "/services/professional-english",
   },
   "leadership-development": {
@@ -104,9 +116,9 @@ const serviceSeo: Record<string, PageMeta> = {
     path: "/services/leadership-development",
   },
   "digital-skills": {
-    title: "Compétences informatiques et numériques — Formation IT",
+    title: "Informatique & numérique — Formations et services",
     description:
-      "Formation IT et compétences numériques au Mali : bureautique, création web, IA, SQL, Google Colab, Canva, CV et lettres de motivation pour professionnels et organisations.",
+      "Formations et services numériques au Mali : CV, design, Google Maps, sites web, applications web sur mesure, bureautique, IA.",
     path: "/services/digital-skills",
   },
 };
@@ -129,6 +141,7 @@ export const gscImportantUrls = [
   `${site.url}/services`,
   `${site.url}/contact`,
   `${site.url}/about`,
+  `${site.url}/entreprises`,
   `${site.url}/pricing`,
   ...serviceLines.map((s) => `${site.url}/services/${s.slug}`),
 ];
