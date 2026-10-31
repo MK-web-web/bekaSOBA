@@ -140,9 +140,7 @@ export default function About() {
               >
                 <div className="flex items-start justify-between gap-3 mb-4">
                   <span className="font-utility text-[10px] uppercase tracking-wide text-clay border border-clay/30 px-2 py-0.5">
-                    {org.kind === "sister"
-                      ? t.sisterOrgLabel[lang]
-                      : t.founderProfileLabel[lang]}
+                    {org.label[lang]}
                   </span>
                   <span className="font-utility text-[12px] text-ink/40 group-hover:text-clay transition-colors shrink-0">
                     ↗
@@ -155,7 +153,7 @@ export default function About() {
                   {org.description[lang]}
                 </p>
                 <span className="mt-4 font-utility text-[11px] text-ink/45 group-hover:text-clay transition-colors">
-                  {org.displayUrl}
+                  {b.learnMore[lang]}
                 </span>
               </a>
             ))}
@@ -176,6 +174,9 @@ export default function About() {
             <Button href="/contact" variant="ghost">
               {b.startDiscovery[lang]}
             </Button>
+            <p className="mt-3 text-[13px] text-ink/60">
+              {b.discoveryNote[lang]}
+            </p>
           </div>
         </Container>
       </section>

@@ -5,7 +5,7 @@ import { Container, Eyebrow, Button } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ComingSoonBadge from "@/components/ComingSoonBadge";
-import { businessPage, launchPriceLabels } from "@/lib/content";
+import { businessPage, launchPriceLabels, uiStrings } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
 export default function BusinessPage() {
@@ -29,6 +29,9 @@ export default function BusinessPage() {
               {content.buttons.discovery[lang]}
             </Button>
           </div>
+          <p className="mt-3 text-[13px] text-ink/60">
+            {uiStrings.buttons.discoveryNote[lang]}
+          </p>
         </Container>
       </section>
 

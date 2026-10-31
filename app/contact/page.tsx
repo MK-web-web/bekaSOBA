@@ -24,9 +24,6 @@ export default function Contact() {
           <p className="mt-6 text-[16px] sm:text-[17px] text-ink/75 max-w-[560px] leading-relaxed">
             {t.sub[lang]}
           </p>
-          <div className="mt-8">
-            <WhatsAppButton source="contact" />
-          </div>
         </Container>
       </section>
 

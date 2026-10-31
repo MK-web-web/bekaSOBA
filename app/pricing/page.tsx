@@ -134,9 +134,14 @@ export default function Pricing() {
           <h2 className="font-display text-[26px] text-indigo max-w-[440px]">
             {t.closing[lang]}
           </h2>
-          <Button href="/contact" variant="secondary" className="shrink-0">
-            {b.startDiscovery[lang]}
-          </Button>
+          <div className="shrink-0">
+            <Button href="/contact" variant="secondary">
+              {b.startDiscovery[lang]}
+            </Button>
+            <p className="mt-3 text-[13px] text-ink/60">
+              {b.discoveryNote[lang]}
+            </p>
+          </div>
         </Container>
       </section>
     </>

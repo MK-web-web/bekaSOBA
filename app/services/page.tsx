@@ -29,6 +29,9 @@ export default function Services() {
               {b.startDiscovery[lang]}
             </Button>
           </div>
+          <p className="mt-3 text-[13px] text-ink/60">
+            {b.discoveryNote[lang]}
+          </p>
         </Container>
       </section>
 
@@ -41,28 +44,17 @@ export default function Services() {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {serviceLines.map((s) => (
-              <ServiceCard key={s.slug} {...s} />
+              <ServiceCard key={s.slug} {...s} name={s.shortName} />
             ))}
-            <ServiceCard {...constructionService} />
-          </div>
-        </Container>
-      </section>
-
-      <section className="pb-12">
-        <Container className="bg-indigo text-bone p-10 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
-          <div>
-            <h2 className="font-display text-[24px] md:text-[28px] leading-tight max-w-[480px]">
-              {t.ctaTitle[lang]}
-            </h2>
-            <p className="mt-3 text-[15px] text-bone/85 max-w-[480px] leading-relaxed">
-              {t.ctaText[lang]}
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-4 shrink-0">
-            <WhatsAppButton source="services" />
-            <Button href="/contact" variant="primary">
-              {b.startDiscovery[lang]}
-            </Button>
+            <ServiceCard
+              {...constructionService}
+              name={constructionService.shortName}
+              featuredLabel={{
+                fr: "Offre phare · Conseil",
+                en: "Flagship offer · Consulting",
+              }}
+              className="md:col-span-2 lg:col-span-3"
+            />
           </div>
         </Container>
       </section>

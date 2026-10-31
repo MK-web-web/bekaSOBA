@@ -28,8 +28,12 @@ export const uiStrings = {
   },
   buttons: {
     startDiscovery: {
-      fr: "Démarrer un entretien découverte",
-      en: "Start a discovery conversation",
+      fr: "Réserver un entretien découverte",
+      en: "Book a discovery call",
+    },
+    discoveryNote: {
+      fr: "30 minutes, gratuit et sans engagement, pour comprendre votre besoin.",
+      en: "30 minutes, free and with no commitment, to understand your needs.",
     },
     viewServices: {
       fr: "Voir nos services",
@@ -43,11 +47,10 @@ export const uiStrings = {
       fr: "Voir notre approche tarifaire",
       en: "See pricing philosophy",
     },
-    learnMore: { fr: "En savoir plus →", en: "Learn more →" },
+    learnMore: { fr: "En savoir plus", en: "Learn more" },
     seeFullMenu: { fr: "Voir tout le menu →", en: "See full menu →" },
     sendMessage: { fr: "Envoyer le message", en: "Send message" },
     sending: { fr: "Envoi en cours…", en: "Sending…" },
-    startNow: { fr: "Démarrer l'échange", en: "Start the conversation" },
   },
   badges: {
     comingSoon: { fr: "Bientôt", en: "Coming soon" },
@@ -117,8 +120,8 @@ export const uiStrings = {
       en: "Community work, independent of the firm.",
     },
     networkText: {
-      fr: "Mahamadou Kane a aussi fondé l'association Djigui-Ba-Mali (à but non lucratif), qui mène des programmes communautaires. L'association est indépendante de bekaSOBA.",
-      en: "Mahamadou Kane also founded Djigui-Ba-Mali, a non-profit association that runs community programs. The association is independent of bekaSOBA.",
+      fr: "Mahamadou Kane a aussi fondé l'association Djigui-Ba-Mali (à but non lucratif), qui mène les programmes SoKalan, HairaiBA et Big Hope Mali English Club. L'association est indépendante de bekaSOBA.",
+      en: "Mahamadou Kane also founded Djigui-Ba-Mali, a non-profit association that runs the SoKalan, HairaiBA and Big Hope Mali English Club programmes. The association is independent of bekaSOBA.",
     },
     networkLink: { fr: "Découvrir le fondateur →", en: "Meet the founder →" },
     featuredEyebrow: { fr: "Offres phares", en: "Featured offers" },
@@ -130,10 +133,6 @@ export const uiStrings = {
     clientTypesNote: {
       fr: "Aussi pour les professionnels et les jeunes diplômés : Pack Carrière, formations et studio création.",
       en: "Also for professionals and recent graduates: Career Pack, training and creative studio.",
-    },
-    founderCardDescription: {
-      fr: "Association à but non lucratif, active depuis 2015 et enregistrée en 2022. Programme : SoKalan (soutien scolaire gratuit).",
-      en: "Non-profit association, active since 2015 and registered in 2022. Programme: SoKalan (free school support).",
     },
     founderCardName: { fr: "Djigui-Ba-Mali", en: "Djigui-Ba-Mali" },
   },
@@ -162,7 +161,7 @@ export const uiStrings = {
     },
     ctaText: {
       fr: "WhatsApp pour une réponse rapide, ou formulaire pour un message détaillé — entretien découverte gratuit.",
-      en: "WhatsApp for a fast reply, or the form for a detailed message — complimentary discovery conversation.",
+      en: "WhatsApp for a fast reply, or the form for a detailed message — complimentary discovery call.",
     },
   },
   about: {
@@ -211,11 +210,9 @@ export const uiStrings = {
       en: "Community work, independent of the firm.",
     },
     networkText: {
-      fr: "Mahamadou Kane a aussi fondé l'association Djigui-Ba-Mali (à but non lucratif), qui mène des programmes communautaires. L'association est indépendante de bekaSOBA.",
-      en: "Mahamadou Kane also founded Djigui-Ba-Mali, a non-profit association that runs community programs. The association is independent of bekaSOBA.",
+      fr: "Mahamadou Kane a aussi fondé l'association Djigui-Ba-Mali (à but non lucratif), qui mène les programmes SoKalan, HairaiBA et Big Hope Mali English Club. L'association est indépendante de bekaSOBA.",
+      en: "Mahamadou Kane also founded Djigui-Ba-Mali, a non-profit association that runs the SoKalan, HairaiBA and Big Hope Mali English Club programmes. The association is independent of bekaSOBA.",
     },
-    sisterOrgLabel: { fr: "Association · Programme de Djigui-Ba-Mali", en: "Association · Djigui-Ba-Mali program" },
-    founderProfileLabel: { fr: "Profil du fondateur", en: "Founder profile" },
     founderProfileText: {
       fr: "Parcours complet, enseignement et engagement communautaire du fondateur.",
       en: "Full background, teaching history, and community involvement of the founder.",
@@ -263,7 +260,7 @@ export const uiStrings = {
     },
     sub: {
       fr: "Un entretien découverte de 30 minutes, gratuit, pour clarifier vos objectifs, vos contraintes et vos critères de réussite — avant toute proposition.",
-      en: "A free 30-minute discovery conversation to clarify your goals, constraints, and success criteria — before any proposal.",
+      en: "A free 30-minute discovery call to clarify your goals, constraints, and success criteria — before any proposal.",
     },
     email: { fr: "E-mail", en: "Email" },
     whatsapp: { fr: "WhatsApp", en: "WhatsApp" },
@@ -285,7 +282,7 @@ export const uiStrings = {
     sentTitle: { fr: "Message bien reçu.", en: "Message received." },
     sentText: {
       fr: "Merci — nous revenons vers vous pour planifier votre entretien découverte.",
-      en: "Thank you — we'll follow up to schedule your discovery conversation.",
+      en: "Thank you — we'll follow up to schedule your discovery call.",
     },
     errorText: {
       fr: "Une erreur est survenue lors de l'envoi — merci de nous écrire directement en attendant.",
@@ -308,7 +305,7 @@ export const uiStrings = {
       whatsappTitle: { fr: "WhatsApp — le plus rapide", en: "WhatsApp — fastest" },
       whatsappText: {
         fr: "Idéal pour une première question ou planifier un court échange découverte.",
-        en: "Best for a first question or scheduling a short discovery conversation.",
+        en: "Best for a first question or scheduling a short discovery call.",
       },
       emailTitle: { fr: "E-mail", en: "Email" },
       emailText: {
@@ -347,7 +344,7 @@ export const uiStrings = {
         title: { fr: "Comment nous utilisons vos données", en: "How we use your data" },
         body: {
           fr: "Pour répondre à vos demandes, planifier des entretiens découverte et améliorer notre site. Nous ne vendons ni ne louons vos données à des tiers.",
-          en: "To respond to inquiries, schedule discovery conversations, and improve our website. We do not sell or rent your data to third parties.",
+          en: "To respond to inquiries, schedule discovery calls, and improve our website. We do not sell or rent your data to third parties.",
         },
       },
       {
@@ -690,10 +687,10 @@ export const pricingModels = [
 
 export const engagementSteps = [
   {
-    title: { fr: "Échange découverte", en: "Discovery conversation" },
+    title: { fr: "Entretien découverte", en: "Discovery call" },
     detail: {
-      fr: "Un court échange gratuit pour clarifier vos objectifs, vos contraintes et vos critères de réussite.",
-      en: "A short, complimentary conversation to clarify goals, constraints, and success criteria.",
+      fr: "Un entretien gratuit pour clarifier vos objectifs, vos contraintes et vos critères de réussite.",
+      en: "A complimentary discovery call to clarify your goals, constraints, and success criteria.",
     },
   },
   {
@@ -717,29 +714,29 @@ export type NetworkKind = "sister" | "founder";
 export const networkLinks = [
   {
     kind: "sister" as const,
+    name: "DJIGUI-BA-MALI",
+    label: { fr: "Association", en: "Association" },
+    url: "https://djiguibamali.org",
+    description: {
+      fr: "Association à but non lucratif, active depuis 2015 et enregistrée en 2022. Programmes : SoKalan (soutien scolaire gratuit), HairaiBA (entretien des espaces communautaires) et Big Hope Mali English Club (club d'anglais gratuit).",
+      en: "Non-profit association, active since 2015 and registered in 2022. Programmes: SoKalan (free school support), HairaiBA (upkeep of shared community spaces) and Big Hope Mali English Club (free English club).",
+    },
+  },
+  {
+    kind: "sister" as const,
     name: "Big Hope Mali English Club",
+    label: { fr: "Programme de Djigui-Ba-Mali", en: "Djigui-Ba-Mali programme" },
     url: "https://bighopemali.com",
-    displayUrl: "bighopemali.com",
     description: {
       fr: "Programme de Djigui-Ba-Mali : club d'anglais gratuit (anglais pour le DEF et le Bac, TOEFL et anglais pour les bourses, anglais professionnel), fondé en novembre 2022, membre du Malian English Clubs Council.",
       en: "A Djigui-Ba-Mali programme: free English club (English for the DEF and Bac, TOEFL and English for scholarships, professional English), founded in November 2022, member of the Malian English Clubs Council.",
     },
   },
   {
-    kind: "sister" as const,
-    name: "DJIGUI-BA-MALI",
-    url: "https://djiguibamali.org",
-    displayUrl: "djiguibamali.org",
-    description: {
-      fr: "Association à but non lucratif, active depuis 2015 et enregistrée en 2022. Programme : SoKalan (soutien scolaire gratuit).",
-      en: "Non-profit association, active since 2015 and registered in 2022. Programme: SoKalan (free school support).",
-    },
-  },
-  {
     kind: "founder" as const,
     name: "Mahamadou Kane",
+    label: { fr: "Profil du fondateur", en: "Founder profile" },
     url: "https://mahamadoukane.vercel.app",
-    displayUrl: "mahamadoukane.vercel.app",
     description: {
       fr: "Parcours complet, enseignement et engagement communautaire du fondateur.",
       en: "Full background, teaching history, and community involvement of the founder.",
@@ -947,6 +944,6 @@ export const businessPage = {
   },
   buttons: {
     whatsapp: { fr: "Écrire sur WhatsApp", en: "Message on WhatsApp" },
-    discovery: { fr: "Démarrer un entretien découverte", en: "Start a discovery conversation" },
+    discovery: { fr: "Réserver un entretien découverte", en: "Book a discovery call" },
   },
 };

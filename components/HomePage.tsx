@@ -46,6 +46,9 @@ export default function HomePage() {
                   {t.buttons.viewServices[lang]}
                 </Button>
               </div>
+              <p className="mt-3 text-[13px] text-ink/60">
+                {t.buttons.discoveryNote[lang]}
+              </p>
               <p className="mt-8 font-utility text-[12px] text-ink/50 tracking-wide">
                 {t.home.credLine[lang]}
               </p>
@@ -264,16 +267,16 @@ export default function HomePage() {
                 className="group border border-line bg-paper p-6 hover:border-clay transition-colors"
               >
                 <div className="font-utility text-[10px] uppercase tracking-wide text-clay border border-clay/30 px-2 py-0.5 inline-block mb-4">
-                  {t.about.sisterOrgLabel[lang]}
+                  {association.label[lang]}
                 </div>
                 <h3 className="font-display text-[18px] text-indigo mb-2">
                   {t.home.founderCardName[lang]}
                 </h3>
                 <p className="text-[14px] text-ink/65 leading-relaxed">
-                  {t.home.founderCardDescription[lang]}
+                  {association.description[lang]}
                 </p>
                 <span className="mt-4 inline-block font-utility text-[11px] text-ink/45 group-hover:text-clay transition-colors">
-                  {association.displayUrl} ↗
+                  {t.buttons.learnMore[lang]}
                 </span>
               </a>
             )}
@@ -298,9 +301,14 @@ export default function HomePage() {
                 {t.home.ctaText[lang]}
               </p>
             </div>
-            <Button href="/contact" variant="primary" className="shrink-0">
-              {t.buttons.startNow[lang]}
-            </Button>
+            <div className="shrink-0">
+              <Button href="/contact" variant="primary">
+                {t.buttons.startDiscovery[lang]}
+              </Button>
+              <p className="mt-3 text-[13px] text-bone/75">
+                {t.buttons.discoveryNote[lang]}
+              </p>
+            </div>
           </div>
         </Container>
       </section>

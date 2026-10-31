@@ -10,18 +10,27 @@ export default function ServiceCard({
   name,
   short,
   slug,
+  featuredLabel,
+  className = "",
 }: {
   code: string;
   name: Bilingual;
   short: Bilingual;
   slug: string;
+  featuredLabel?: Bilingual;
+  className?: string;
 }) {
   const { lang } = useLanguage();
   return (
     <Link
       href={`/services/${slug}`}
-      className="group relative block border border-line bg-paper p-5 sm:p-7 hover:border-clay transition-colors"
+      className={`group relative block border border-line bg-paper p-5 sm:p-7 hover:border-clay transition-colors ${className}`}
     >
+      {featuredLabel && (
+        <div className="font-utility text-[11px] tracking-wide text-clay mb-4">
+          {featuredLabel[lang]}
+        </div>
+      )}
       <div className="flex items-start justify-between mb-6">
         <span className="font-utility text-[12px] tracking-[0.14em] text-clay">
           {code} —
