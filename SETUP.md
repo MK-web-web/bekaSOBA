@@ -115,13 +115,13 @@ Listed on the Home page and About page (`/about#network`) as **sister organizati
 
 The founder profile links to mahamadoukane.vercel.app.
 
-## Service lines (5)
+## Service pillars (3)
 
-1. PM — Project Management
-2. CA — Construction Advisory
-3. ED — Education Mentoring (bekaSOBA model)
-4. EN — Professional English & Leadership
-5. DS — Digital Skills Development
+1. Conseil
+2. Formation des équipes
+3. Numérique, IA & création
+
+Construction de A à Z remains available on its separate service page.
 
 ## SEO — Google Search Console checklist
 

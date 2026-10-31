@@ -48,7 +48,7 @@ export default function Pricing() {
         </Container>
       </section>
 
-      <LaunchPriceTable />
+      <LaunchPriceTable showAfterTable />
 
       <section className="py-20">
         <Container>

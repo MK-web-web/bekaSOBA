@@ -3,7 +3,8 @@
 import { Container, Eyebrow, Button } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { serviceLines, uiStrings } from "@/lib/content";
+import ServiceCard from "@/components/ServiceCard";
+import { constructionService, serviceLines, uiStrings } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
 export default function Services() {
@@ -35,45 +36,14 @@ export default function Services() {
 
       <section className="py-20" aria-labelledby="services-list-title">
         <Container>
-          <h2
-            id="services-list-title"
-            className="font-display text-[28px] text-indigo mb-10"
-          >
-            {lang === "fr" ? "Nos six pôles de service" : "Our six service lines"}
+          <h2 id="services-list-title" className="font-display text-[28px] text-indigo mb-10">
+            {t.listTitle[lang]}
           </h2>
-          <div className="grid gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {serviceLines.map((s) => (
-              <article
-                key={s.slug}
-                className="grid md:grid-cols-[80px_1fr_auto] gap-6 md:gap-10 items-start md:items-center border border-line p-8 hover:border-clay transition-colors group"
-              >
-                <span className="font-utility text-[13px] text-clay">
-                  {s.code}
-                </span>
-                <div>
-                  <h3 className="font-display text-[22px] text-indigo mb-2">
-                    {s.name[lang]}
-                  </h3>
-                  <p className="text-[14.5px] text-ink/70 leading-relaxed max-w-[560px]">
-                    {s.short[lang]} {s.who[lang]}
-                  </p>
-                  {s.code === "PM" && (
-                    <a
-                      href="/entreprises"
-                      className="mt-2 inline-block text-[14px] text-clay hover:text-clay-deep underline underline-offset-2"
-                    >
-                      {uiStrings.nav.business[lang]} →
-                    </a>
-                  )}
-                </div>
-                <a
-                  href={`/services/${s.slug}`}
-                  className="font-utility text-[13px] uppercase tracking-wide text-clay whitespace-nowrap group-hover:text-clay-deep"
-                >
-                  {b.learnMore[lang]}
-                </a>
-              </article>
+              <ServiceCard key={s.slug} {...s} />
             ))}
+            <ServiceCard {...constructionService} />
           </div>
         </Container>
       </section>

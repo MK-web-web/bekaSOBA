@@ -3,7 +3,7 @@
 import Link from "next/link";
 import BekasobaLogo from "./BekasobaLogo";
 import { Container } from "./ui";
-import { serviceLines, contact, uiStrings } from "@/lib/content";
+import { serviceLines, constructionService, contact, uiStrings } from "@/lib/content";
 import { site } from "@/lib/site";
 import { useLanguage } from "@/lib/i18n";
 import BogolanDivider from "./BogolanDivider";
@@ -49,6 +49,14 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/services/construction-advisory"
+                  className="text-bone/80 hover:text-bone transition-colors"
+                >
+                  {constructionService.code} — {constructionService.shortName[lang]}
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/entreprises"

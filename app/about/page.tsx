@@ -2,7 +2,7 @@
 
 import { Container, Eyebrow, Button } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
-import { credentials, approach, uiStrings, networkLinks } from "@/lib/content";
+import { aboutCredentials, approach, uiStrings, networkLinks } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
 export default function About() {
@@ -34,6 +34,14 @@ export default function About() {
               <p className="text-[15px] text-ink/70 leading-relaxed">
                 {t.positioningText[lang]}
               </p>
+              <div className="mt-6 border-t border-line pt-4">
+                <p className="font-utility text-[11px] uppercase tracking-wide text-clay">
+                  {uiStrings.home.missionTitle[lang]}
+                </p>
+                <p className="mt-1 text-[14px] text-ink/70 leading-relaxed">
+                  {uiStrings.home.missionText[lang]}
+                </p>
+              </div>
             </div>
             <div>
               <Eyebrow>{t.shortEyebrow[lang]}</Eyebrow>
@@ -89,9 +97,12 @@ export default function About() {
               <p className="mt-5 text-[14.5px] text-bone/75 leading-relaxed max-w-[420px]">
                 {t.credText[lang]}
               </p>
+              <p className="mt-4 text-[12px] text-bone/55 leading-relaxed max-w-[420px]">
+                {t.languages[lang]}
+              </p>
             </div>
             <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
-              {credentials.map((c) => (
+              {aboutCredentials.map((c) => (
                 <li
                   key={c.en}
                   className="flex items-start gap-3 text-[14.5px] border-t border-bone/20 pt-4"

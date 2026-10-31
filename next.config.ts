@@ -39,14 +39,34 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/services/english-leadership",
-        destination: "/services/professional-english",
-        permanent: true,
+        source: "/services/project-management",
+        destination: "/services/conseil",
+        statusCode: 301,
+      },
+      {
+        source: "/services/education-mentoring",
+        destination: "/services/conseil",
+        statusCode: 301,
+      },
+      {
+        source: "/services/professional-english",
+        destination: "/services/formation",
+        statusCode: 301,
+      },
+      {
+        source: "/services/leadership-development",
+        destination: "/services/formation",
+        statusCode: 301,
+      },
+      {
+        source: "/services/digital-skills",
+        destination: "/services/numerique",
+        statusCode: 301,
       },
       {
         source: "/tarification",
         destination: "/pricing",
-        permanent: true,
+        statusCode: 301,
       },
     ];
   },

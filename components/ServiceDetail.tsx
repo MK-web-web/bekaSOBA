@@ -6,10 +6,11 @@ import BogolanDivider from "@/components/BogolanDivider";
 import ServiceCard from "@/components/ServiceCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import LaunchPriceTable from "@/components/LaunchPriceTable";
-import { serviceLines, uiStrings } from "@/lib/content";
+import ComingSoonBadge from "@/components/ComingSoonBadge";
+import { serviceLines, servicePages, uiStrings, launchPriceLabels } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
-type Service = (typeof serviceLines)[number];
+type Service = (typeof servicePages)[number];
 
 export default function ServiceDetail({ service }: { service: Service }) {
   const { lang } = useLanguage();
@@ -57,7 +58,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
             <Button href="/pricing" variant="ghost">
               {t.buttons.seePricing[lang]}
             </Button>
-            {service.code === "PM" && (
+            {service.code === "01" && (
               <Button href="/entreprises" variant="ghost">
                 {t.nav.business[lang]}
               </Button>
@@ -89,7 +90,15 @@ export default function ServiceDetail({ service }: { service: Service }) {
                     className="flex items-start gap-3 text-[14.5px] text-ink/80 leading-relaxed"
                   >
                     <span className="text-clay mt-0.5 shrink-0">—</span>
-                    {item[lang]}
+                    <span>
+                      {item[lang]}
+                      {"soon" in item && item.soon && (
+                        <>
+                          {" "}
+                          <ComingSoonBadge />
+                        </>
+                      )}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -111,7 +120,9 @@ export default function ServiceDetail({ service }: { service: Service }) {
         </Container>
       </section>
 
-      <LaunchPriceTable serviceCode={service.code} />
+      <LaunchPriceTable
+        serviceCode={("priceCode" in service ? service.priceCode : undefined) ?? service.code}
+      />
 
       <BogolanDivider tone="clay" />
 
@@ -128,6 +139,11 @@ export default function ServiceDetail({ service }: { service: Service }) {
           </div>
         </Container>
       </section>
+      {service.slug === "formation" && (
+        <p className="mx-auto max-w-6xl px-6 pb-8 text-[11px] text-ink/45">
+          {launchPriceLabels.trademark[lang]}
+        </p>
+      )}
     </>
   );
 }

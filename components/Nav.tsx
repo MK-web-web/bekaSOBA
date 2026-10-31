@@ -66,9 +66,15 @@ export default function Nav() {
                       href={`/services/${s.slug}`}
                       className="block px-4 py-2.5 text-[14px] text-ink hover:bg-bone-dim border-t border-line/60"
                     >
-                      {s.name[lang]}
+                      {s.shortName[lang]}
                     </Link>
                   ))}
+                  <Link
+                    href="/services/construction-advisory"
+                    className="block px-4 py-2.5 text-[14px] text-ink hover:bg-bone-dim border-t border-line/60"
+                  >
+                    {uiStrings.nav.construction[lang]}
+                  </Link>
                   <Link
                     href="/entreprises"
                     className="block px-4 py-2.5 text-[14px] text-ink hover:bg-bone-dim border-t border-line/60"
@@ -161,9 +167,16 @@ export default function Nav() {
                 className="py-2 text-ink pl-3"
                 onClick={closeMenu}
               >
-                {s.name[lang]}
+                {s.shortName[lang]}
               </Link>
             ))}
+            <Link
+              href="/services/construction-advisory"
+              className="py-2 text-ink pl-3"
+              onClick={closeMenu}
+            >
+              {uiStrings.nav.construction[lang]}
+            </Link>
             <Link
               href="/entreprises"
               className="py-2 text-ink pl-3"

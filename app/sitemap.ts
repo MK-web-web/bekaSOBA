@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { serviceLines } from "@/lib/content";
+import { servicePages } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: path === "" ? 1 : 0.8,
     })),
-    ...serviceLines.map((service) => ({
+    ...servicePages.map((service) => ({
       url: `${site.url}/services/${service.slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,

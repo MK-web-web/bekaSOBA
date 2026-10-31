@@ -1,9 +1,9 @@
 "use client";
 
 import ServiceDetail from "@/components/ServiceDetail";
-import { serviceLines } from "@/lib/content";
+import { constructionService } from "@/lib/content";
 
-const service = serviceLines.find((s) => s.slug === "construction-advisory")!;
+const service = constructionService;
 
 export default function Page() {
   return <ServiceDetail service={service} />;

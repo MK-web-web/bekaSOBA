@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Container, Eyebrow, Button } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ComingSoonBadge from "@/components/ComingSoonBadge";
 import { businessPage, launchPriceLabels } from "@/lib/content";
 import { useLanguage } from "@/lib/i18n";
 
@@ -52,7 +53,10 @@ export default function BusinessPage() {
                 {content.offers.map((offer) => (
                   <tr key={offer.title.en} className="border-b border-line/70 last:border-0">
                     <th scope="row" className="px-4 py-4 align-top font-display text-[16px] text-indigo">
-                      {offer.title[lang]}
+                      <span className="inline-flex items-start gap-3">
+                        {offer.title[lang]}
+                        {"soon" in offer && offer.soon && <ComingSoonBadge />}
+                      </span>
                     </th>
                     <td className="px-4 py-4 align-top text-[14px] text-ink/75 leading-relaxed">
                       {offer.detail[lang]}

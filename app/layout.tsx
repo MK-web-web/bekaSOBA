@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | bekaSOBA",
   },
   description:
-    "bekaSOBA : cabinet de conseil et de soutien à Bamako. Gestion de projet et d'entreprise, construction de A à Z, établissements scolaires, anglais professionnel, leadership, informatique et numérique.",
+    "bekaSOBA : cabinet de conseil et de soutien à Bamako. Conseil aux entreprises, gestion de projet, construction de A à Z, formation des équipes, numérique, IA et automatisation.",
   keywords: site.keywords,
   authors: [{ name: site.name, url: site.url }],
   creator: site.name,

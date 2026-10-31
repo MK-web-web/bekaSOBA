@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Container, Eyebrow, Button } from "@/components/ui";
 import BogolanDivider from "@/components/BogolanDivider";
 import ServiceCard from "@/components/ServiceCard";
+import ComingSoonBadge from "@/components/ComingSoonBadge";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import {
   serviceLines,
@@ -48,6 +49,14 @@ export default function HomePage() {
               <p className="mt-8 font-utility text-[12px] text-ink/50 tracking-wide">
                 {t.home.credLine[lang]}
               </p>
+              <div className="mt-5 border-t border-line pt-4">
+                <p className="font-utility text-[11px] uppercase tracking-wide text-clay">
+                  {t.home.missionTitle[lang]}
+                </p>
+                <p className="mt-1 text-[14px] text-ink/70 leading-relaxed">
+                  {t.home.missionText[lang]}
+                </p>
+              </div>
             </div>
 
             <div className="relative bg-indigo text-bone p-8 md:p-10">
@@ -101,7 +110,7 @@ export default function HomePage() {
               {t.home.whoTitle[lang]}
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-px bg-line">
+          <div className="grid md:grid-cols-3 gap-px bg-line">
             {clientTypes.map((c) => (
               <div key={c.title.en} className="bg-bone p-8">
                 <h3 className="font-display text-[19px] text-indigo mb-2">
@@ -113,6 +122,9 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <p className="mt-5 text-[14px] text-ink/65">
+            {t.home.clientTypesNote[lang]}
+          </p>
         </Container>
       </section>
 
@@ -155,9 +167,12 @@ export default function HomePage() {
                 href={offer.href}
                 className="border border-line bg-paper p-6 hover:border-clay transition-colors"
               >
-                <h3 className="font-display text-[20px] text-indigo mb-3">
-                  {offer.title[lang]}
-                </h3>
+                <div className="mb-3 flex items-start justify-between gap-3">
+                  <h3 className="font-display text-[20px] text-indigo">
+                    {offer.title[lang]}
+                  </h3>
+                  {"soon" in offer && offer.soon && <ComingSoonBadge />}
+                </div>
                 <p className="text-[14px] text-ink/70 leading-relaxed">
                   {offer.detail[lang]}
                 </p>

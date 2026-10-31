@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { serviceLines } from "@/lib/content";
+import { servicePages, serviceLines } from "@/lib/content";
 import { site } from "@/lib/site";
 
 type PageMeta = {
@@ -37,13 +37,13 @@ export const pageSeo = {
   home: buildMetadata({
     title: "bekaSOBA — Cabinet de conseil et de soutien à Bamako",
     description:
-      "bekaSOBA : cabinet de conseil et de soutien à Bamako. Gestion de projet et d'entreprise, construction de A à Z, établissements scolaires, anglais professionnel, leadership, informatique et numérique.",
+      "bekaSOBA : cabinet de conseil et de soutien à Bamako. Conseil aux entreprises, gestion de projet, construction de A à Z, formation des équipes, numérique, IA et automatisation.",
     path: "/",
   }),
   services: buildMetadata({
     title: "Services — Conseil, formation et accompagnement",
     description:
-      "Six pôles de service bekaSOBA au Mali : gestion de projet et d'entreprise, construction de A à Z, services aux établissements scolaires, anglais professionnel, leadership, informatique et numérique.",
+      "Les trois piliers de bekaSOBA au Mali : conseil, formation des équipes, numérique, IA et création. Construction de A à Z pour les familles, les organisations et les entreprises.",
     path: "/services",
   }),
   contact: buildMetadata({
@@ -61,16 +61,16 @@ export const pageSeo = {
   pricing: buildMetadata({
     title: "Tarification — Transparente et alignée sur les résultats",
     description:
-      "Prix de lancement bekaSOBA jusqu'au 31 décembre 2026 : tarifs fixes en FCFA et missions de conseil sur devis après une consultation gratuite de 30 minutes.",
+      "Prix de lancement bekaSOBA jusqu'au 31 décembre 2026 : tarifs fixes en FCFA ; packs et missions de conseil sur demande après une consultation gratuite de 30 minutes.",
     path: "/pricing",
   }),
   business: buildMetadata({
     title: {
       absolute:
-        "Pour les entreprises — Lancement et diagnostic financier | bekaSOBA",
+        "Pour les entreprises, les porteurs de projet et les organisations | bekaSOBA",
     },
     description:
-      "Lancement d'entreprise, diagnostic financier et gestion de projet à Bamako. Consultation de cadrage gratuite de 30 minutes.",
+      "Conseil aux entreprises, gestion de projet, formation des équipes, automatisation IA et construction de A à Z à Bamako.",
     path: "/entreprises",
   }),
   privacy: buildMetadata({
@@ -82,11 +82,11 @@ export const pageSeo = {
 } satisfies Record<string, Metadata>;
 
 const serviceSeo: Record<string, PageMeta> = {
-  "project-management": {
-    title: "Gestion de projet — Conseil et formation PMP®",
+  conseil: {
+    title: "Conseil aux entreprises, organisations et diaspora",
     description:
-      "Conseil, formation et accompagnement en gestion de projet certifiés PMP® à Bamako. Planification, MS Project, Agile, préparation certification.",
-    path: "/services/project-management",
+      "Conseil aux entreprises, gestion de projet, diagnostic IA et automatisation, construction de A à Z et accompagnement des écoles à Bamako.",
+    path: "/services/conseil",
   },
   "construction-advisory": {
     title: {
@@ -94,32 +94,20 @@ const serviceSeo: Record<string, PageMeta> = {
         "Construction de A à Z — Représentation du maître d'ouvrage",
     },
     description:
-      "Accompagnement de projets de construction résidentielle au Mali : planification, budget, qualité, sécurité et suivi d'exécution côté maître d'ouvrage.",
+      "Construction de A à Z et représentation du maître d'ouvrage. Notre fondateur a représenté le maître d'ouvrage sur 5 projets résidentiels à Bamako (2019–2023).",
     path: "/services/construction-advisory",
   },
-  "education-mentoring": {
-    title: "Établissements scolaires — Services aux écoles et universités",
+  formation: {
+    title: "Formation et développement des équipes",
     description:
-      "Formation du personnel, outils de suivi des inscriptions et des frais, visibilité en ligne pour les écoles et universités à Bamako.",
-    path: "/services/education-mentoring",
+      "Formations pratiques en gestion de projet, management d'équipe, outils numériques et IA, carrière et employabilité pour les organisations à Bamako.",
+    path: "/services/formation",
   },
-  "professional-english": {
-    title: "Anglais professionnel — Coaching immersif",
+  numerique: {
+    title: "Numérique, IA et création",
     description:
-      "Coaching d'anglais professionnel à Bamako par un ancien boursier Fulbright — fluidité, confiance et anglais technique.",
-    path: "/services/professional-english",
-  },
-  "leadership-development": {
-    title: "Développement du leadership — Mentorat et programmes",
-    description:
-      "Mentorat en leadership à Bamako : communication d'équipe, prise de décision, développement du potentiel et programmes sur mesure pour managers et institutions.",
-    path: "/services/leadership-development",
-  },
-  "digital-skills": {
-    title: "Informatique & numérique — Formations et services",
-    description:
-      "Formations et services numériques au Mali : CV, design, Google Maps, sites web, applications web sur mesure, bureautique, IA.",
-    path: "/services/digital-skills",
+      "Présence en ligne, automatisations et assistants IA, sites et applications web, Pack Visible et studio de création à Bamako.",
+    path: "/services/numerique",
   },
 };
 
@@ -143,5 +131,5 @@ export const gscImportantUrls = [
   `${site.url}/about`,
   `${site.url}/entreprises`,
   `${site.url}/pricing`,
-  ...serviceLines.map((s) => `${site.url}/services/${s.slug}`),
+  ...servicePages.map((s) => `${site.url}/services/${s.slug}`),
 ];

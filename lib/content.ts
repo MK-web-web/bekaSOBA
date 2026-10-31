@@ -11,6 +11,7 @@ export const firm = {
 export const uiStrings = {
   nav: {
     services: { fr: "Services", en: "Services" },
+    construction: { fr: "Construction de A à Z", en: "Construction from A to Z" },
     business: { fr: "Pour les entreprises", en: "For businesses" },
     about: { fr: "À propos", en: "About" },
     pricing: { fr: "Tarification", en: "Pricing" },
@@ -19,7 +20,7 @@ export const uiStrings = {
       fr: "Démarrer un échange",
       en: "Start a conversation",
     },
-    allServices: { fr: "Tous les services", en: "All service lines" },
+    allServices: { fr: "Tous les services", en: "All services" },
     tagline: {
       fr: "Conseil et soutien axés sur les résultats",
       en: "Results-Oriented Consulting & Support",
@@ -32,7 +33,7 @@ export const uiStrings = {
     },
     viewServices: {
       fr: "Voir nos services",
-      en: "View service lines",
+      en: "View services",
     },
     discussService: {
       fr: "Discuter de ce service",
@@ -48,6 +49,9 @@ export const uiStrings = {
     sending: { fr: "Envoi en cours…", en: "Sending…" },
     startNow: { fr: "Démarrer l'échange", en: "Start the conversation" },
   },
+  badges: {
+    comingSoon: { fr: "Bientôt", en: "Coming soon" },
+  },
   home: {
     eyebrow: {
       fr: "Cabinet de conseil et de soutien axé sur les résultats",
@@ -58,17 +62,22 @@ export const uiStrings = {
       en: "International standards, Malian realities.",
     },
     heroSub: {
-      fr: "Nous aidons étudiants, professionnels, entreprises, écoles et familles qui construisent à résoudre des problèmes concrets — gestion de projet et d'entreprise, construction, anglais professionnel, leadership, informatique et numérique.",
-      en: "We help students, professionals, companies, schools, and families who build solve concrete problems — project and business management, construction, professional English, leadership, IT and digital.",
+      fr: "Nous aidons les entreprises, les organisations (ONG, écoles et universités) et les familles de la diaspora à réussir leurs projets : lancer et piloter une entreprise, construire en toute confiance, développer leurs équipes et passer au numérique grâce à l'IA et à l'automatisation.",
+      en: "We help businesses, organizations (NGOs, schools and universities), and diaspora families deliver their projects successfully: launching and managing a business, building with confidence, developing their people, and going digital with AI and automation.",
     },
     credLine: {
-      fr: "BOURSIER FULBRIGHT · MBA (UF) · CERTIFIÉ PMP® · ADMIS EN DOCTORAT, GESTION DE LA CONSTRUCTION (IA)",
-      en: "FULBRIGHT SCHOLAR · MBA (UF) · PMP® CERTIFIED · ADMITTED TO PHD, CONSTRUCTION MANAGEMENT (AI)",
+      fr: "BOURSIER FULBRIGHT · MBA (UF) · CERTIFIÉ PMP® · ADMIS EN DOCTORAT (UF, 2027)",
+      en: "FULBRIGHT SCHOLAR · MBA (UF) · PMP® CERTIFIED · ADMITTED TO PHD (UF, 2027)",
     },
     blueprintTag: { fr: "Périmètre d'intervention", en: "Scope of Engagement" },
     blueprintTitle: {
-      fr: "Six pôles de service",
-      en: "Six lead service lines",
+      fr: "Trois piliers",
+      en: "Three pillars",
+    },
+    missionTitle: { fr: "Notre mission", en: "Our mission" },
+    missionText: {
+      fr: "bekaSOBA transforme les problèmes des entreprises, des organisations et des familles maliennes en solutions qui marchent.",
+      en: "bekaSOBA turns the problems Malian businesses, organizations and families face into solutions that work.",
     },
     whoEyebrow: { fr: "À qui nous nous adressons", en: "Who we serve" },
     whoTitle: {
@@ -77,8 +86,8 @@ export const uiStrings = {
     },
     deliverEyebrow: { fr: "Ce que nous offrons", en: "What we deliver" },
     deliverTitle: {
-      fr: "Six pôles de service, un seul cabinet.",
-      en: "Six lead service lines, one consulting firm.",
+      fr: "Trois piliers, un seul cabinet.",
+      en: "Three pillars, one firm.",
     },
     approachEyebrow: { fr: "Notre approche", en: "Our approach" },
     approachTitle: {
@@ -108,8 +117,8 @@ export const uiStrings = {
       en: "Community work, independent of the firm.",
     },
     networkText: {
-      fr: "Mahamadou Kane a aussi fondé l'association Djigui-Ba-Mali (à but non lucratif), qui mène les programmes SoKalan et Big Hope Mali English Club. L'association est indépendante de bekaSOBA.",
-      en: "Mahamadou Kane also founded Djigui-Ba-Mali, a non-profit association that runs the SoKalan and Big Hope Mali English Club programs. The association is independent of bekaSOBA.",
+      fr: "Mahamadou Kane a aussi fondé l'association Djigui-Ba-Mali (à but non lucratif), qui mène des programmes communautaires. L'association est indépendante de bekaSOBA.",
+      en: "Mahamadou Kane also founded Djigui-Ba-Mali, a non-profit association that runs community programs. The association is independent of bekaSOBA.",
     },
     networkLink: { fr: "Découvrir le fondateur →", en: "Meet the founder →" },
     featuredEyebrow: { fr: "Offres phares", en: "Featured offers" },
@@ -118,21 +127,26 @@ export const uiStrings = {
       fr: "Premier entretien de 30 minutes gratuit pour toute mission de conseil.",
       en: "First 30-minute consultation is free for all advisory engagements.",
     },
+    clientTypesNote: {
+      fr: "Aussi pour les professionnels et les jeunes diplômés : Pack Carrière, formations et studio création.",
+      en: "Also for professionals and recent graduates: Career Pack, training and creative studio.",
+    },
     founderCardDescription: {
-      fr: "Association à but non lucratif, fondée en 2015. Programmes : SoKalan (soutien scolaire gratuit) et Big Hope Mali English Club.",
-      en: "Non-profit association founded in 2015. Programs: SoKalan (free school support) and Big Hope Mali English Club.",
+      fr: "Association à but non lucratif, active depuis 2015 et enregistrée en 2022. Programme : SoKalan (soutien scolaire gratuit).",
+      en: "Non-profit association, active since 2015 and registered in 2022. Programme: SoKalan (free school support).",
     },
     founderCardName: { fr: "Djigui-Ba-Mali", en: "Djigui-Ba-Mali" },
   },
   services: {
     eyebrow: { fr: "Menu des services", en: "Service menu" },
+    listTitle: { fr: "Nos services", en: "Our services" },
     title: {
-      fr: "Six pôles de service, conçus pour des résultats mesurables.",
-      en: "Six lead service lines, built for measurable outcomes.",
+      fr: "Trois piliers, conçus pour des résultats mesurables.",
+      en: "Three pillars, built for measurable outcomes.",
     },
     sub: {
-      fr: "Chaque pôle est assuré par le même cabinet, avec une tarification et un mode de prestation adaptés à la nature de la mission.",
-      en: "Each line is delivered by the same consulting firm, with pricing and delivery formats matched to the nature of the engagement.",
+      fr: "Chaque pilier est assuré par le même cabinet, avec une tarification et un mode de prestation adaptés à la mission.",
+      en: "Each pillar is delivered by the same firm, with pricing and delivery matched to the engagement.",
     },
     otherServices: { fr: "Autres services", en: "Other service lines" },
     exploreRest: {
@@ -155,18 +169,18 @@ export const uiStrings = {
     eyebrow: { fr: "À propos du cabinet", en: "About the firm" },
     positioningEyebrow: { fr: "Positionnement", en: "Positioning" },
     positioningTitle: {
-      fr: "Un cabinet, six pôles de service.",
-      en: "One firm, six service lines.",
+      fr: "Un cabinet, trois piliers.",
+      en: "One firm, three pillars.",
     },
     positioningText: {
-      fr: "bekaSOBA (DENMISEW KA GNETA, entreprise individuelle) réunit six pôles dans un seul cabinet : gestion de projet et d'entreprise, construction, établissements scolaires, anglais professionnel, leadership, informatique et numérique. Cette structure garantit simplicité et concentration, tout en permettant à chaque pôle de se développer.",
-      en: "bekaSOBA (DENMISEW KA GNETA, sole proprietorship) brings six service lines into one firm: project and business management, construction, schools and universities, professional English, leadership, IT and digital. This keeps the firm simple and focused while each line can grow.",
+      fr: "bekaSOBA (DENMISEW KA GNETA, entreprise individuelle, fondée en 2021) réunit trois piliers dans un seul cabinet : le conseil, la formation des équipes, et le numérique, l'IA et la création. Cette structure garantit simplicité et concentration, tout en permettant à chaque pilier de se développer.",
+      en: "bekaSOBA (DENMISEW KA GNETA, sole proprietorship, founded in 2021) brings three pillars into one firm: consulting, team training, and digital, AI and studio. This keeps the firm simple and focused while each pillar can grow.",
     },
     shortEyebrow: { fr: "En bref", en: "The firm, in short" },
     shortTitle: { fr: "Un atout distinctif.", en: "A distinctive strength." },
     shortText: {
-      fr: "Notre atout distinctif est la combinaison d'une formation professionnelle internationale rigoureuse et d'une expérience malienne pratique et approfondie — appliquée à la gestion de projet et d'entreprise, la construction, les établissements scolaires, l'anglais professionnel, le leadership et le numérique.",
-      en: "Our distinctive strength is the combination of rigorous international professional training with deep, practical Malian experience — applied to project and business management, construction, schools and universities, professional English, leadership, and digital skills.",
+      fr: "Notre atout distinctif est la combinaison d'une formation professionnelle internationale rigoureuse et d'une expérience malienne pratique et approfondie — appliquée au conseil aux entreprises, à la gestion de projet, à la construction, à la formation des équipes et au numérique.",
+      en: "Our distinctive strength is the combination of rigorous international professional training with deep, practical Malian experience — applied to business consulting, project management, construction, team training and digital.",
     },
     approachEyebrow: { fr: "Notre approche", en: "Our approach" },
     approachTitle: {
@@ -176,8 +190,12 @@ export const uiStrings = {
     credEyebrow: { fr: "Le fondateur", en: "The founder" },
     credTitle: { fr: "Mahamadou Kane", en: "Mahamadou Kane" },
     credText: {
-      fr: "Mahamadou Kane fonde et dirige bekaSOBA. Boursier Fulbright, il est titulaire d'un MBA (Business Analytics) de l'University of Florida et d'un MS en gestion de projet (TechnoLAB-ISTA), et il est certifié PMP®. Chercheur à la Rinker School of Construction Management (University of Florida), il est admis en doctorat en gestion de la construction, axe intelligence artificielle, à partir d'août 2027. Une riche expérience d'enseignement du primaire à l'université — dont l'anglais technique et professionnel à TechnoLAB-ISTA. Bilingue (anglais/français), avec une maîtrise du bambara et la capacité, forgée par l'expérience, d'évoluer efficacement dans les environnements professionnels internationaux comme maliens.",
-      en: "Mahamadou Kane founded and leads bekaSOBA. A Fulbright scholar, he holds an MBA (Business Analytics) from the University of Florida and an MS in Project Management (TechnoLAB-ISTA), and he is PMP® certified. A researcher at the Rinker School of Construction Management (University of Florida), he has been admitted to the PhD in Construction Management, with an AI focus, starting August 2027. Extensive teaching experience across primary, secondary, professional, and university levels — including Technical & Professional English at TechnoLAB-ISTA. Bilingual (English/French) with fluency in Bambara, and the lived ability to operate effectively in international and Malian professional environments.",
+      fr: "Mahamadou Kane a fondé bekaSOBA en 2021 et le dirige. Chef de projet certifié PMP® et boursier Fulbright, il est titulaire d'un MBA (Business Analytics) de l'Université de Floride (2026) et d'un master en management des projets et des organisations (TechnoLAB-ISTA, 2023). Il est admis en doctorat à l'Université de Floride (IA appliquée à la gestion de projets de construction), à partir d'août 2027. De 2019 à 2023, il a représenté le maître d'ouvrage sur 5 projets résidentiels à Bamako, avec plus de 300 ouvriers et artisans encadrés au total. Aux États-Unis, il a suivi le programme de développement du leadership – gestion de projet de Bhild LLC (2025). Il a aussi enseigné à l'université (TechnoLAB-ISTA, 2023).",
+      en: "Mahamadou Kane founded bekaSOBA in 2021 and leads it. A PMP®-certified project manager and Fulbright Scholar, he holds an MBA (Business Analytics) from the University of Florida (2026) and a master's in management of projects and organizations (TechnoLAB-ISTA, 2023). He has been admitted to the PhD at the University of Florida (AI applied to construction project management), starting August 2027. From 2019 to 2023 he represented the owner on 5 residential projects in Bamako, supervising more than 300 workers and craftsmen in total. In the United States, he completed Bhild LLC's Leadership Development Program – Project Management (2025). He has also taught at university level (TechnoLAB-ISTA, 2023).",
+    },
+    languages: {
+      fr: "Langues : français (bilingue) · anglais (compétence professionnelle complète) · bambara (langue maternelle) · arabe (compétence professionnelle limitée)",
+      en: "Languages: French (bilingual) · English (full professional proficiency) · Bambara (native) · Arabic (limited working proficiency)",
     },
     closingTitle: {
       fr: "",
@@ -193,8 +211,8 @@ export const uiStrings = {
       en: "Community work, independent of the firm.",
     },
     networkText: {
-      fr: "Mahamadou Kane a aussi fondé l'association Djigui-Ba-Mali (à but non lucratif), qui mène les programmes SoKalan et Big Hope Mali English Club. L'association est indépendante de bekaSOBA.",
-      en: "Mahamadou Kane also founded Djigui-Ba-Mali, a non-profit association that runs the SoKalan and Big Hope Mali English Club programs. The association is independent of bekaSOBA.",
+      fr: "Mahamadou Kane a aussi fondé l'association Djigui-Ba-Mali (à but non lucratif), qui mène des programmes communautaires. L'association est indépendante de bekaSOBA.",
+      en: "Mahamadou Kane also founded Djigui-Ba-Mali, a non-profit association that runs community programs. The association is independent of bekaSOBA.",
     },
     sisterOrgLabel: { fr: "Association · Programme de Djigui-Ba-Mali", en: "Association · Djigui-Ba-Mali program" },
     founderProfileLabel: { fr: "Profil du fondateur", en: "Founder profile" },
@@ -219,10 +237,10 @@ export const uiStrings = {
       en: "Transparent, fair, and aligned with results.",
     },
     sub: {
-      fr: "Nos prix de lancement sont en vigueur au moins jusqu'au 31 décembre 2026. Les services standard ont un prix fixe (tableau ci-dessous) ; les missions de conseil sont chiffrées sur devis après une consultation gratuite de 30 minutes.",
-      en: "Our launch prices apply at least until 31 December 2026. Standard services have a fixed price (table below); consulting assignments are quoted after a free 30-minute consultation.",
+      fr: "Nos prix de lancement sont en vigueur au moins jusqu'au 31 décembre 2026. Les services standard ont un prix fixe (tableau ci-dessous) ; les packs à formules et les missions de conseil sont chiffrés sur demande, après une consultation gratuite de 30 minutes.",
+      en: "Our launch prices apply at least until 31 December 2026. Standard services have a fixed price (table below); tiered packs and consulting assignments are quoted on request, after a free 30-minute consultation.",
     },
-    byServiceEyebrow: { fr: "Par pôle de service", en: "By service line" },
+    byServiceEyebrow: { fr: "Par pilier", en: "By pillar" },
     byServiceTitle: {
       fr: "Comment la tarification s'applique à nos services.",
       en: "How pricing applies across our services.",
@@ -342,8 +360,8 @@ export const uiStrings = {
       {
         title: { fr: "Cookies et stockage local", en: "Cookies and local storage" },
         body: {
-          fr: "Nous mémorisons votre préférence de langue (français/anglais) dans le stockage local de votre navigateur. Google Analytics peut déposer des cookies si activé.",
-          en: "We store your language preference (French/English) in your browser’s local storage. Google Analytics may set cookies when enabled.",
+          fr: "Nous mémorisons votre préférence de langue dans le stockage local de votre navigateur. Google Analytics peut déposer des cookies si activé.",
+          en: "We store your selected language preference in your browser’s local storage. Google Analytics may set cookies when enabled.",
         },
       },
       {
@@ -374,31 +392,27 @@ export const uiStrings = {
 
 export const clientTypes = [
   {
-    title: { fr: "Étudiants et jeunes professionnels", en: "Students & young professionals" },
+    title: { fr: "Entreprises", en: "Businesses" },
     detail: {
-      fr: "Étudiants et jeunes diplômés qui préparent un CV, une bourse ou un examen d'anglais ; professionnels qui veulent progresser en anglais, en leadership, en gestion de projet ou en informatique.",
-      en: "Students and recent graduates preparing a CV, scholarship, or English exam; professionals growing in English, leadership, project management, or IT.",
+      fr: "Commerces, PME, startups, imprimeries, restaurants, entreprises du BTP : se lancer, se structurer, se faire trouver en ligne et gagner du temps grâce à l'automatisation.",
+      en: "Shops, SMEs, startups, printers, restaurants, construction firms: launch, get organized, get found online and save time with automation.",
     },
   },
   {
-    title: { fr: "Familles et diaspora qui construisent", en: "Families & diaspora who build" },
+    title: {
+      fr: "Organisations : ONG, écoles et universités",
+      en: "Organizations: NGOs, schools and universities",
+    },
     detail: {
-      fr: "Familles et Maliens de l'extérieur qui construisent ou rénovent : un représentant fiable sur le chantier, du budget à la réception, avec rapports photo et paiements contrôlés.",
-      en: "Families and Malians abroad who build or renovate: a reliable representative on site, from budget to handover, with photo reports and controlled payments.",
+      fr: "ONG, associations, coopératives, projets financés par des bailleurs, écoles et universités, organismes publics : gestion de projet, formation des équipes, programmes d'employabilité, outils numériques.",
+      en: "NGOs, associations, cooperatives, donor-funded projects, schools and universities, public bodies: project management, team training, employability programmes, digital tools.",
     },
   },
   {
-    title: { fr: "Organisations et entreprises", en: "Organizations & companies" },
+    title: { fr: "Diaspora", en: "Diaspora" },
     detail: {
-      fr: "Porteurs de projet, startups, commerçants, PME et ONG : lancement d'entreprise, diagnostic financier, gestion de projet, formation d'équipes et présence en ligne.",
-      en: "Project holders, startups, shop owners, SMEs, and NGOs: business launch, financial diagnostic, project management, team training, and online presence.",
-    },
-  },
-  {
-    title: { fr: "Établissements scolaires", en: "Educational institutions" },
-    detail: {
-      fr: "Écoles et universités : formation du personnel, outils de suivi des inscriptions et des frais, programmes d'anglais, visibilité (Google Maps, site web).",
-      en: "Schools and universities: staff training, enrollment and fee-tracking tools, English programs, visibility (Google Maps, website).",
+      fr: "Maliens de l'extérieur qui construisent une maison ou lancent une activité au pays : un représentant fiable sur place, du budget à la réception, avec rapports photo et paiements contrôlés.",
+      en: "Malians abroad building a house or launching a business at home: a reliable representative on the ground, from budget to handover, with photo reports and controlled payments.",
     },
   },
 ];
@@ -414,8 +428,8 @@ export const approach = [
   {
     title: { fr: "Incitations alignées sur le succès", en: "Success-aligned incentives" },
     detail: {
-      fr: "Lorsque les résultats sont mesurables — réussite à un examen, jalons de projet, objectifs de fluidité — nous proposons une tarification liée au succès ou hybride.",
-      en: "Where outcomes are measurable — exam success, project milestones, fluency targets — we offer success-based or hybrid fee structures.",
+      fr: "Lorsque les résultats sont mesurables — jalons de projet, respect du délai ou du budget, personnes placées en emploi — nous proposons une tarification liée au succès ou hybride.",
+      en: "Where outcomes are measurable — project milestones, on-time or on-budget delivery, people placed in jobs — we offer success-based or hybrid fee structures.",
     },
   },
   {
@@ -436,80 +450,174 @@ export const approach = [
 
 export const credentials = [
   { fr: "Boursier Fulbright", en: "Fulbright Scholar" },
-  { fr: "MBA (Business Analytics) — Université de Floride", en: "MBA (Business Analytics) — University of Florida" },
-  { fr: "Certifié PMP® (Identifiant 4313639)", en: "PMP® Certified (Credential ID 4313639)" },
-  { fr: "MS en Gestion de Projet", en: "MS in Project Management" },
-  { fr: "Admis en doctorat, gestion de la construction (IA) — University of Florida", en: "Admitted to the PhD in Construction Management (AI) — University of Florida" },
-  { fr: "Chercheur, Rinker School of Construction Management (UF)", en: "Researcher, Rinker School of Construction Management (UF)" },
+  { fr: "MBA (Business Analytics), Université de Floride, 2026", en: "MBA (Business Analytics), University of Florida, 2026" },
+  { fr: "Certifié PMP® (n° 4313639, 2026–2029)", en: "PMP® certified (No. 4313639, 2026–2029)" },
+  { fr: "Master en management des projets et des organisations, TechnoLAB-ISTA, 2023", en: "Master's in Management of Projects and Organizations, TechnoLAB-ISTA, 2023" },
+  { fr: "Admis en doctorat (IA appliquée à la gestion de projets de construction), Université de Floride, début août 2027", en: "Admitted to the PhD (AI applied to construction project management), University of Florida, starting August 2027" },
+];
+
+export const aboutCredentials = [
+  ...credentials,
+  { fr: "SUSI — Entrepreneuriat social, Département d'État américain (2018)", en: "SUSI — Social Entrepreneurship, U.S. Department of State (2018)" },
+  { fr: "OPEN — Professional Development for Teacher Trainers, Département d'État américain et Arizona State University (2023)", en: "OPEN — Professional Development for Teacher Trainers, U.S. Department of State and Arizona State University (2023)" },
 ];
 
 export const serviceLines = [
   {
-    slug: "project-management",
-    code: "PM",
+    slug: "conseil",
+    code: "01",
     name: {
-      fr: "Conseil, formation et accompagnement en gestion de projet et d'entreprise",
-      en: "Project & Business Management Consulting, Training & Advisory",
+      fr: "Conseil aux entreprises, aux organisations et à la diaspora",
+      en: "Consulting for businesses, organizations and the diaspora",
     },
-    shortName: { fr: "Gestion de projet & d'entreprise", en: "Project & Business Management" },
+    shortName: { fr: "Conseil", en: "Consulting" },
     short: {
-      fr: "Formation PMP®, lancement d'entreprise de A à Z, diagnostic financier et pilotage mensuel.",
-      en: "PMP® training, business launch from A to Z, financial diagnostic, and monthly financial oversight.",
+      fr: "Conseil aux entreprises, diagnostic IA & automatisation, gestion de projet, construction de A à Z et établissements scolaires.",
+      en: "Business consulting, AI & automation diagnostic, project management, construction from A to Z and schools.",
     },
     summary: {
-      fr: "Accompagnement et formation en gestion de projet certifiés PMP®, fondés sur une expérience réelle de livraison multi-projets. Nous guidons nos clients à travers les parcours de certification professionnelle, notamment la préparation et le suivi du dossier PMP®. Nous accompagnons aussi les porteurs de projet et les PME : lancement d'entreprise de A à Z, diagnostic financier et de gestion, puis pilotage financier mensuel.",
-      en: "PMP®-certified project management support and training grounded in real multi-project delivery experience. We guide clients through professional certification pathways, including preparation and process support for the PMP® credential. We also support project holders and SMEs: business launch from A to Z, financial and management diagnostic, then monthly financial oversight.",
+      fr: "Le cœur de bekaSOBA : nous aidons les entreprises, les organisations et la diaspora à lancer, piloter et livrer leurs projets, avec les méthodes d'un chef de projet certifié PMP® et des outils d'IA pour la planification, les risques et le suivi.",
+      en: "The core of bekaSOBA: we help businesses, organizations and the diaspora launch, manage and deliver their projects, with the methods of a PMP®-certified project manager and AI tools for planning, risk and reporting.",
     },
     who: {
-      fr: "Professionnels, porteurs de projet, startups, PME, ONG et institutions.",
-      en: "Professionals, project holders, startups, SMEs, NGOs, and institutions.",
+      fr: "Entreprises, organisations (ONG, projets, écoles et universités) et familles de la diaspora.",
+      en: "Businesses, organizations (NGOs, projects, schools and universities) and diaspora families.",
     },
     includes: [
       {
-        fr: "Planification de projet, ordonnancement et prise en main de MS Project",
-        en: "Project planning, scheduling, and MS Project setup",
+        fr: "Conseil aux entreprises : lancement d'entreprise de A à Z (Essentiel ou Complet), diagnostic financier et de gestion, missions sur mesure, pilotage financier mensuel, plans d'affaires",
+        en: "Business consulting: business launch from A to Z (Essentiel or Complet), financial and management diagnostic, custom assignments, monthly financial oversight, business plans",
       },
       {
-        fr: "Accompagnement sur le périmètre, les parties prenantes, les risques et la maîtrise des coûts",
-        en: "Scope, stakeholder, risk, and cost-control advisory",
+        fr: "Diagnostic IA & automatisation : repérer vos tâches répétitives, recommander les bons outils, estimer le temps et l'argent gagnés",
+        en: "AI & automation diagnostic: map your repetitive tasks, recommend the right tools, estimate the time and money saved",
+        soon: true,
       },
       {
-        fr: "Ateliers de formation ou coaching individuel orientés PMP",
-        en: "PMP-oriented training workshops or individual coaching",
+        fr: "Conseil en gestion de projet : cadrage, planification, suivi des risques et rapports, avec des outils d'IA ; audit d'un projet en difficulté",
+        en: "Project management consulting: scoping, planning, risk tracking and reporting with AI tools; recovery of a struggling project",
       },
       {
-        fr: "Accompagnement dans les parcours de certification professionnelle (dossier et préparation PMP®)",
-        en: "Guidance through professional certification pathways (PMP® application and preparation support)",
+        fr: "Construction de A à Z : représentation du maître d'ouvrage pour les familles, la diaspora, les entreprises, les ONG et les écoles → page dédiée",
+        en: "Construction from A to Z: owner's representation for families, the diaspora, firms, NGOs and schools → dedicated page",
       },
       {
-        fr: "Méthodes Agile et Waterfall, accompagnement Jira, Trello et Smartsheet",
-        en: "Agile and Waterfall methods, Jira, Trello, and Smartsheet support",
-      },
-      {
-        fr: "Suivi de projet en continu ou redressement ; formation formelle pour institutions",
-        en: "Ongoing project oversight or recovery support; formal instruction for institutions",
-      },
-      {
-        fr: "Lancement d'entreprise A à Z (Essentiel ou Complet) : forme juridique, démarches au guichet unique, business plan, budget et prix",
-        en: "Business launch from A to Z (Essential or Complete): legal form, one-stop-shop procedures, business plan, budget, and pricing",
-      },
-      {
-        fr: "Diagnostic financier & gestion en 1 à 2 semaines : ventes, coûts, trésorerie, tableau de bord Excel et plan d'action en 10 points",
-        en: "Financial & management diagnostic in 1 to 2 weeks: sales, costs, cash flow, Excel dashboard, and 10-point action plan",
-      },
-      {
-        fr: "Plans d'affaires, notes conceptuelles et plannings MS Project",
-        en: "Business plans, concept notes, and MS Project schedules",
+        fr: "Établissements scolaires : formation du personnel, outils de suivi des inscriptions et des frais, visibilité en ligne",
+        en: "Schools: staff training, enrollment and fee-tracking tools, online visibility",
       },
     ],
     pricing: {
-      fr: "Principalement des forfaits fixes ou hybrides (abonnement + composante liée aux jalons). Les programmes de formation et de préparation à la certification sont souvent proposés en forfaits fixes multi-sessions.",
-      en: "Primarily fixed packages or hybrid (retainer + milestone success component). Training and certification-support programs often offered as fixed multi-session packages.",
+      fr: "Sur devis, après une consultation de cadrage gratuite de 30 minutes. Modèle hybride possible (honoraires de base + composante liée aux jalons).",
+      en: "Quoted after a free 30-minute scoping consultation. Hybrid model possible (base fee + milestone component).",
     },
   },
   {
+    slug: "formation",
+    code: "02",
+    name: {
+      fr: "Formation & développement des équipes",
+      en: "Training & people development",
+    },
+    shortName: { fr: "Formation des équipes", en: "Team training" },
+    short: {
+      fr: "Gestion de projet et management d'équipe, IA pour les chefs de projet, outils numériques et IA au travail, carrière & employabilité.",
+      en: "Project and team management, AI for project managers, digital tools and AI at work, career & employability.",
+    },
+    summary: {
+      fr: "Des formations pratiques pour les équipes des entreprises et des organisations, conçues et animées par un chef de projet certifié PMP®, avec des méthodes alignées sur les standards internationaux du PMI : gérer des projets, diriger une équipe, travailler avec l'IA et préparer les jeunes à l'emploi.",
+      en: "Practical training for business and organization teams, designed and delivered by a PMP®-certified project manager, with methods aligned with PMI's international standards: managing projects, leading a team, working with AI and preparing young people for work.",
+    },
+    who: {
+      fr: "Équipes d'entreprises et d'organisations ; universités et projets d'emploi des jeunes ; professionnels et jeunes diplômés (Pack Carrière).",
+      en: "Business and organization teams; universities and youth-employment projects; professionals and recent graduates (Career Pack).",
+    },
+    includes: [
+      {
+        fr: "Gestion de projet et management d'équipe : planification, budget, risques, MS Project (module), délégation, réunions, feedback, gestion des conflits ; mentorat individuel des managers",
+        en: "Project and team management: planning, budget, risk, MS Project (module), delegation, meetings, feedback, conflict management; one-to-one mentoring for managers",
+      },
+      {
+        fr: "L'IA pour les chefs de projet : plannings, registres des risques, rapports d'avancement et comptes rendus de réunion avec l'IA",
+        en: "AI for project managers: schedules, risk registers, progress reports and meeting summaries with AI",
+        soon: true,
+      },
+      {
+        fr: "Outils numériques et IA au travail : Excel pour les budgets et les rapports, Google Workspace, Canva, ChatGPT pour les rapports, les e-mails et les comptes rendus, automatisation des tâches administratives",
+        en: "Digital tools and AI at work: Excel for budgets and reporting, Google Workspace, Canva, ChatGPT for reports, emails and meeting notes, automating admin tasks",
+      },
+      {
+        fr: "Carrière & employabilité, pour les organisations : programmes d'employabilité pour universités, ONG et projets d'emploi des jeunes (ateliers CV et lettre, LinkedIn, simulations d'entretien, méthode de recherche d'emploi, suivi des placements). Sur devis.",
+        en: "Career & employability, for organizations: employability programmes for universities, NGOs and youth-employment projects (CV and cover-letter workshops, LinkedIn, mock interviews, job-search method, placement tracking). Quoted.",
+      },
+      {
+        fr: "Carrière & employabilité, pour les particuliers : Pack Carrière en 3 formules (Essentiel : CV + lettre de motivation · Pro : + profil LinkedIn · Complet : + coaching d'entretien), variante candidature bourse ou université",
+        en: "Career & employability, for individuals: Career Pack in 3 tiers (Essentiel: CV + cover letter · Pro: + LinkedIn profile · Complet: + interview coaching), with a scholarship or university application variant",
+        soon: true,
+      },
+      {
+        fr: "Communication professionnelle en anglais pour équipes : pour les organisations uniquement, sur devis",
+        en: "Professional English communication for teams: organizations only, quoted",
+      },
+    ],
+    pricing: {
+      fr: "Forfaits fixes par module ou parcours ; tarifs de groupe pour les équipes ; programmes d'organisation sur devis.",
+      en: "Fixed packages per module or track; group rates for teams; organization programmes quoted.",
+    },
+  },
+  {
+    slug: "numerique",
+    code: "03",
+    name: {
+      fr: "Numérique, IA & création",
+      en: "Digital, AI & Studio",
+    },
+    shortName: { fr: "Numérique, IA & création", en: "Digital, AI & Studio" },
+    short: {
+      fr: "Automatisation et solutions IA, Pack Visible, suivi des réseaux sociaux, sites et applications web, studio création.",
+      en: "Automation and AI solutions, Get found pack, social media management, websites and web apps, creative studio.",
+    },
+    summary: {
+      fr: "Nous mettons votre activité en ligne et nous automatisons ce qui vous fait perdre du temps : présence sur Google et les réseaux, sites et applications web, automatisations et assistants IA, et un studio de création pour vos supports.",
+      en: "We put your business online and automate what wastes your time: presence on Google and social media, websites and web apps, automations and AI assistants, and a creative studio for your materials.",
+    },
+    who: {
+      fr: "Entreprises, organisations et écoles.",
+      en: "Businesses, organizations and schools.",
+    },
+    includes: [
+      {
+        fr: "Automatisation & solutions IA : réponses automatiques et assistants WhatsApp, devis → facture → reçu automatiques, tableaux de bord Google Sheets en temps réel, applications web avec fonctions IA",
+        en: "Automation & AI solutions: WhatsApp auto-replies and assistants, automatic quote → invoice → receipt, live Google Sheets dashboards, web apps with AI features",
+      },
+      {
+        fr: "Pack Visible (Essentiel · Pro · Complet) : fiche Google Maps, WhatsApp Business, pages Facebook, Instagram, TikTok et LinkedIn de l'entreprise, photos de la boutique ou des produits, site d'une page",
+        en: "Get found pack (Essentiel · Pro · Complet): Google Maps listing, WhatsApp Business, business Facebook, Instagram, TikTok and LinkedIn pages, shop or product photos, one-page site",
+      },
+      {
+        fr: "Suivi mensuel des réseaux sociaux : publications, réponses aux messages, rapport mensuel ; pour les entreprises uniquement",
+        en: "Monthly social media management: posts, message replies, monthly report; businesses only",
+        soon: true,
+      },
+      {
+        fr: "Sites web et applications web sur mesure (PWA) : inscriptions, suivi d'élèves ou de clients, tableau de bord, réservations ; s'installe sur le téléphone et fonctionne avec peu de connexion. Sur devis.",
+        en: "Custom websites and web apps (PWA): registrations, student or client tracking, dashboard, bookings; installs on the phone and works on a weak connection. Quoted.",
+      },
+      {
+        fr: "Studio création : logos, cartes de visite, invitations, flyers, affiches, banderoles ; impression sur demande par nos imprimeurs partenaires",
+        en: "Creative studio: logos, business cards, invitations, flyers, posters, banners; printing on request through our partner printers",
+      },
+    ],
+    pricing: {
+      fr: "Packs à formules fixes ; sites et applications sur devis ; studio à prix fixe.",
+      en: "Fixed-tier packs; websites and apps quoted; studio at fixed prices.",
+    },
+  },
+];
+
+export const constructionService = {
     slug: "construction-advisory",
-    code: "CA",
+    code: "Conseil",
+    priceCode: "01",
     name: {
       fr: "Construction de A à Z — Représentation du maître d'ouvrage",
       en: "Construction from A to Z — Owner's Representation",
@@ -520,8 +628,8 @@ export const serviceLines = [
       en: "Your build followed from A to Z: budget, reliable craftsmen, photo reports, controlled payments.",
     },
     summary: {
-      fr: "Construction de A à Z pour les familles, la diaspora et les organisations : nous représentons le maître d'ouvrage, du budget à la réception. Le propriétaire signe et paie directement les ouvriers ; nous revoyons les devis, choisissons avec vous des artisans fiables, suivons le chantier avec des rapports photo et contrôlons les paiements. Fort d'une expérience pluriannuelle dans la gestion de grands projets résidentiels et d'équipes de plus de 300 ouvriers.",
-      en: "Construction from A to Z for families, the diaspora, and organizations: we represent the owner, from budget to handover. The owner signs and pays the workers directly; we review quotes and budget, choose reliable craftsmen with you, follow the site with photo reports, and control payments. Backed by multi-year experience managing large residential projects and teams of 300+ workers.",
+      fr: "Construction de A à Z pour les familles, la diaspora et les organisations : nous représentons le maître d'ouvrage, du budget à la réception. Le propriétaire signe et paie directement les ouvriers ; nous revoyons les devis, choisissons avec vous des artisans fiables, suivons le chantier avec des rapports photo et contrôlons les paiements. Notre fondateur a représenté le maître d'ouvrage sur 5 projets résidentiels à Bamako (2019–2023) : plus de 300 ouvriers et artisans encadrés au total.",
+      en: "Construction from A to Z for families, the diaspora, and organizations: we represent the owner, from budget to handover. The owner signs and pays the workers directly; we review quotes and budget, choose reliable craftsmen with you, follow the site with photo reports, and control payments. Our founder represented the owner on 5 residential projects in Bamako (2019–2023): more than 300 workers and craftsmen supervised in total.",
     },
     who: {
       fr: "Familles, Maliens de l'extérieur, entreprises, ONG et écoles qui construisent ou rénovent.",
@@ -553,232 +661,8 @@ export const serviceLines = [
       fr: "Sur devis, après une consultation de cadrage gratuite de 30 minutes. Modèle hybride possible (honoraires de base + composantes liées aux jalons de délai, de budget ou de qualité).",
       en: "Quoted after a free 30-minute scoping consultation. Hybrid model possible (base fee + components linked to time, budget, or quality milestones).",
     },
-  },
-  {
-    slug: "education-mentoring",
-    code: "ED",
-    name: {
-      fr: "Établissements scolaires : services aux écoles et universités",
-      en: "Schools & Universities: services for educational institutions",
-    },
-    shortName: { fr: "Établissements scolaires", en: "Schools & Universities" },
-    short: {
-      fr: "Formation du personnel, outils de suivi des inscriptions et des frais, visibilité en ligne.",
-      en: "Staff training, enrollment and fee-tracking tools, online visibility.",
-    },
-    summary: {
-      fr: "Pour les écoles, centres de formation et universités : formation des enseignants et du personnel, outils de suivi des inscriptions et des frais, et visibilité en ligne (Google Maps, site web). Pour les étudiants : orientation, CV et bourses d'études.",
-      en: "For schools, training centers, and universities: teacher and staff training, enrollment and fee-tracking tools, and online visibility (Google Maps, website). For students: career guidance, CVs, and scholarships.",
-    },
-    who: {
-      fr: "Écoles, centres de formation et universités ; étudiants (orientation, CV, bourses).",
-      en: "Schools, training centers, and universities; students (career guidance, CVs, scholarships).",
-    },
-    includes: [
-      {
-        fr: "Formation des enseignants et du personnel",
-        en: "Teacher and staff training",
-      },
-      {
-        fr: "Outils de suivi des inscriptions et des frais",
-        en: "Enrollment and fee-tracking tools",
-      },
-      {
-        fr: "Visibilité : fiche Google Maps, site web, WhatsApp Business",
-        en: "Visibility: Google Maps listing, website, WhatsApp Business",
-      },
-      {
-        fr: "Programmes d'anglais pour le personnel",
-        en: "English programs for staff",
-      },
-      {
-        fr: "Étudiants : orientation, CV, Pack Bourse d'études",
-        en: "Students: career guidance, CV, Scholarship Pack",
-      },
-    ],
-    pricing: {
-      fr: "Établissements : sur devis, après une consultation gratuite de 30 minutes. Étudiants : Pack Bourse d'études 75 000 FCFA (prix de lancement ; prix normal 125 000).",
-      en: "Institutions: quoted after a free 30-minute consultation. Students: Scholarship Pack 75,000 FCFA (launch price; regular 125,000).",
-    },
-  },
-  {
-    slug: "professional-english",
-    code: "EN",
-    name: {
-      fr: "Coaching d'anglais professionnel",
-      en: "Professional English Coaching",
-    },
-    shortName: { fr: "Anglais professionnel", en: "Professional English" },
-    short: {
-      fr: "Coaching d'anglais par un ancien boursier Fulbright — acquisition naturelle, sans traduction mentale.",
-      en: "English coaching by a former Fulbright scholar — natural acquisition, no mental translation.",
-    },
-    summary: {
-      fr: "Un coaching d'anglais immersif et personnalisé, assuré par un ancien boursier Fulbright passé par une université américaine. L'anglais s'acquiert naturellement, par la conversation réelle, sans exercices de grammaire formels ni barrière de traduction. Idéal pour les professionnels, étudiants et dirigeants qui veulent communiquer avec confiance en contexte international.",
-      en: "Personalized immersive English coaching led by a former Fulbright scholar who studied at a U.S. university. English is acquired naturally through real conversation, without formal grammar drills or mental translation barriers. Ideal for professionals, students, and leaders who need confident communication in international settings.",
-    },
-    who: {
-      fr: "Professionnels, étudiants et cadres souhaitant gagner en fluidité et en confiance en anglais.",
-      en: "Professionals, students, and managers seeking fluency and confidence in English.",
-    },
-    includes: [
-      {
-        fr: "Coaching immersif par un ancien boursier Fulbright (méthode d'acquisition naturelle)",
-        en: "Immersive coaching by a former Fulbright scholar (natural acquisition method)",
-      },
-      {
-        fr: "Format : coaching individuel, à l'heure ou en pack de 10 h",
-        en: "Format: one-to-one coaching, by the hour or in a 10-hour pack",
-      },
-      {
-        fr: "Anglais professionnel et technique adapté à votre secteur (business, construction, éducation, etc.)",
-        en: "Professional and technical English tailored to your field (business, construction, education, etc.)",
-      },
-      {
-        fr: "Préparation aux entretiens, réunions, présentations et correspondance professionnelle",
-        en: "Preparation for interviews, meetings, presentations, and professional correspondence",
-      },
-      {
-        fr: "Enregistrements des séances et suivi de progression selon les cas",
-        en: "Session recordings and progress reporting where applicable",
-      },
-      {
-        fr: "Préparation TOEFL, IELTS et Duolingo English Test",
-        en: "TOEFL, IELTS, and Duolingo English Test preparation",
-      },
-      {
-        fr: "Programmes d'anglais pour entreprises, ONG et équipes de projet",
-        en: "English programs for companies, NGOs, and project teams",
-      },
-    ],
-    pricing: {
-      fr: "Principalement des forfaits fixes ou des forfaits de séances. Composante hybride ou liée au succès possible pour les programmes de fluidité plus longs.",
-      en: "Primarily fixed packages or session packages. Hybrid or light success components available for longer fluency programs.",
-    },
-  },
-  {
-    slug: "leadership-development",
-    code: "LD",
-    name: {
-      fr: "Développement du leadership",
-      en: "Leadership Development",
-    },
-    shortName: { fr: "Leadership", en: "Leadership" },
-    short: {
-      fr: "Mentorat en leadership, communication et développement du potentiel pour managers et futurs dirigeants.",
-      en: "Leadership mentoring, communication, and talent development for managers and emerging leaders.",
-    },
-    summary: {
-      fr: "Un accompagnement structuré pour développer le leadership, la prise de décision, la communication d'équipe et le potentiel professionnel. Conçu pour les managers, entrepreneurs et jeunes professionnels qui veulent progresser avec des standards concrets — inspirés de pratiques américaines et adaptés au contexte malien.",
-      en: "Structured support to develop leadership, decision-making, team communication, and professional potential. Built for managers, entrepreneurs, and emerging professionals who want practical standards — informed by U.S. practice and adapted to the Malian context.",
-    },
-    who: {
-      fr: "Managers, entrepreneurs, responsables d'équipe et jeunes professionnels en progression.",
-      en: "Managers, entrepreneurs, team leads, and emerging professionals.",
-    },
-    includes: [
-      {
-        fr: "Mentorat individuel ou en petit groupe sur le leadership et la gestion d'équipe",
-        en: "Individual or small-group mentoring on leadership and team management",
-      },
-      {
-        fr: "Communication professionnelle, feedback, délégation et résolution de conflits",
-        en: "Professional communication, feedback, delegation, and conflict resolution",
-      },
-      {
-        fr: "Développement du potentiel, confiance en situation professionnelle et posture de dirigeant",
-        en: "Talent development, professional confidence, and executive presence",
-      },
-      {
-        fr: "Ateliers sur la prise de décision, la planification et la responsabilisation",
-        en: "Workshops on decision-making, planning, and accountability",
-      },
-      {
-        fr: "Programmes sur mesure pour institutions, ONG et entreprises",
-        en: "Custom programs for institutions, NGOs, and companies",
-      },
-    ],
-    pricing: {
-      fr: "Forfaits fixes par programme ou parcours multi-séances. Modèle hybride possible lorsque des jalons de progression ou de performance sont définis à l'avance.",
-      en: "Fixed packages per program or multi-session track. Hybrid models available when progress or performance milestones are defined upfront.",
-    },
-  },
-  {
-    slug: "digital-skills",
-    code: "DS",
-    name: {
-      fr: "Informatique & numérique : formations et services",
-      en: "IT & Digital: training and services",
-    },
-    shortName: { fr: "Informatique & numérique", en: "IT & Digital" },
-    short: {
-      fr: "CV et design, Google Maps, WhatsApp Business, sites web et applications web sur mesure, formations bureautique et IA.",
-      en: "CVs and design, Google Maps, WhatsApp Business, websites and custom web apps, office and AI training.",
-    },
-    summary: {
-      fr: "Formations pratiques et services numériques pour particuliers, commerçants, écoles et organisations au Mali : nous créons vos CV et visuels, votre présence en ligne, vos sites web et vos applications web sur mesure, et nous formons vos équipes.",
-      en: "Practical training and digital services for individuals, shop owners, schools, and organizations in Mali: we create your CVs and visuals, your online presence, your websites and custom web apps, and we train your teams.",
-    },
-    who: {
-      fr: "Particuliers, commerçants, écoles, PME et organisations.",
-      en: "Individuals, shop owners, schools, SMEs, and organizations.",
-    },
-    includes: [
-      {
-        fr: "CV et design : logo, cartes de visite, flyers, affiches, invitations",
-        en: "CVs and design: logo, business cards, flyers, posters, invitations",
-      },
-      {
-        fr: "Présence en ligne : fiche Google Maps, WhatsApp Business, page Facebook (Pack Visible)",
-        en: "Online presence: Google Maps listing, WhatsApp Business, Facebook page (Pack Visible)",
-      },
-      {
-        fr: "Sites web : site d'une page, site vitrine jusqu'à 5 pages",
-        en: "Websites: one-page site, showcase site up to 5 pages",
-      },
-      {
-        fr: "Applications web sur mesure (PWA) : inscriptions, suivi d'élèves ou de clients, tableau de bord, réservations ; s'installe sur le téléphone et marche avec peu de connexion",
-        en: "Custom web apps (PWA): registrations, student or client tracking, dashboard, bookings; installs on the phone and works on a weak connection",
-      },
-      {
-        fr: "Bureautique et productivité (Word, Excel, PowerPoint, Google Workspace)",
-        en: "Office productivity (Word, Excel, PowerPoint, Google Workspace)",
-      },
-      {
-        fr: "Design et présentations (Canva, PowerPoint avancé, supports visuels professionnels)",
-        en: "Design and presentations (Canva, advanced PowerPoint, professional visual materials)",
-      },
-      {
-        fr: "Création de sites web et présence en ligne (sites simples, portfolios, outils no-code)",
-        en: "Website building and online presence (simple sites, portfolios, no-code tools)",
-      },
-      {
-        fr: "Outils IA et productivité (prompt engineering, assistants IA, automatisation de base)",
-        en: "AI tools and productivity (prompt engineering, AI assistants, basic automation)",
-      },
-      {
-        fr: "Données et analyse (SQL, Google Colab, tableaux de bord et bases de données introductives)",
-        en: "Data and analysis (SQL, Google Colab, dashboards, and introductory databases)",
-      },
-      {
-        fr: "Documents professionnels (CV, lettres de motivation, portfolios numériques)",
-        en: "Professional documents (résumés/CVs, cover letters, digital portfolios)",
-      },
-      {
-        fr: "Organisation numérique : fichiers, calendriers, communication professionnelle",
-        en: "Digital organization: files, calendars, professional communication",
-      },
-      {
-        fr: "Ateliers en présentiel ou à distance, adaptés aux débutants comme aux profils intermédiaires",
-        en: "In-person or remote workshops for beginners and intermediate learners",
-      },
-    ],
-    pricing: {
-      fr: "Forfaits fixes par module ou parcours multi-séances. Tarifs groupés disponibles pour les institutions et les équipes.",
-      en: "Fixed packages per module or multi-session tracks. Group rates available for institutions and teams.",
-    },
-  },
-];
+  };
+export const servicePages = [...serviceLines, constructionService];
 
 export const pricingModels = [
   {
@@ -798,8 +682,8 @@ export const pricingModels = [
   {
     name: { fr: "Basé sur les résultats", en: "Success-Based / Results-Linked" },
     detail: {
-      fr: "Une part des honoraires est liée à des résultats mesurables : réussite à un examen, jalon de projet ou objectif de fluidité.",
-      en: "Part of the fee is tied to measurable outcomes: exam success, project milestones, or fluency targets.",
+      fr: "Une part des honoraires est liée à des résultats mesurables : jalons de projet, respect du délai ou du budget, personnes placées en emploi.",
+      en: "Part of the fee is tied to measurable outcomes: project milestones, on-time or on-budget delivery, people placed in jobs.",
     },
   },
 ];
@@ -837,8 +721,8 @@ export const networkLinks = [
     url: "https://bighopemali.com",
     displayUrl: "bighopemali.com",
     description: {
-      fr: "Programme de Djigui-Ba-Mali : club d'anglais gratuit, affilié au Malian English Clubs Council.",
-      en: "A Djigui-Ba-Mali program: free English club, affiliated with the Malian English Clubs Council.",
+      fr: "Programme de Djigui-Ba-Mali : club d'anglais gratuit (anglais pour le DEF et le Bac, TOEFL et anglais pour les bourses, anglais professionnel), fondé en novembre 2022, membre du Malian English Clubs Council.",
+      en: "A Djigui-Ba-Mali programme: free English club (English for the DEF and Bac, TOEFL and English for scholarships, professional English), founded in November 2022, member of the Malian English Clubs Council.",
     },
   },
   {
@@ -847,8 +731,8 @@ export const networkLinks = [
     url: "https://djiguibamali.org",
     displayUrl: "djiguibamali.org",
     description: {
-      fr: "Association à but non lucratif, fondée en 2015. Programmes : SoKalan (soutien scolaire gratuit) et Big Hope Mali English Club.",
-      en: "Non-profit association founded in 2015. Programs: SoKalan (free school support) and Big Hope Mali English Club.",
+      fr: "Association à but non lucratif, active depuis 2015 et enregistrée en 2022. Programme : SoKalan (soutien scolaire gratuit).",
+      en: "Non-profit association, active since 2015 and registered in 2022. Programme: SoKalan (free school support).",
     },
   },
   {
@@ -881,14 +765,15 @@ export const contact = {
     en: "Map — bekaSOBA, Hamdallaye, Bamako",
   },
   serviceOptions: [
-    { fr: "Gestion de projet & d'entreprise", en: "Project & Business Management" },
-    { fr: "Lancement d'entreprise ou diagnostic financier", en: "Business launch or financial diagnostic" },
+    { fr: "Conseil aux entreprises (lancement, diagnostic)", en: "Business consulting (launch, diagnostic)" },
+    { fr: "Gestion de projet", en: "Project management" },
     { fr: "Construction de A à Z", en: "Construction from A to Z" },
-    { fr: "Établissements scolaires", en: "Schools & Universities" },
-    { fr: "Anglais professionnel", en: "Professional English" },
-    { fr: "Leadership", en: "Leadership" },
-    { fr: "Informatique & numérique (CV, design, Google Maps)", en: "IT & Digital (CVs, design, Google Maps)" },
-    { fr: "Site web ou application", en: "Website or application" },
+    { fr: "Établissements scolaires", en: "Schools" },
+    { fr: "Formation des équipes", en: "Team training" },
+    { fr: "Carrière & employabilité", en: "Career & employability" },
+    { fr: "Pack Visible ou réseaux sociaux", en: "Get found pack or social media" },
+    { fr: "Site web, application ou automatisation", en: "Website, app or automation" },
+    { fr: "Studio création (logo, cartes, affiches)", en: "Creative studio (logo, cards, posters)" },
     { fr: "Je ne sais pas encore", en: "Not sure yet" },
   ],
 };
@@ -903,12 +788,13 @@ export const homeFeaturedOffers = [
     href: "/entreprises",
   },
   {
-    title: { fr: "Diagnostic financier & gestion", en: "Financial & management diagnostic" },
+    title: { fr: "L'IA pour les chefs de projet", en: "AI for project managers" },
     detail: {
-      fr: "En 1 à 2 semaines : ventes, coûts, trésorerie ; tableau de bord Excel et plan d'action en 10 points.",
-      en: "In 1 to 2 weeks: sales, costs, cash flow; Excel dashboard and 10-point action plan.",
+      fr: "Construire un planning, rédiger un registre des risques, produire des rapports d'avancement et résumer des réunions avec l'IA. Par un chef de projet certifié PMP®.",
+      en: "Build a schedule, write a risk register, produce progress reports and summarize meetings with AI. Taught by a PMP®-certified project manager.",
     },
-    href: "/entreprises",
+    href: "/services/formation",
+    soon: true,
   },
   {
     title: { fr: "Construction de A à Z", en: "Construction from A to Z" },
@@ -919,40 +805,33 @@ export const homeFeaturedOffers = [
     href: "/services/construction-advisory",
   },
   {
-    title: { fr: "Sites web & applications sur mesure", en: "Websites & custom applications" },
+    title: { fr: "Pack Visible", en: "Get found pack" },
     detail: {
-      fr: "Site d'une page dès 50 000 FCFA, site vitrine 125 000 FCFA, applications web (PWA) sur devis.",
-      en: "One-page site from 50,000 FCFA, showcase site 125,000 FCFA, custom web apps (PWA) quoted.",
+      fr: "Fiche Google Maps, WhatsApp Business, pages réseaux sociaux de l'entreprise, photos et site d'une page. Formules Essentiel, Pro, Complet.",
+      en: "Google Maps listing, WhatsApp Business, business social pages, photos and a one-page site. Essentiel, Pro and Complet tiers.",
     },
-    href: "/services/digital-skills",
+    href: "/services/numerique",
   },
 ];
 
 export const launchPriceItems = [
-  { code: "PM", service: { fr: "Gestion de projet : les bases (3 × 2 h)", en: "Project management: fundamentals (3 × 2 h)" }, regular: { fr: "40 000 / pers.", en: "40,000 / person" }, launch: { fr: "25 000 / pers.", en: "25,000 / person" } },
-  { code: "PM", service: { fr: "Gestion de projet : approfondissement (6 × 2 h)", en: "Project management: advanced (6 × 2 h)" }, regular: { fr: "75 000 / pers.", en: "75,000 / person" }, launch: { fr: "45 000 / pers.", en: "45,000 / person" } },
-  { code: "PM", service: { fr: "MS Project en pratique (4 × 2 h)", en: "MS Project in practice (4 × 2 h)" }, regular: { fr: "60 000 / pers.", en: "60,000 / person" }, launch: { fr: "50 000 / pers.", en: "50,000 / person" } },
-  { code: "PM", service: { fr: "Pack Chef de projet (10 × 2 h)", en: "Project Manager Pack (10 × 2 h)" }, regular: { fr: "135 000 / pers.", en: "135,000 / person" }, launch: { fr: "85 000 / pers.", en: "85,000 / person" } },
-  { code: "PM", service: { fr: "Orientation certification CAPM® / PMP® (2 h)", en: "CAPM® / PMP® certification orientation (2 h)" }, regular: { fr: "10 000", en: "10,000" }, launch: { fr: "5 000", en: "5,000" } },
-  { code: "PM", service: { fr: "Plan d'affaires", en: "Business plan" }, regular: { fr: "À partir de 150 000", en: "From 150,000" }, launch: { fr: "À partir de 100 000", en: "From 100,000" } },
-  { code: "CA", service: { fr: "Construction de A à Z", en: "Construction from A to Z" }, regular: { fr: "Sur devis", en: "Quoted" }, launch: { fr: "Sur devis", en: "Quoted" } },
-  { code: "ED", service: { fr: "Pack Bourse d'études", en: "Scholarship Pack" }, regular: { fr: "125 000", en: "125,000" }, launch: { fr: "75 000", en: "75,000" } },
-  { code: "ED", service: { fr: "CV (français ou anglais)", en: "CV (French or English)" }, regular: { fr: "7 500", en: "7,500" }, launch: { fr: "5 000", en: "5,000" } },
-  { code: "ED", service: { fr: "Pack Carrière", en: "Career Pack" }, regular: { fr: "35 000", en: "35,000" }, launch: { fr: "25 000", en: "25,000" } },
-  { code: "EN", service: { fr: "Anglais professionnel, coaching individuel", en: "Professional English, one-to-one coaching" }, regular: { fr: "10 000 / h", en: "10,000 / hour" }, launch: { fr: "7 500 / h", en: "7,500 / hour" } },
-  { code: "EN", service: { fr: "Anglais professionnel, pack de 10 h", en: "Professional English, 10-hour pack" }, regular: { fr: "85 000", en: "85,000" }, launch: { fr: "65 000", en: "65,000" } },
-  { code: "EN", service: { fr: "Test de niveau d'anglais + plan d'étude", en: "English level test + study plan" }, regular: { fr: "10 000", en: "10,000" }, launch: { fr: "7 500", en: "7,500" } },
-  { code: "EN", service: { fr: "Préparation TOEFL / IELTS / Duolingo (8 × 2 h, groupe)", en: "TOEFL / IELTS / Duolingo preparation (8 × 2 h, group)" }, regular: { fr: "60 000 / pers.", en: "60,000 / person" }, launch: { fr: "50 000 / pers.", en: "50,000 / person" } },
-  { code: "EN", service: { fr: "Prise de parole en public en anglais (4 × 2 h)", en: "Public speaking in English (4 × 2 h)" }, regular: { fr: "35 000 / pers.", en: "35,000 / person" }, launch: { fr: "25 000 / pers.", en: "25,000 / person" } },
-  { code: "DS", service: { fr: "Logo", en: "Logo" }, regular: { fr: "25 000", en: "25,000" }, launch: { fr: "15 000", en: "15,000" } },
-  { code: "DS", service: { fr: "Fiche Google Maps", en: "Google Maps listing" }, regular: { fr: "15 000", en: "15,000" }, launch: { fr: "10 000", en: "10,000" } },
-  { code: "DS", service: { fr: "Pack Visible (Google Maps + WhatsApp Business + page Facebook)", en: "Pack Visible (Google Maps + WhatsApp Business + Facebook page)" }, regular: { fr: "35 000", en: "35,000" }, launch: { fr: "25 000", en: "25,000" } },
-  { code: "DS", service: { fr: "Site d'une page", en: "One-page website" }, regular: { fr: "75 000", en: "75,000" }, launch: { fr: "50 000", en: "50,000" } },
-  { code: "DS", service: { fr: "Site vitrine (jusqu'à 5 pages)", en: "Showcase website (up to 5 pages)" }, regular: { fr: "175 000", en: "175,000" }, launch: { fr: "125 000", en: "125,000" } },
-  { code: "DS", service: { fr: "Application web sur mesure (PWA)", en: "Custom web application (PWA)" }, regular: { fr: "Sur devis", en: "Quoted" }, launch: { fr: "Sur devis", en: "Quoted" } },
-  { code: "DS", service: { fr: "Bureautique : Word + Excel (8 × 2 h)", en: "Office tools: Word + Excel (8 × 2 h)" }, regular: { fr: "35 000 / pers.", en: "35,000 / person" }, launch: { fr: "25 000 / pers.", en: "25,000 / person" } },
-  { code: "DS", service: { fr: "Excel pour professionnels (6 × 2 h)", en: "Excel for professionals (6 × 2 h)" }, regular: { fr: "50 000 / pers.", en: "50,000 / person" }, launch: { fr: "40 000 / pers.", en: "40,000 / person" } },
-  { code: "LD", service: { fr: "Ateliers de leadership", en: "Leadership workshops" }, regular: { fr: "Sur devis", en: "Quoted" }, launch: { fr: "Sur devis", en: "Quoted" } },
+  { code: "01", pillar: { fr: "Conseil", en: "Consulting" }, service: { fr: "Plan d'affaires", en: "Business plan" }, regular: { fr: "À partir de 150 000", en: "From 150,000" }, launch: { fr: "À partir de 100 000", en: "From 100,000" } },
+  { code: "01", pillar: { fr: "Conseil", en: "Consulting" }, service: { fr: "Note conceptuelle ou proposition de projet", en: "Concept note or project proposal" }, regular: { fr: "À partir de 75 000", en: "From 75,000" }, launch: { fr: "À partir de 60 000", en: "From 60,000" } },
+  { code: "01", pillar: { fr: "Conseil", en: "Consulting" }, service: { fr: "Lancement d'entreprise A à Z · Diagnostic financier · Diagnostic IA & automatisation", en: "Business launch A to Z · Financial diagnostic · AI & automation diagnostic" }, regular: { fr: "Sur devis", en: "Quoted" }, launch: { fr: "Sur devis", en: "Quoted" } },
+  { code: "01", pillar: { fr: "Conseil", en: "Consulting" }, service: { fr: "Construction de A à Z", en: "Construction from A to Z" }, regular: { fr: "Sur devis", en: "Quoted" }, launch: { fr: "Sur devis", en: "Quoted" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "Gestion de projet : les bases (3 × 2 h)", en: "Project management: fundamentals (3 × 2 h)" }, regular: { fr: "40 000 / pers.", en: "40,000 / person" }, launch: { fr: "25 000 / pers.", en: "25,000 / person" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "Gestion de projet : approfondissement (6 × 2 h)", en: "Project management: advanced (6 × 2 h)" }, regular: { fr: "75 000 / pers.", en: "75,000 / person" }, launch: { fr: "45 000 / pers.", en: "45,000 / person" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "MS Project en pratique (4 × 2 h)", en: "MS Project in practice (4 × 2 h)" }, regular: { fr: "60 000 / pers.", en: "60,000 / person" }, launch: { fr: "50 000 / pers.", en: "50,000 / person" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "Pack Chef de projet (10 × 2 h)", en: "Project Manager Pack (10 × 2 h)" }, regular: { fr: "135 000 / pers.", en: "135,000 / person" }, launch: { fr: "85 000 / pers.", en: "85,000 / person" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "Bureautique : Word + Excel (8 × 2 h)", en: "Office tools: Word + Excel (8 × 2 h)" }, regular: { fr: "35 000 / pers.", en: "35,000 / person" }, launch: { fr: "25 000 / pers.", en: "25,000 / person" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "Excel pour professionnels (6 × 2 h)", en: "Excel for professionals (6 × 2 h)" }, regular: { fr: "50 000 / pers.", en: "50,000 / person" }, launch: { fr: "40 000 / pers.", en: "40,000 / person" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "L'IA pour les chefs de projet", en: "AI for project managers" }, regular: { fr: "Sur demande", en: "On request" }, launch: { fr: "Sur demande", en: "On request" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "Pack Carrière (Essentiel · Pro · Complet)", en: "Career Pack (Essentiel · Pro · Complet)" }, regular: { fr: "Sur demande", en: "On request" }, launch: { fr: "Sur demande", en: "On request" } },
+  { code: "02", pillar: { fr: "Formation", en: "Training" }, service: { fr: "Programmes d'employabilité (organisations)", en: "Employability programmes (organizations)" }, regular: { fr: "Sur devis", en: "Quoted" }, launch: { fr: "Sur devis", en: "Quoted" } },
+  { code: "03", pillar: { fr: "Numérique", en: "Digital" }, service: { fr: "Pack Visible (Essentiel · Pro · Complet)", en: "Get found pack (Essentiel · Pro · Complet)" }, regular: { fr: "Sur demande", en: "On request" }, launch: { fr: "Sur demande", en: "On request" } },
+  { code: "03", pillar: { fr: "Numérique", en: "Digital" }, service: { fr: "Suivi mensuel des réseaux sociaux", en: "Monthly social media management" }, regular: { fr: "Sur demande", en: "On request" }, launch: { fr: "Sur demande", en: "On request" } },
+  { code: "03", pillar: { fr: "Numérique", en: "Digital" }, service: { fr: "Sites web et applications web (PWA)", en: "Websites and web apps (PWA)" }, regular: { fr: "Sur devis", en: "Quoted" }, launch: { fr: "Sur devis", en: "Quoted" } },
+  { code: "03", pillar: { fr: "Numérique", en: "Digital" }, service: { fr: "Logo", en: "Logo" }, regular: { fr: "25 000", en: "25,000" }, launch: { fr: "15 000", en: "15,000" } },
 ];
 
 export const launchPriceLabels = {
@@ -963,10 +842,18 @@ export const launchPriceLabels = {
     en: "Launch prices through 31 December 2026",
   },
   service: { fr: "Service", en: "Service" },
-  code: { fr: "Pôle", en: "Line" },
+  code: { fr: "Pilier", en: "Pillar" },
+  afterTable: {
+    fr: "Nouvelle grille des packs en préparation : prix communiqués sur WhatsApp.",
+    en: "New pack prices in preparation: ask us on WhatsApp.",
+  },
   regular: { fr: "Prix normal", en: "Regular price" },
   launch: { fr: "Prix de lancement", en: "Launch price" },
   conditionsTitle: { fr: "Conditions", en: "Conditions" },
+  trademark: {
+    fr: "PMP® est une marque déposée du Project Management Institute, Inc. bekaSOBA n'est pas un partenaire de formation agréé par le PMI.",
+    en: "PMP® is a registered mark of the Project Management Institute, Inc. bekaSOBA is not a PMI Authorized Training Partner.",
+  },
   conditions: [
     {
       fr: "Prix en francs CFA, communiqué et confirmé avant le début du travail.",
@@ -994,8 +881,8 @@ export const businessPage = {
   includedLabel: { fr: "Ce qui est inclus", en: "What's included" },
   priceLabel: { fr: "Prix", en: "Price" },
   title: {
-    fr: "Pour les entreprises — Lancement et diagnostic financier | bekaSOBA",
-    en: "For businesses — Business launch and financial diagnostic | bekaSOBA",
+    fr: "Pour les entreprises, les porteurs de projet et les organisations",
+    en: "For businesses, project holders and organizations",
   },
   sub: {
     fr: "Lancer, structurer et piloter votre activité, avec un cabinet dirigé par un MBA certifié PMP®. Chaque mission commence par une consultation de cadrage gratuite de 30 minutes.",
@@ -1021,6 +908,15 @@ export const businessPage = {
       price: { fr: "Sur devis", en: "Quoted" },
     },
     {
+      title: { fr: "Diagnostic IA & automatisation", en: "AI & automation diagnostic" },
+      detail: {
+        fr: "Repérer vos tâches répétitives, recommander les bons outils, estimer le temps et l'argent gagnés",
+        en: "Map your repetitive tasks, recommend the right tools, estimate the time and money saved",
+      },
+      price: { fr: "Sur devis", en: "Quoted" },
+      soon: true,
+    },
+    {
       title: { fr: "Gestion de projet en entreprise", en: "Project management for businesses" },
       detail: { fr: "Cadrage et planification, outils de suivi, audit d'un projet en difficulté, formation d'équipes", en: "Scoping and planning, tracking tools, review of a struggling project, team training" },
       price: { fr: "Sur devis", en: "Quoted" },
@@ -1042,10 +938,11 @@ export const businessPage = {
     title: { fr: "Aussi pour les organisations", en: "Also for organizations" },
     services: [
       { title: { fr: "Construction de A à Z", en: "Construction from A to Z" }, href: "/services/construction-advisory" },
-      { title: { fr: "Établissements scolaires", en: "Schools & Universities" }, href: "/services/education-mentoring" },
-      { title: { fr: "Programmes d'anglais pour entreprises et ONG", en: "English programs for companies and NGOs" }, href: "/services/professional-english" },
-      { title: { fr: "Ateliers de leadership", en: "Leadership workshops" }, href: "/services/leadership-development" },
-      { title: { fr: "Transformation numérique de PME et d'écoles : outils, automatisation, formation du personnel", en: "Digital transformation for SMEs and schools: tools, automation, staff training" }, href: "/services/digital-skills" },
+      { title: { fr: "Établissements scolaires", en: "Schools" }, href: "/services/conseil" },
+      { title: { fr: "Programmes d'employabilité", en: "Employability programmes" }, href: "/services/formation" },
+      { title: { fr: "Formation des équipes (gestion de projet, IA, outils numériques)", en: "Team training (project management, AI, digital tools)" }, href: "/services/formation" },
+      { title: { fr: "Communication professionnelle en anglais pour équipes (sur devis)", en: "Professional English communication for teams (quoted)" }, href: "/services/formation" },
+      { title: { fr: "Automatisation & solutions IA", en: "Automation & AI solutions" }, href: "/services/numerique" },
     ],
   },
   buttons: {

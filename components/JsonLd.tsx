@@ -1,4 +1,4 @@
-import { contact, serviceLines } from "@/lib/content";
+import { contact } from "@/lib/content";
 import { site } from "@/lib/site";
 
 export default function JsonLd() {
@@ -12,6 +12,8 @@ export default function JsonLd() {
         legalName: site.legalName,
         url: site.url,
         logo: `${site.url}${site.logo}`,
+        foundingDate: "2021-08-20",
+        slogan: "Standards internationaux, réalités maliennes",
         email: contact.emailPlaceholder,
         telephone: contact.whatsappPlaceholder.replace(/\s/g, ""),
         address: {
@@ -33,7 +35,17 @@ export default function JsonLd() {
         },
         description:
           "Consulting and support firm in Bamako. International standards, Malian realities.",
-        knowsAbout: serviceLines.map((s) => s.name.en),
+        knowsAbout: [
+          "Business consulting",
+          "AI & automation diagnostic",
+          "Project management consulting",
+          "Construction from A to Z / Owner's Representation",
+          "Project & team management training",
+          "AI for project managers",
+          "Career & employability programmes",
+          "Digital solutions, automation & AI",
+          "Creative studio",
+        ],
       },
       {
         "@type": "WebSite",

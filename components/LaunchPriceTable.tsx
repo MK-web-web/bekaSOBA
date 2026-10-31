@@ -6,8 +6,10 @@ import { useLanguage } from "@/lib/i18n";
 
 export default function LaunchPriceTable({
   serviceCode,
+  showAfterTable = false,
 }: {
   serviceCode?: string;
+  showAfterTable?: boolean;
 }) {
   const { lang } = useLanguage();
   const labels = launchPriceLabels;
@@ -41,10 +43,10 @@ export default function LaunchPriceTable({
               {items.map((item) => (
                 <tr key={`${item.code}-${item.service.en}`} className="border-b border-line/70 last:border-0">
                   <th scope="row" className="px-4 py-3 font-utility text-[12px] text-clay">
-                    {item.code}
+                    {item.pillar[lang]}
                   </th>
                   <td className="px-4 py-3 text-[14px] text-ink/80">{item.service[lang]}</td>
-                  <td className="px-4 py-3 text-[13px] text-ink/50 line-through">
+                  <td className={`px-4 py-3 text-[13px] text-ink/50 ${item.regular[lang] !== item.launch[lang] ? "line-through" : ""}`}>
                     {item.regular[lang]}
                   </td>
                   <td className="px-4 py-3 text-[14px] font-bold text-green-700">
@@ -55,6 +57,11 @@ export default function LaunchPriceTable({
             </tbody>
           </table>
         </div>
+        {showAfterTable && (
+          <p className="mt-4 text-[12px] text-ink/55">
+            {labels.afterTable[lang]}
+          </p>
+        )}
       </Container>
     </section>
   );
